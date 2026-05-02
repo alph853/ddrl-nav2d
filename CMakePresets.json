@@ -1,0 +1,53 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": { "major": 3, "minor": 3, "patch": 25 },
+  "configurePresets": [
+    {
+      "name": "dev",
+      "displayName": "Dev Build",
+      "description": "RelWithDebInfo, Ninja",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/dev",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "DDRL_ENABLE_ASAN": "OFF",
+        "DDRL_ENABLE_UBSAN": "OFF",
+        "DDRL_BUILD_EXAMPLES": "OFF"
+      }
+    },
+    {
+      "name": "debug",
+      "displayName": "Debug Build (ASan+UBSan)",
+      "description": "Debug with ASan/UBSan, Ninja",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "DDRL_ENABLE_ASAN": "ON",
+        "DDRL_ENABLE_UBSAN": "ON",
+        "DDRL_BUILD_EXAMPLES": "OFF"
+      }
+    },
+    {
+      "name": "release",
+      "displayName": "Release Build",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_INTERPROCEDURAL_OPTIMIZATION": "ON"
+      }
+    }
+  ],
+  "buildPresets": [
+    { "name": "dev", "configurePreset": "dev"},
+    { "name": "debug", "configurePreset": "debug"},
+    { "name": "release", "configurePreset": "release"}
+  ],
+  "testPresets": [
+    { "name": "dev", "configurePreset": "dev", "output": { "outputOnFailure": true } },
+    { "name": "debug", "configurePreset": "debug", "output": { "outputOnFailure": true } }
+  ]
+}

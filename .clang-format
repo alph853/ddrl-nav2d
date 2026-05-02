@@ -1,0 +1,63 @@
+BasedOnStyle: LLVM
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+ColumnLimit: 100
+
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: InlineOnly
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: true
+  AfterControlStatement: false
+  AfterEnum: false
+  AfterFunction: true
+  AfterNamespace: false
+  AfterStruct: false
+  BeforeCatch: false
+  BeforeElse: false
+  SplitEmptyFunction: true
+  SplitEmptyRecord: true
+  SplitEmptyNamespace: true
+
+DerivePointerAlignment: false
+PointerAlignment: Left
+
+AlwaysBreakTemplateDeclarations: Yes
+
+AccessModifierOffset: -2
+
+AlignAfterOpenBracket: BlockIndent
+ContinuationIndentWidth: 2
+
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+AlignOperands:   true
+AlignTrailingComments: true
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: false
+
+
+BinPackArguments: false
+BinPackParameters: true
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+IndentCaseLabels: true
+IndentPPDirectives: AfterHash
+KeepEmptyLinesAtTheStartOfBlocks: false
+SpaceAfterCStyleCast: false
+SpaceBeforeParens: ControlStatements
+SpacesBeforeTrailingComments: 1
+SpaceInEmptyParentheses: false
+Cpp11BracedListStyle: true
+SortIncludes: true
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '^(<|"(Drivers|Core)/)'
+    Priority: 1
+  - Regex: '.*'
+    Priority: 2
+SortUsingDeclarations: true
+ReflowComments: true
+...

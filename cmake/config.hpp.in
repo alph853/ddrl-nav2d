@@ -1,0 +1,17 @@
+#pragma once
+
+// Auto-generated configuration header
+
+#define DDRL_VERSION_MAJOR @PROJECT_VERSION_MAJOR@
+#define DDRL_VERSION_MINOR @PROJECT_VERSION_MINOR@
+#define DDRL_VERSION_PATCH @PROJECT_VERSION_PATCH@
+#define DDRL_VERSION "@PROJECT_VERSION@"
+
+namespace ddrl {
+
+constexpr int version_major = DDRL_VERSION_MAJOR;
+constexpr int version_minor = DDRL_VERSION_MINOR;
+constexpr int version_patch = DDRL_VERSION_PATCH;
+constexpr const char* version_string = DDRL_VERSION;
+
+} // namespace ddrl

@@ -1,0 +1,72 @@
+name: sedan_highway
+
+# Highway sedan - moderated top speed for safer highway traffic
+cfg:
+  type: ackermann_follow
+
+  kin:
+    caps_fwd:
+      max_speed: 16.0
+      max_accel: 2.4
+      max_decel: 5.0
+      cmd_rate_hz: 50.0
+      cmd_delay_s: 0.015
+      accel_noise_std: 0.015
+      steer_noise_std: 0.003
+    caps_rev:
+      max_speed: 5.0
+      max_accel: 1.6
+      max_decel: 4.0
+      cmd_rate_hz: 50.0
+      cmd_delay_s: 0.015
+      accel_noise_std: 0.015
+      steer_noise_std: 0.003
+    wheel_base: 2.7
+    max_steer_angle: 0.436 # ~25 deg
+    max_steer_rate: 1.396 # ~80 deg/s
+    min_turn_radius: 6.0
+
+  pp:
+    lookahead_m: 4.5
+    min_lookahead_m: 2.5
+    max_lookahead_m: 8.5
+    speed_coupled_to_curvature: true
+    kv: 0.4
+
+  speed_pid:
+    kp: 1.8
+    ki: 0.25
+    kd: 0.12
+    integral_windup_limit: 4.0
+    d_filter_hz: 5.0
+
+  cruise_speed_min: 12.0
+  cruise_speed_max: 16.0
+  cornering_speed_min: 6.0
+  arrival_stop_decel_bias: 1.1
+
+# Long highway path
+waypoints_local:
+  points:
+    - p_local:
+        pos: [0.0, 0.0]
+        yaw: 0.0
+      wait_s: 0.0
+    - p_local:
+        pos: [100.0, 0.0]
+        yaw: 0.0
+      wait_s: 0.5
+    - p_local:
+        pos: [100.0, 50.0]
+        yaw: 1.571
+      wait_s: 0.0
+    - p_local:
+        pos: [0.0, 50.0]
+        yaw: 3.142
+      wait_s: 0.5
+
+  reached_pos_tol: 1.0
+  reached_yaw_tol: 0.1
+  loop: true
+
+stop_when_collide_s: 4.0

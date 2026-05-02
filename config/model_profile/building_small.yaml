@@ -1,0 +1,30 @@
+name: small_building
+category: structure
+parts:
+  - name: main_structure
+    geom:
+      type: box
+      hx: 4.0
+      hy: 4.0
+      z_min: 0.0
+      z_max: 5.0
+    material:
+      name: building_facade
+      rgba: [0.8, 0.8, 0.7, 1.0] # beige
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: roof
+    geom:
+      type: box
+      hx: 4.2
+      hy: 4.2
+      z_min: 5.0
+      z_max: 5.5
+    material:
+      name: building_roof
+      rgba: [0.4, 0.3, 0.3, 1.0] # dark brown
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

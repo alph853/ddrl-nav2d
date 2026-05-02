@@ -1,0 +1,38 @@
+# Offline expert-demo recording for BC pretraining.
+# Runs the scripted expert locally, writes rollout batches to disk, and does not
+# connect to coordinator or learner.
+
+num_sim_instances: 9
+num_raycast_threads: 0
+
+enable_visualization: true
+real_time_factor: -1.0
+
+unroll_length: 256
+
+standalone_run_enable: false
+
+sim_config_path: "simulator_expert.yaml"
+world_config_path: "world_random.yaml"
+visualizer_config_path: "visualizer.yaml"
+policy_type: expert
+policy_arch_config_path: "policy_arch.yaml"
+reward_config_path: "rl_reward.yaml"
+
+map_directory: "map"
+
+event_bus:
+  buffer_size: 1000
+
+coordinator:
+  target: "127.0.0.1:5700"
+  version: "1.0.0"
+  worker_identity: ""
+  hostname: ""
+  capabilities: {}
+  labels: {}
+
+demos:
+  mode: record_only
+  output_dir: "../data/demos_bc"
+  max_files: 10000

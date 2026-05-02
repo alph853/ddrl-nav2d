@@ -1,0 +1,50 @@
+# - 0: auto-detect based on hardware_concurrency()
+num_sim_instances: 4 # Prefer n^2 for nice viewport layouts
+num_raycast_threads: 0 # Max 5 threads for raycasting
+
+enable_visualization: true #  Enable VTK visualization
+# - 1.0: run in real time (thread sleeps to match real time).
+# - 0.5: slow motion (2x slow as real time).
+# - 2.0: fast motion (2x fast as real time).
+# - <= 0: unbounded mode
+real_time_factor: -1.0
+
+# Steps before flushing a rollout to the learner (episode end also flushes)
+unroll_length: 512
+# Max number of rollouts grouped into one RolloutBatch.
+max_batch_rollouts: 64
+
+# Use tanh(mean) instead of stochastic sampling for neural policy evaluation.
+# Useful for debugging a live streamed policy against standalone ONNX behavior.
+deterministic_policy_eval: false
+
+# Run without coordinator/Kafka when true
+standalone_run_enable: false
+
+# All file paths are relative to this file
+sim_config_path: "simulator.yaml"
+world_config_path: "world_random.yaml"
+visualizer_config_path: "visualizer.yaml"
+policy_type: neural_network
+policy_arch_config_path: "policy_arch.yaml"
+reward_config_path: "rl_reward.yaml"
+
+map_directory: "map"
+
+event_bus:
+  buffer_size: 1000
+
+coordinator:
+  target: "127.0.0.1:10800"
+  version: "1.0.0"
+  worker_identity: "" # set when running multiple workers per host
+  hostname: ""
+  capabilities: {} # Map of capability key/value pairs
+  labels: {} # Map of label key/value pairs
+
+# Record expert or policy rollouts to disk for offline imitation learning (BC).
+# Modes: off | record_only | stream_and_record
+demos:
+  mode: off
+  output_dir: "../data/demos"
+  max_files: 20000

@@ -1,0 +1,58 @@
+name: gate
+category: structure
+parts:
+  - name: left_support
+    geom:
+      type: box
+      hx: 0.3
+      hy: 0.3
+      z_min: 0.0
+      z_max: 4.0
+    material:
+      name: support_metal
+      rgba: [0.4, 0.4, 0.4, 1.0] # gray
+    rel_pose:
+      pos: [-3.0, 0.0]
+      yaw: 0.0
+
+  - name: right_support
+    geom:
+      type: box
+      hx: 0.3
+      hy: 0.3
+      z_min: 0.0
+      z_max: 4.0
+    material:
+      name: support_metal
+      rgba: [0.4, 0.4, 0.4, 1.0] # gray
+    rel_pose:
+      pos: [3.0, 0.0]
+      yaw: 0.0
+
+  - name: overhead_beam
+    geom:
+      type: box
+      hx: 3.5
+      hy: 0.4
+      z_min: 3.5
+      z_max: 4.0
+    material:
+      name: beam_metal
+      rgba: [0.3, 0.3, 0.3, 1.0] # dark gray
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: hanging_sign
+    geom:
+      type: box
+      hx: 1.5
+      hy: 0.1
+      z_min: 2.5
+      z_max: 3.3
+    material:
+      name: sign_board
+      rgba: [0.2, 0.4, 0.8, 1.0] # blue
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

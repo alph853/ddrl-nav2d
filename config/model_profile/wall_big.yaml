@@ -1,0 +1,19 @@
+name: wall_big
+category: structure
+parts:
+  - name: wall_segment
+    geom:
+      type: polygon  # Shape2 variant indicator
+      vertices:      # CCW winding
+        - [0.0, 0.0]
+        - [20.0, 0.0]
+        - [20.0, 1.0]
+        - [0.0, 1.0]
+      z_min: 0.0
+      z_max: 3.0
+    material:
+      name: concrete_wall
+      rgba: [0.5, 0.5, 0.5, 1.0]  # gray
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

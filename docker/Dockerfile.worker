@@ -1,0 +1,59 @@
+# syntax=docker/dockerfile:1.6
+
+FROM ubuntu:24.04 AS builder
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+WORKDIR /opt/src
+
+COPY scripts/install.sh scripts/install.sh
+RUN scripts/install.sh
+
+COPY . .
+
+RUN cmake --fresh --preset dev \
+    && cmake --build --preset dev \
+    && cmake --install build/dev --prefix /opt/ddrl --strip
+
+FROM ubuntu:24.04 AS runner
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates \
+    libyaml-cpp0.8 \
+    libvtk9.1t64 \
+    libvtk9.1t64-qt \
+    libqt5widgets5 \
+    libqt5gui5 \
+    libqt5core5t64 \
+    libqt5opengl5 \
+    libgl1 \
+    libglu1-mesa \
+    libx11-6 \
+    libxrandr2 \
+    libxcursor1 \
+    libxi6 \
+    libspdlog1.12 \
+    openjdk-21-jre \
+    libpython3.12 \
+    librdkafka++1 \
+    libgrpc++1.51t64 \
+    libprotobuf32t64 \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN printf "/usr/lib/jvm/java-21-openjdk-amd64/lib/server\n/usr/lib/jvm/java-21-openjdk-amd64/lib\n" > /etc/ld.so.conf.d/openjdk.conf \
+    && ldconfig
+
+COPY --from=builder /opt/ddrl /opt/ddrl
+COPY --from=builder /opt/src/config /opt/ddrl/config
+COPY --from=builder /opt/src/third_party/onnxruntime/lib /opt/ddrl/lib
+
+WORKDIR /opt/ddrl
+
+ENTRYPOINT ["/opt/ddrl/bin/ddrl_worker"]
+
+RUN printf "/opt/ddrl/lib\n" > /etc/ld.so.conf.d/ddrl.conf \
+    && ldconfig
+
+RUN ldd /opt/ddrl/bin/ddrl_worker | grep "not found" && echo "Missing dependencies!" && exit 1 || echo "All dependencies found."

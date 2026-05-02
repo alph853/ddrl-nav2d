@@ -1,0 +1,358 @@
+version: '1.0'
+name: map_easy_2
+description: ''
+static_instances:
+- name: gas_station_1
+  model_id: gas_station
+  pose_world:
+    pos:
+    - -59
+    - -35
+    yaw: 0.0
+- name: train_station_platform_2
+  model_id: train_station_platform
+  pose_world:
+    pos:
+    - -2
+    - -36
+    yaw: 0.0
+- name: forest_dense_3
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - 55.0
+    - -37
+    yaw: 0.0
+- name: forest_dense_4
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - 80.0
+    - -37
+    yaw: 0.0
+- name: bridge_long_5
+  model_id: bridge_long
+  pose_world:
+    pos:
+    - -66
+    - 1.0
+    yaw: 0.0
+- name: bridge_long_6
+  model_id: bridge_long
+  pose_world:
+    pos:
+    - 0.0
+    - 1.0
+    yaw: 0.0
+- name: bridge_long_7
+  model_id: bridge_long
+  pose_world:
+    pos:
+    - 66.0
+    - 1.0
+    yaw: 0.0
+- name: roundabout_small_8
+  model_id: roundabout_small
+  pose_world:
+    pos:
+    - -2
+    - 39.0
+    yaw: 0.0
+- name: small_building_9
+  model_id: small_building
+  pose_world:
+    pos:
+    - -21
+    - 55.0
+    yaw: 0.0
+- name: small_building_10
+  model_id: small_building
+  pose_world:
+    pos:
+    - -33
+    - 55.0
+    yaw: 0.0
+- name: small_building_11
+  model_id: small_building
+  pose_world:
+    pos:
+    - -44
+    - 55.0
+    yaw: 0.0
+- name: small_building_12
+  model_id: small_building
+  pose_world:
+    pos:
+    - -56
+    - 55.0
+    yaw: 0.0
+- name: small_building_13
+  model_id: small_building
+  pose_world:
+    pos:
+    - -20
+    - 30.0
+    yaw: 0.0
+- name: small_building_14
+  model_id: small_building
+  pose_world:
+    pos:
+    - -20
+    - 18.0
+    yaw: 0.0
+- name: bamboo_grove_15
+  model_id: bamboo_grove
+  pose_world:
+    pos:
+    - -17
+    - 10.0
+    yaw: 0.0
+- name: bamboo_grove_16
+  model_id: bamboo_grove
+  pose_world:
+    pos:
+    - -25
+    - 11.0
+    yaw: 0.0
+- name: bamboo_grove_17
+  model_id: bamboo_grove
+  pose_world:
+    pos:
+    - -21
+    - 9.0
+    yaw: 0.0
+- name: small_building_18
+  model_id: small_building
+  pose_world:
+    pos:
+    - -19
+    - -9
+    yaw: 0.0
+- name: small_building_19
+  model_id: small_building
+  pose_world:
+    pos:
+    - -67
+    - 55.0
+    yaw: 0.0
+- name: small_building_20
+  model_id: small_building
+  pose_world:
+    pos:
+    - -79
+    - 55.0
+    yaw: 0.0
+- name: small_building_21
+  model_id: small_building
+  pose_world:
+    pos:
+    - 17.0
+    - 31.0
+    yaw: 0.0
+- name: small_building_22
+  model_id: small_building
+  pose_world:
+    pos:
+    - 17.0
+    - 19.0
+    yaw: 0.0
+- name: small_building_23
+  model_id: small_building
+  pose_world:
+    pos:
+    - -91
+    - 56.0
+    yaw: 0.0
+- name: small_building_24
+  model_id: small_building
+  pose_world:
+    pos:
+    - 19.0
+    - 56.0
+    yaw: 0.0
+- name: big_building_25
+  model_id: big_building
+  pose_world:
+    pos:
+    - 42.0
+    - 46.0
+    yaw: 0.0
+- name: big_building_26
+  model_id: big_building
+  pose_world:
+    pos:
+    - 79.0
+    - 46.0
+    yaw: 0.0
+robot_routes:
+- name: route_1
+  start:
+    pos:
+    - -55.0
+    - -61.0
+    yaw: 0.3028848683749714
+  waypoints:
+  - name: wp_1
+    pos:
+    - -39.0
+    - -56.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - -39.0
+    - -37.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - -38.0
+    - -6.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - -39.0
+    - 29.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - -38.0
+    - 41.0
+    tolerance: 2.0
+  - name: wp_6
+    pos:
+    - -20.0
+    - 42.0
+    tolerance: 2.0
+  - name: wp_7
+    pos:
+    - -13.0
+    - 49.0
+    tolerance: 2.0
+  - name: wp_8
+    pos:
+    - -7.0
+    - 57.0
+    tolerance: 2.0
+  - name: wp_9
+    pos:
+    - -8.0
+    - 66.0
+    tolerance: 2.0
+  - name: wp_10
+    pos:
+    - -25.0
+    - 67.0
+    tolerance: 2.0
+  - name: wp_11
+    pos:
+    - -48.0
+    - 67.0
+    tolerance: 2.0
+  - name: wp_12
+    pos:
+    - -86.0
+    - 67.0
+    tolerance: 2.0
+- name: route_2
+  start:
+    pos:
+    - 3.0
+    - -18.0
+    yaw: -0.06442683942555355
+  waypoints:
+  - name: wp_1
+    pos:
+    - 34.0
+    - -20.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - 37.0
+    - -49.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - 64.0
+    - -52.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - 19.0
+    - -53.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - 2.0
+    - -54.0
+    tolerance: 2.0
+  - name: wp_6
+    pos:
+    - -24.0
+    - -52.0
+    tolerance: 2.0
+  - name: wp_7
+    pos:
+    - -37.0
+    - -51.0
+    tolerance: 2.0
+  - name: wp_8
+    pos:
+    - -39.0
+    - -18.0
+    tolerance: 2.0
+  - name: wp_9
+    pos:
+    - 28.0
+    - -19.0
+    tolerance: 2.0
+  - name: wp_10
+    pos:
+    - 28.0
+    - -5.0
+    tolerance: 2.0
+  - name: wp_11
+    pos:
+    - 29.0
+    - 23.0
+    tolerance: 2.0
+  - name: wp_12
+    pos:
+    - 25.0
+    - 29.0
+    tolerance: 2.0
+  - name: wp_13
+    pos:
+    - 23.0
+    - 43.0
+    tolerance: 2.0
+  - name: wp_14
+    pos:
+    - 12.0
+    - 43.0
+    tolerance: 2.0
+  - name: wp_15
+    pos:
+    - 3.0
+    - 57.0
+    tolerance: 2.0
+  - name: wp_16
+    pos:
+    - 3.0
+    - 66.0
+    tolerance: 2.0
+  - name: wp_17
+    pos:
+    - 56.0
+    - 67.0
+    tolerance: 2.0
+  - name: wp_18
+    pos:
+    - 73.0
+    - 66.0
+    tolerance: 2.0
+bounds:
+  min:
+  - -120.0
+  - -120.0
+  max:
+  - 120.0
+  - 120.0

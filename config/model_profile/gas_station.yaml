@@ -1,0 +1,313 @@
+name: gas_station
+category: structure
+parts:
+  # Main convenience store building
+  - name: store_building
+    geom:
+      type: box
+      hx: 6.0
+      hy: 5.0
+      z_min: 0.0
+      z_max: 3.5
+    material:
+      name: store_walls
+      rgba: [0.9, 0.9, 0.85, 1.0]
+    rel_pose:
+      pos: [0.0, -10.0]
+      yaw: 0.0
+
+  - name: store_roof
+    geom:
+      type: box
+      hx: 6.2
+      hy: 5.2
+      z_min: 3.5
+      z_max: 4.0
+    material:
+      name: roof_material
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [0.0, -10.0]
+      yaw: 0.0
+
+  # Large windows
+  - name: store_window
+    geom:
+      type: box
+      hx: 5.0
+      hy: 0.05
+      z_min: 0.5
+      z_max: 2.5
+    material:
+      name: glass
+      rgba: [0.7, 0.9, 1.0, 0.6]
+    rel_pose:
+      pos: [0.0, -5.05]
+      yaw: 0.0
+
+  # Canopy structure over pumps
+  - name: canopy_support_1
+    geom:
+      type: circle
+      radius: 0.3
+      z_min: 0.0
+      z_max: 4.0
+    material:
+      name: metal_support
+      rgba: [0.7, 0.7, 0.7, 1.0]
+    rel_pose:
+      pos: [-7.0, 3.0]
+      yaw: 0.0
+
+  - name: canopy_support_2
+    geom:
+      type: circle
+      radius: 0.3
+      z_min: 0.0
+      z_max: 4.0
+    material:
+      name: metal_support
+      rgba: [0.7, 0.7, 0.7, 1.0]
+    rel_pose:
+      pos: [7.0, 3.0]
+      yaw: 0.0
+
+  - name: canopy_support_3
+    geom:
+      type: circle
+      radius: 0.3
+      z_min: 0.0
+      z_max: 4.0
+    material:
+      name: metal_support
+      rgba: [0.7, 0.7, 0.7, 1.0]
+    rel_pose:
+      pos: [-7.0, -3.0]
+      yaw: 0.0
+
+  - name: canopy_support_4
+    geom:
+      type: circle
+      radius: 0.3
+      z_min: 0.0
+      z_max: 4.0
+    material:
+      name: metal_support
+      rgba: [0.7, 0.7, 0.7, 1.0]
+    rel_pose:
+      pos: [7.0, -3.0]
+      yaw: 0.0
+
+  - name: canopy_roof
+    geom:
+      type: box
+      hx: 8.0
+      hy: 5.0
+      z_min: 4.0
+      z_max: 4.5
+    material:
+      name: canopy_material
+      rgba: [0.9, 0.2, 0.2, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  # Gas pumps
+  - name: pump_island_1
+    geom:
+      type: box
+      hx: 3.0
+      hy: 1.0
+      z_min: 0.0
+      z_max: 0.2
+    material:
+      name: concrete_island
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-3.0, 0.0]
+      yaw: 0.0
+
+  - name: pump_1a
+    geom:
+      type: box
+      hx: 0.5
+      hy: 0.3
+      z_min: 0.2
+      z_max: 1.5
+    material:
+      name: pump_body
+      rgba: [0.2, 0.6, 0.8, 1.0]
+    rel_pose:
+      pos: [-3.5, 0.0]
+      yaw: 0.0
+
+  - name: pump_1b
+    geom:
+      type: box
+      hx: 0.5
+      hy: 0.3
+      z_min: 0.2
+      z_max: 1.5
+    material:
+      name: pump_body
+      rgba: [0.2, 0.6, 0.8, 1.0]
+    rel_pose:
+      pos: [-2.5, 0.0]
+      yaw: 0.0
+
+  - name: pump_island_2
+    geom:
+      type: box
+      hx: 3.0
+      hy: 1.0
+      z_min: 0.0
+      z_max: 0.2
+    material:
+      name: concrete_island
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [3.0, 0.0]
+      yaw: 0.0
+
+  - name: pump_2a
+    geom:
+      type: box
+      hx: 0.5
+      hy: 0.3
+      z_min: 0.2
+      z_max: 1.5
+    material:
+      name: pump_body
+      rgba: [0.2, 0.6, 0.8, 1.0]
+    rel_pose:
+      pos: [2.5, 0.0]
+      yaw: 0.0
+
+  - name: pump_2b
+    geom:
+      type: box
+      hx: 0.5
+      hy: 0.3
+      z_min: 0.2
+      z_max: 1.5
+    material:
+      name: pump_body
+      rgba: [0.2, 0.6, 0.8, 1.0]
+    rel_pose:
+      pos: [3.5, 0.0]
+      yaw: 0.0
+
+  # Price sign
+  - name: sign_pole
+    geom:
+      type: circle
+      radius: 0.2
+      z_min: 0.0
+      z_max: 6.0
+    material:
+      name: sign_pole
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [-10.0, -8.0]
+      yaw: 0.0
+
+  - name: sign_board
+    geom:
+      type: box
+      hx: 2.0
+      hy: 0.2
+      z_min: 4.0
+      z_max: 6.0
+    material:
+      name: sign_display
+      rgba: [1.0, 1.0, 0.8, 1.0]
+    rel_pose:
+      pos: [-10.0, -8.0]
+      yaw: 0.0
+
+  # Air/vacuum station
+  - name: air_station
+    geom:
+      type: box
+      hx: 0.4
+      hy: 0.4
+      z_min: 0.0
+      z_max: 1.2
+    material:
+      name: air_machine
+      rgba: [0.8, 0.8, 0.2, 1.0]
+    rel_pose:
+      pos: [9.0, -8.0]
+      yaw: 0.0
+
+  # Station floor/lot
+  - name: station_floor
+    geom:
+      type: box
+      hx: 12.0
+      hy: 12.0
+      z_min: -0.01
+      z_max: 0.0
+    material:
+      name: gas_station_asphalt
+      rgba: [0.25, 0.25, 0.25, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  # Perimeter curbs/barriers
+  - name: curb_north
+    geom:
+      type: box
+      hx: 12.0
+      hy: 0.15
+      z_min: 0.0
+      z_max: 0.2
+    material:
+      name: concrete_curb
+      rgba: [0.7, 0.7, 0.7, 1.0]
+    rel_pose:
+      pos: [0.0, 12.0]
+      yaw: 0.0
+
+  - name: curb_south
+    geom:
+      type: box
+      hx: 12.0
+      hy: 0.15
+      z_min: 0.0
+      z_max: 0.2
+    material:
+      name: concrete_curb
+      rgba: [0.7, 0.7, 0.7, 1.0]
+    rel_pose:
+      pos: [0.0, -12.0]
+      yaw: 0.0
+
+  - name: curb_east
+    geom:
+      type: box
+      hx: 12.0
+      hy: 0.15
+      z_min: 0.0
+      z_max: 0.2
+    material:
+      name: concrete_curb
+      rgba: [0.7, 0.7, 0.7, 1.0]
+    rel_pose:
+      pos: [12.0, 0.0]
+      yaw: 1.5708
+
+  - name: curb_west
+    geom:
+      type: box
+      hx: 12.0
+      hy: 0.15
+      z_min: 0.0
+      z_max: 0.2
+    material:
+      name: concrete_curb
+      rgba: [0.7, 0.7, 0.7, 1.0]
+    rel_pose:
+      pos: [-12.0, 0.0]
+      yaw: 1.5708

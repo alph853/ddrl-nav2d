@@ -1,0 +1,170 @@
+name: iron_barrier
+category: obstacle
+parts:
+  # Base posts
+  - name: post_1
+    geom:
+      type: circle
+      radius: 0.08
+      z_min: 0.0
+      z_max: 2.5
+    material:
+      name: iron_metal
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: post_2
+    geom:
+      type: circle
+      radius: 0.08
+      z_min: 0.0
+      z_max: 2.5
+    material:
+      name: iron_metal
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [2.0, 0.0]
+      yaw: 0.0
+
+  - name: post_3
+    geom:
+      type: circle
+      radius: 0.08
+      z_min: 0.0
+      z_max: 2.5
+    material:
+      name: iron_metal
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [4.0, 0.0]
+      yaw: 0.0
+
+  # Horizontal bars
+  - name: top_bar
+    geom:
+      type: box
+      hx: 2.0
+      hy: 0.05
+      z_min: 2.3
+      z_max: 2.4
+    material:
+      name: iron_metal
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [2.0, 0.0]
+      yaw: 0.0
+
+  - name: middle_bar
+    geom:
+      type: box
+      hx: 2.0
+      hy: 0.05
+      z_min: 1.2
+      z_max: 1.3
+    material:
+      name: iron_metal
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [2.0, 0.0]
+      yaw: 0.0
+
+  - name: bottom_bar
+    geom:
+      type: box
+      hx: 2.0
+      hy: 0.05
+      z_min: 0.3
+      z_max: 0.4
+    material:
+      name: iron_metal
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [2.0, 0.0]
+      yaw: 0.0
+
+  # Vertical bars (decorative)
+  - name: vert_bar_1
+    geom:
+      type: box
+      hx: 0.03
+      hy: 0.03
+      z_min: 0.4
+      z_max: 2.3
+    material:
+      name: iron_metal
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [0.5, 0.0]
+      yaw: 0.0
+
+  - name: vert_bar_2
+    geom:
+      type: box
+      hx: 0.03
+      hy: 0.03
+      z_min: 0.4
+      z_max: 2.3
+    material:
+      name: iron_metal
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [1.0, 0.0]
+      yaw: 0.0
+
+  - name: vert_bar_3
+    geom:
+      type: box
+      hx: 0.03
+      hy: 0.03
+      z_min: 0.4
+      z_max: 2.3
+    material:
+      name: iron_metal
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [1.5, 0.0]
+      yaw: 0.0
+
+  - name: vert_bar_4
+    geom:
+      type: box
+      hx: 0.03
+      hy: 0.03
+      z_min: 0.4
+      z_max: 2.3
+    material:
+      name: iron_metal
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [2.5, 0.0]
+      yaw: 0.0
+
+  - name: vert_bar_5
+    geom:
+      type: box
+      hx: 0.03
+      hy: 0.03
+      z_min: 0.4
+      z_max: 2.3
+    material:
+      name: iron_metal
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [3.0, 0.0]
+      yaw: 0.0
+
+  - name: vert_bar_6
+    geom:
+      type: box
+      hx: 0.03
+      hy: 0.03
+      z_min: 0.4
+      z_max: 2.3
+    material:
+      name: iron_metal
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [3.5, 0.0]
+      yaw: 0.0

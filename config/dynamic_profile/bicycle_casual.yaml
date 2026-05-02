@@ -1,0 +1,44 @@
+name: bicycle_casual
+
+# Casual bicycle rider - simple linear motion
+cfg:
+  type: linear_const_vel
+
+  caps:
+    max_speed: 5.0
+    max_accel: 1.5
+    max_decel: 2.5
+    cmd_rate_hz: 30.0
+    cmd_delay_s: 0.08
+    accel_noise_std: 0.04
+    steer_noise_std: 0.0
+
+  speed_min: 3.0
+  speed_max: 5.0
+  brake_to_stop: true
+
+# Bike path
+waypoints_local:
+  points:
+    - p_local:
+        pos: [0.0, 0.0]
+        yaw: 0.0
+      wait_s: 0.5
+    - p_local:
+        pos: [30.0, 0.0]
+        yaw: 0.0
+      wait_s: 2.0
+    - p_local:
+        pos: [30.0, 20.0]
+        yaw: 1.571
+      wait_s: 0.5
+    - p_local:
+        pos: [0.0, 20.0]
+        yaw: 3.142
+      wait_s: 2.0
+
+  reached_pos_tol: 0.8
+  reached_yaw_tol: 0.2
+  loop: true
+
+stop_when_collide_s: 1.5

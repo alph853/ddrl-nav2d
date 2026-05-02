@@ -1,0 +1,42 @@
+name: caution_tape_barrier
+category: obstacle
+parts:
+  - name: post_left
+    geom:
+      type: circle
+      radius: 0.05
+      z_min: 0.0
+      z_max: 1.2
+    material:
+      name: metal_post
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [-2.5, 0.0]
+      yaw: 0.0
+
+  - name: post_right
+    geom:
+      type: circle
+      radius: 0.05
+      z_min: 0.0
+      z_max: 1.2
+    material:
+      name: metal_post
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [2.5, 0.0]
+      yaw: 0.0
+
+  - name: tape
+    geom:
+      type: box
+      hx: 2.5
+      hy: 0.025
+      z_min: 1.0
+      z_max: 1.05
+    material:
+      name: caution_tape
+      rgba: [1.0, 0.95, 0.0, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

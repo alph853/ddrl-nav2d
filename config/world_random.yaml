@@ -1,0 +1,117 @@
+version: "1.1"
+
+collision_categories:
+  - category: wall
+    collides_with: [car, pedestrian, service_bot]
+  - category: car
+    collides_with: [wall, car, pedestrian, service_bot]
+  - category: pedestrian
+    collides_with: [wall, car]
+  - category: service_bot
+    collides_with: [wall, car, pedestrian]
+
+# All filepaths are relative to this file
+model_profiles:
+  - model_profile/*.yaml
+
+dynamic_profiles:
+  - dynamic_profile/*.yaml
+
+robot_profiles:
+  - robot_profile/*.yaml
+
+active_map_id: urban_plaza
+
+robot:
+  name: hero
+  robot_profile_id: ego_vehicle
+  action_delay_s: 0.1
+
+world:
+  type: random
+  random_dynamic_instances:
+    # === Vehicles - Urban Traffic ===
+    - name: commuter_sedans
+      model_id: sedan
+      dynamic_profile_id: sedan_urban
+      count: 1
+
+    - name: highway_sedans
+      model_id: sedan
+      dynamic_profile_id: sedan_highway
+      count: 1
+
+    - name: family_suvs
+      model_id: suv
+      dynamic_profile_id: suv_urban
+      count: 1
+
+    - name: delivery_trucks
+      model_id: truck
+      dynamic_profile_id: truck_delivery
+      count: 1
+
+    - name: city_buses
+      model_id: bus
+      dynamic_profile_id: bus_route
+      count: 2
+
+    # === Micro-Mobility ===
+    - name: urban_cyclists
+      model_id: bicycle
+      dynamic_profile_id: bicycle_casual
+      count: 2
+
+    - name: scooter_riders
+      model_id: scooter
+      dynamic_profile_id: scooter_urban
+      count: 3
+
+    - name: motorcyclists
+      model_id: motorcycle
+      dynamic_profile_id: motorcycle_agile
+      count: 2
+
+    # === Pedestrians - Various Types ===
+    - name: walking_adults
+      model_id: adult
+      dynamic_profile_id: pedestrian_walk
+      count: 6
+
+    - name: jogging_adults
+      model_id: adult
+      dynamic_profile_id: pedestrian_jog
+      count: 4
+
+    - name: slow_walkers
+      model_id: adult
+      dynamic_profile_id: pedestrian_slow
+      count: 3
+
+    - name: children_groups
+      model_id: kid_group
+      dynamic_profile_id: pedestrian_walk
+      count: 3
+
+    # === Vulnerable Road Users ===
+    - name: wheelchair_users
+      model_id: wheelchair
+      dynamic_profile_id: wheelchair_slow
+      count: 2
+
+    - name: parents_with_strollers
+      model_id: stroller
+      dynamic_profile_id: stroller_parent
+      count: 2
+
+    # === Urban Wildlife & Pets ===
+    - name: wandering_pets
+      model_id: pet
+      dynamic_profile_id: pet_wander
+      count: 2
+
+    # === Street Vendors & Service ===
+    - name: food_vendors
+      model_id: food_cart
+      dynamic_profile_id: food_cart_vendor
+      count: 2

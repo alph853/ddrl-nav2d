@@ -1,0 +1,16 @@
+name: cone_line
+category: obstacle
+parts:
+  - name: cones
+    geom:
+      type: box
+      hx: 5.0
+      hy: 0.2
+      z_min: 0.0
+      z_max: 0.7
+    material:
+      name: orange_plastic
+      rgba: [1.0, 0.5, 0.0, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

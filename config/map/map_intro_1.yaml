@@ -1,0 +1,182 @@
+version: '1.0'
+name: map_intro_1
+description: ''
+static_instances: []
+robot_routes:
+- name: route_s1_g1
+  start:
+    pos:
+    - 0.836493
+    - -15.998563
+    yaw: 1.627463
+  waypoints:
+  - name: wp_01
+    pos:
+    - 0.311283
+    - -6.740058
+    tolerance: 2.0
+  - name: wp_02
+    pos:
+    - -0.213927
+    - 2.518446
+    tolerance: 2.0
+  - name: wp_03
+    pos:
+    - -0.739138
+    - 11.776951
+    tolerance: 2.0
+  - name: wp_04
+    pos:
+    - -1.264348
+    - 21.035455
+    tolerance: 2.0
+  - name: final_goal
+    pos:
+    - -1.789558
+    - 30.29396
+    tolerance: 2.0
+- name: route_2
+  start:
+    pos:
+    - 16.0
+    - -17.0
+    yaw: 2.439335722080786
+  waypoints:
+  - name: wp_1
+    pos:
+    - 3.0
+    - -6.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - -9.0
+    - 2.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - -16.0
+    - 10.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - -22.0
+    - 16.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - -30.0
+    - 23.0
+    tolerance: 2.0
+  - name: wp_6
+    pos:
+    - -37.0
+    - 29.0
+    tolerance: 2.0
+- name: route_3
+  start:
+    pos:
+    - -15.0
+    - -12.0
+    yaw: 0.7086262721276703
+  waypoints:
+  - name: wp_1
+    pos:
+    - -8.0
+    - -6.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - 2.0
+    - -3.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - 10.0
+    - 3.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - 15.0
+    - 8.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - 25.0
+    - 17.0
+    tolerance: 2.0
+  - name: wp_6
+    pos:
+    - 31.0
+    - 22.0
+    tolerance: 2.0
+  - name: wp_7
+    pos:
+    - 38.0
+    - 26.0
+    tolerance: 2.0
+- name: route_4
+  start:
+    pos:
+    - -17.0
+    - 30.0
+    yaw: -0.7328151017865066
+  waypoints:
+  - name: wp_1
+    pos:
+    - -7.0
+    - 21.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - 3.0
+    - 14.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - 10.0
+    - 6.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - 17.0
+    - -8.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - 20.0
+    - -16.0
+    tolerance: 2.0
+- name: route_5
+  start:
+    pos:
+    - 20.0
+    - 31.0
+    yaw: -2.601173153319209
+  waypoints:
+  - name: wp_1
+    pos:
+    - 5.0
+    - 22.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - -4.0
+    - 14.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - -13.0
+    - 0.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - -14.0
+    - -16.0
+    tolerance: 2.0
+bounds:
+  min:
+  - -75.0
+  - -75.0
+  max:
+  - 75.0
+  - 75.0

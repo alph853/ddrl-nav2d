@@ -1,0 +1,29 @@
+name: bicycle
+category: vehicle
+parts:
+  - name: frame
+    geom:
+      type: box
+      hx: 0.9
+      hy: 0.15
+      z_min: 0.5
+      z_max: 1.0
+    material:
+      name: bicycle_frame
+      rgba: [0.3, 0.3, 0.8, 1.0] # blue
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: rider
+    geom:
+      type: circle
+      radius: 0.25
+      z_min: 0.8
+      z_max: 1.6
+    material:
+      name: cyclist
+      rgba: [0.2, 0.6, 0.8, 1.0] # light blue
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

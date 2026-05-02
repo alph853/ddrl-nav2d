@@ -1,0 +1,29 @@
+name: wheelchair
+category: human
+parts:
+  - name: chair_frame
+    geom:
+      type: box
+      hx: 0.5
+      hy: 0.5
+      z_min: 0.4
+      z_max: 0.9
+    material:
+      name: wheelchair_frame
+      rgba: [0.3, 0.3, 0.3, 1.0] # gray
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: occupant
+    geom:
+      type: circle
+      radius: 0.3
+      z_min: 0.9
+      z_max: 1.5
+    material:
+      name: wheelchair_user
+      rgba: [0.2, 0.6, 0.8, 1.0] # blue
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

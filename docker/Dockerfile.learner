@@ -1,0 +1,29 @@
+# DDRL Learner - Python training worker
+# syntax=docker/dockerfile:1.6
+
+FROM python:3.12-slim AS runner
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Runtime deps for confluent-kafka + general build tooling for wheels
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    librdkafka-dev \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /opt/ddrl/learner
+
+COPY apps/learner/requirements.txt .
+RUN pip install --upgrade pip \
+    && pip install -r requirements.txt
+
+COPY apps/learner/ .
+
+ENV PYTHONPATH=/opt/ddrl/learner
+
+ENTRYPOINT ["python", "-u", "main.py"]

@@ -1,0 +1,72 @@
+name: suv_urban
+
+# SUV with Ackermann steering - slightly slower, larger turning radius
+cfg:
+  type: ackermann_follow
+
+  kin:
+    caps_fwd:
+      max_speed: 12.0
+      max_accel: 2.2
+      max_decel: 4.0
+      cmd_rate_hz: 50.0
+      cmd_delay_s: 0.02
+      accel_noise_std: 0.025
+      steer_noise_std: 0.006
+    caps_rev:
+      max_speed: 5.0
+      max_accel: 1.8
+      max_decel: 3.0
+      cmd_rate_hz: 50.0
+      cmd_delay_s: 0.02
+      accel_noise_std: 0.025
+      steer_noise_std: 0.006
+    wheel_base: 2.9
+    max_steer_angle: 0.471 # ~27 deg
+    max_steer_rate: 1.571 # ~90 deg/s
+    min_turn_radius: 6.5
+
+  pp:
+    lookahead_m: 2.5
+    min_lookahead_m: 1.8
+    max_lookahead_m: 5.0
+    speed_coupled_to_curvature: true
+    kv: 0.55
+
+  speed_pid:
+    kp: 1.4
+    ki: 0.2
+    kd: 0.09
+    integral_windup_limit: 3.0
+    d_filter_hz: 6.0
+
+  cruise_speed_min: 7.0
+  cruise_speed_max: 12.0
+  cornering_speed_min: 3.5
+  arrival_stop_decel_bias: 1.25
+
+# Urban SUV path
+waypoints_local:
+  points:
+    - p_local:
+        pos: [0.0, 0.0]
+        yaw: 0.0
+      wait_s: 0.0
+    - p_local:
+        pos: [45.0, 0.0]
+        yaw: 0.0
+      wait_s: 1.5
+    - p_local:
+        pos: [45.0, 30.0]
+        yaw: 1.571
+      wait_s: 0.0
+    - p_local:
+        pos: [0.0, 30.0]
+        yaw: 3.142
+      wait_s: 1.5
+
+  reached_pos_tol: 0.7
+  reached_yaw_tol: 0.12
+  loop: true
+
+stop_when_collide_s: 3.0

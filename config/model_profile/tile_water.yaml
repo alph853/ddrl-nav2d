@@ -1,0 +1,16 @@
+name: tile_water
+category: ground_tile
+parts:
+  - name: water_fill
+    geom:
+      type: box
+      hx: 2.0
+      hy: 2.0
+      z_min: 0.0
+      z_max: 0.001
+    material:
+      name: blue_water
+      rgba: [0.2, 0.4, 0.8, 0.8]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

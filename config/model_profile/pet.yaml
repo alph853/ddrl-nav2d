@@ -1,0 +1,16 @@
+name: pet
+category: animal
+parts:
+  - name: body
+    geom:
+      type: box
+      hx: 0.3
+      hy: 0.2
+      z_min: 0.0
+      z_max: 0.5
+    material:
+      name: pet_body
+      rgba: [0.6, 0.4, 0.2, 1.0] # brown
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

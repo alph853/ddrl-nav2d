@@ -1,0 +1,60 @@
+name: ego_vehicle
+model_id: sedan
+
+kinematics:
+  caps_fwd:
+    max_speed: 15.0 # m/s
+    max_accel: 3.0 # m/s^2
+    max_decel: 5.0 # m/s^2
+    cmd_rate_hz: 50.0 # control update rate
+    cmd_delay_s: 0.02 # actuation latency
+    accel_noise_std: 0.05 # m/s^2
+    steer_noise_std: 0.01 # rad
+
+  caps_rev:
+    max_speed: 5.0 # m/s
+    max_accel: 2.0 # m/s^2
+    max_decel: 3.0 # m/s^2
+    cmd_rate_hz: 50.0 # control update rate
+    cmd_delay_s: 0.02 # actuation latency
+    accel_noise_std: 0.05 # m/s^2
+    steer_noise_std: 0.01 # rad
+
+  wheel_base: 2.7 # m
+  max_steer_angle: 0.523 # rad (~30 deg)
+  max_steer_rate: 2.094 # rad/s (~120 deg/s)
+  min_turn_radius: 5.0 # m
+  gear_hold_time_s: 1.0
+
+sensors:
+  - type: lidar_3d
+    id: roof_lidar_ultralite
+    pose_rel_base: { t: [0.0, 0.0, 1.82], q: [1.0, 0.0, 0.0, 0.0] }
+    min_range: 3.0
+    max_range: 35.0
+    noise_std: 0.02
+    dropout_prob: 0.01
+    update_hz: 10.0
+    latency_s: 0.05
+    hfov: 6.283185307       # 360°
+    angular_res: 0.017453293 # 1.0° in rad
+    vfov: 0.34906585        # 20° to cut vertical spread
+    num_rings: 16
+
+  - type: depth_camera
+    id: front_depth_ultralite
+    pose_rel_base: { t: [2.75, 0.0, 1.2], q: [0.5, -0.5, 0.5, -0.5] }
+    width: 128
+    height: 96
+    fx: 64.0
+    fy: 64.0
+    cx: 64.0
+    cy: 48.0
+    min_range: 0.3
+    max_range: 45.0
+    near_z: 0.3
+    far_z: 20.0
+    update_hz: 10.0
+    latency_s: 0.06
+    noise_std: 0.02
+    dropout_prob: 0.18

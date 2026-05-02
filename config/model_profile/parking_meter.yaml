@@ -1,0 +1,29 @@
+name: parking_meter
+category: infrastructure
+parts:
+  - name: pole
+    geom:
+      type: circle
+      radius: 0.05
+      z_min: 0.0
+      z_max: 1.2
+    material:
+      name: meter_pole
+      rgba: [0.4, 0.4, 0.4, 1.0] # gray
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: head
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 1.2
+      z_max: 1.5
+    material:
+      name: meter_head
+      rgba: [0.5, 0.5, 0.5, 1.0] # light gray
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

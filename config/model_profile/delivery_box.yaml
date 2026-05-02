@@ -1,0 +1,16 @@
+name: delivery_box
+category: obstacle
+parts:
+  - name: box
+    geom:
+      type: box
+      hx: 0.3
+      hy: 0.3
+      z_min: 0.0
+      z_max: 0.4
+    material:
+      name: cardboard
+      rgba: [0.7, 0.6, 0.4, 1.0] # cardboard brown
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

@@ -1,0 +1,44 @@
+name: pedestrian_jog
+
+# Motion controller configuration - jogging pedestrians
+cfg:
+  type: linear_const_vel
+
+  caps:
+    max_speed: 3.0
+    max_accel: 1.5
+    max_decel: 2.0
+    cmd_rate_hz: 20.0
+    cmd_delay_s: 0.05
+    accel_noise_std: 0.05
+    steer_noise_std: 0.0
+
+  speed_min: 2.0
+  speed_max: 2.8
+  brake_to_stop: true
+
+# Longer running path
+waypoints_local:
+  points:
+    - p_local:
+        pos: [0.0, 0.0]
+        yaw: 0.0
+      wait_s: 1.0
+    - p_local:
+        pos: [20.0, 0.0]
+        yaw: 0.0
+      wait_s: 0.5
+    - p_local:
+        pos: [20.0, 15.0]
+        yaw: 1.571
+      wait_s: 1.0
+    - p_local:
+        pos: [0.0, 15.0]
+        yaw: 3.142
+      wait_s: 0.5
+
+  reached_pos_tol: 0.5
+  reached_yaw_tol: 0.2
+  loop: true
+
+stop_when_collide_s: 1.0

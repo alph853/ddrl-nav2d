@@ -1,0 +1,44 @@
+name: wheelchair_slow
+
+# Wheelchair user - very slow and careful
+cfg:
+  type: linear_const_vel
+
+  caps:
+    max_speed: 1.2
+    max_accel: 0.4
+    max_decel: 0.8
+    cmd_rate_hz: 20.0
+    cmd_delay_s: 0.12
+    accel_noise_std: 0.02
+    steer_noise_std: 0.0
+
+  speed_min: 0.6
+  speed_max: 1.0
+  brake_to_stop: true
+
+# Short accessible path
+waypoints_local:
+  points:
+    - p_local:
+        pos: [0.0, 0.0]
+        yaw: 0.0
+      wait_s: 4.0
+    - p_local:
+        pos: [8.0, 0.0]
+        yaw: 0.0
+      wait_s: 3.0
+    - p_local:
+        pos: [8.0, 5.0]
+        yaw: 1.571
+      wait_s: 4.0
+    - p_local:
+        pos: [0.0, 5.0]
+        yaw: 3.142
+      wait_s: 3.0
+
+  reached_pos_tol: 0.5
+  reached_yaw_tol: 0.3
+  loop: true
+
+stop_when_collide_s: 3.0

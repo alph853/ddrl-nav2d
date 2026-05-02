@@ -1,0 +1,54 @@
+name: roundabout_small
+category: road_feature
+parts:
+  - name: center_island
+    geom:
+      type: circle
+      radius: 6.0
+      z_min: 0.0
+      z_max: 1.0
+    material:
+      name: concrete
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: center_decoration
+    geom:
+      type: circle
+      radius: 5.0
+      z_min: 1.0
+      z_max: 2.0
+    material:
+      name: grass_green
+      rgba: [0.3, 0.6, 0.3, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: center_marker
+    geom:
+      type: circle
+      radius: 2.0
+      z_min: 2.0
+      z_max: 3.5
+    material:
+      name: bright_yellow
+      rgba: [1.0, 0.9, 0.0, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: road_surface
+    geom:
+      type: circle
+      radius: 10.0
+      z_min: 0.0
+      z_max: 0.05
+    material:
+      name: asphalt
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

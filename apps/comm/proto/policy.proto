@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package ddrl.comm;
+
+option csharp_namespace = "Ddrl.Comm";
+option go_package       = "github.com/ddrl/collision-avoidance/comm/gen/go/ddrl/comm";
+option java_multiple_files = true;
+option java_package        = "ai.ddrl.comm";
+
+message PolicyTensor {
+  string name        = 1;
+  repeated int32 shape = 2;
+  bytes  data        = 3;
+  string dtype       = 4; // "float32", etc.
+}
+
+message PolicyPush {
+  uint64                version      = 1;
+  repeated PolicyTensor tensors      = 2 [deprecated = true]; // legacy tensor bundle (unused)
+  map<string, double>   scalars      = 3 [deprecated = true]; // legacy metrics (unused)
+  bytes                 metadata     = 4 [deprecated = true]; // legacy metadata (unused)
+  bytes                 onnx_model   = 5; // Optional ONNX export of the policy for worker inference.
+}
+
+message PolicySubscription {
+  string worker_id      = 1;
+  string session_token  = 2;
+  uint64 last_version   = 3;
+}
+
+message PolicyAck {
+  string worker_id      = 1;
+  uint64 version        = 2;
+  uint64 received_unix_ms = 3;
+}
+
+message PolicyStreamRequest {
+  oneof payload {
+    PolicySubscription subscribe = 1;
+    PolicyAck ack               = 2;
+  }
+}
+
+service PolicyService {
+  rpc StreamPolicyUpdates(stream PolicyStreamRequest) returns (stream PolicyPush);
+}

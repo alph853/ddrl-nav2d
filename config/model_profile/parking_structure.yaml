@@ -1,0 +1,280 @@
+name: parking_structure
+category: structure
+parts:
+  # Ground floor
+  - name: ground_floor_slab
+    geom:
+      type: box
+      hx: 12.0
+      hy: 10.0
+      z_min: 0.0
+      z_max: 0.3
+    material:
+      name: concrete_slab
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  # Corner support columns
+  - name: column_1
+    geom:
+      type: box
+      hx: 0.5
+      hy: 0.5
+      z_min: 0.3
+      z_max: 9.0
+    material:
+      name: concrete_column
+      rgba: [0.45, 0.45, 0.45, 1.0]
+    rel_pose:
+      pos: [-10.0, -8.0]
+      yaw: 0.0
+
+  - name: column_2
+    geom:
+      type: box
+      hx: 0.5
+      hy: 0.5
+      z_min: 0.3
+      z_max: 9.0
+    material:
+      name: concrete_column
+      rgba: [0.45, 0.45, 0.45, 1.0]
+    rel_pose:
+      pos: [10.0, -8.0]
+      yaw: 0.0
+
+  - name: column_3
+    geom:
+      type: box
+      hx: 0.5
+      hy: 0.5
+      z_min: 0.3
+      z_max: 9.0
+    material:
+      name: concrete_column
+      rgba: [0.45, 0.45, 0.45, 1.0]
+    rel_pose:
+      pos: [-10.0, 8.0]
+      yaw: 0.0
+
+  - name: column_4
+    geom:
+      type: box
+      hx: 0.5
+      hy: 0.5
+      z_min: 0.3
+      z_max: 9.0
+    material:
+      name: concrete_column
+      rgba: [0.45, 0.45, 0.45, 1.0]
+    rel_pose:
+      pos: [10.0, 8.0]
+      yaw: 0.0
+
+  # Interior columns
+  - name: column_5
+    geom:
+      type: box
+      hx: 0.5
+      hy: 0.5
+      z_min: 0.3
+      z_max: 9.0
+    material:
+      name: concrete_column
+      rgba: [0.45, 0.45, 0.45, 1.0]
+    rel_pose:
+      pos: [0.0, -8.0]
+      yaw: 0.0
+
+  - name: column_6
+    geom:
+      type: box
+      hx: 0.5
+      hy: 0.5
+      z_min: 0.3
+      z_max: 9.0
+    material:
+      name: concrete_column
+      rgba: [0.45, 0.45, 0.45, 1.0]
+    rel_pose:
+      pos: [0.0, 8.0]
+      yaw: 0.0
+
+  # Second floor
+  - name: floor_2_slab
+    geom:
+      type: box
+      hx: 12.0
+      hy: 10.0
+      z_min: 3.0
+      z_max: 3.3
+    material:
+      name: concrete_slab
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  # Third floor (roof level)
+  - name: floor_3_slab
+    geom:
+      type: box
+      hx: 12.0
+      hy: 10.0
+      z_min: 6.0
+      z_max: 6.3
+    material:
+      name: concrete_slab
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  # Roof
+  - name: roof_slab
+    geom:
+      type: box
+      hx: 12.0
+      hy: 10.0
+      z_min: 9.0
+      z_max: 9.3
+    material:
+      name: concrete_slab
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  # Ramp structure
+  - name: ramp
+    geom:
+      type: box
+      hx: 3.0
+      hy: 2.0
+      z_min: 0.3
+      z_max: 3.0
+    material:
+      name: ramp_surface
+      rgba: [0.4, 0.4, 0.4, 1.0]
+    rel_pose:
+      pos: [13.0, 0.0]
+      yaw: 0.0
+
+  # Exterior walls (partial)
+  - name: wall_back
+    geom:
+      type: box
+      hx: 12.0
+      hy: 0.3
+      z_min: 0.3
+      z_max: 9.0
+    material:
+      name: concrete_wall
+      rgba: [0.55, 0.55, 0.55, 1.0]
+    rel_pose:
+      pos: [0.0, -10.0]
+      yaw: 0.0
+
+  # Signage
+  - name: parking_sign
+    geom:
+      type: box
+      hx: 2.0
+      hy: 0.1
+      z_min: 7.0
+      z_max: 8.5
+    material:
+      name: parking_sign
+      rgba: [0.2, 0.3, 0.8, 1.0]
+    rel_pose:
+      pos: [0.0, -10.2]
+      yaw: 0.0
+
+  # Parking lot floor surface
+  - name: parking_lot_floor
+    geom:
+      type: box
+      hx: 15.0
+      hy: 12.0
+      z_min: -0.01
+      z_max: 0.0
+    material:
+      name: parking_asphalt
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  # Perimeter barriers
+  - name: barrier_north
+    geom:
+      type: box
+      hx: 15.0
+      hy: 0.2
+      z_min: 0.0
+      z_max: 0.8
+    material:
+      name: concrete_barrier
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [0.0, 12.0]
+      yaw: 0.0
+
+  - name: barrier_south
+    geom:
+      type: box
+      hx: 15.0
+      hy: 0.2
+      z_min: 0.0
+      z_max: 0.8
+    material:
+      name: concrete_barrier
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [0.0, -12.0]
+      yaw: 0.0
+
+  - name: barrier_east
+    geom:
+      type: box
+      hx: 12.0
+      hy: 0.2
+      z_min: 0.0
+      z_max: 0.8
+    material:
+      name: concrete_barrier
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [15.0, 0.0]
+      yaw: 1.5708
+
+  - name: barrier_west
+    geom:
+      type: box
+      hx: 12.0
+      hy: 0.2
+      z_min: 0.0
+      z_max: 0.8
+    material:
+      name: concrete_barrier
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-15.0, 0.0]
+      yaw: 1.5708
+
+  # Parking space markings
+  - name: parking_lines
+    geom:
+      type: box
+      hx: 12.0
+      hy: 10.0
+      z_min: 0.0
+      z_max: 0.02
+    material:
+      name: white_paint
+      rgba: [0.9, 0.9, 0.9, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

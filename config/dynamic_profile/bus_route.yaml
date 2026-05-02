@@ -1,0 +1,80 @@
+name: bus_route
+
+# City bus with frequent stops
+cfg:
+  type: ackermann_follow
+
+  kin:
+    caps_fwd:
+      max_speed: 12.0
+      max_accel: 1.2
+      max_decel: 2.5
+      cmd_rate_hz: 50.0
+      cmd_delay_s: 0.04
+      accel_noise_std: 0.02
+      steer_noise_std: 0.006
+    caps_rev:
+      max_speed: 4.0
+      max_accel: 1.0
+      max_decel: 2.0
+      cmd_rate_hz: 50.0
+      cmd_delay_s: 0.04
+      accel_noise_std: 0.02
+      steer_noise_std: 0.006
+    wheel_base: 6.0
+    max_steer_angle: 0.349 # ~20 deg
+    max_steer_rate: 1.047 # ~60 deg/s
+    min_turn_radius: 12.0
+
+  pp:
+    lookahead_m: 4.0
+    min_lookahead_m: 2.5
+    max_lookahead_m: 7.0
+    speed_coupled_to_curvature: true
+    kv: 0.7
+
+  speed_pid:
+    kp: 1.0
+    ki: 0.12
+    kd: 0.06
+    integral_windup_limit: 2.0
+    d_filter_hz: 4.0
+
+  cruise_speed_min: 6.0
+  cruise_speed_max: 12.0
+  cornering_speed_min: 3.0
+  arrival_stop_decel_bias: 1.5
+
+# Bus route with multiple stops
+waypoints_local:
+  points:
+    - p_local:
+        pos: [0.0, 0.0]
+        yaw: 0.0
+      wait_s: 8.0 # Bus stop
+    - p_local:
+        pos: [30.0, 0.0]
+        yaw: 0.0
+      wait_s: 6.0 # Bus stop
+    - p_local:
+        pos: [60.0, 0.0]
+        yaw: 0.0
+      wait_s: 8.0 # Bus stop
+    - p_local:
+        pos: [60.0, 40.0]
+        yaw: 1.571
+      wait_s: 6.0 # Bus stop
+    - p_local:
+        pos: [30.0, 40.0]
+        yaw: 3.142
+      wait_s: 8.0 # Bus stop
+    - p_local:
+        pos: [0.0, 40.0]
+        yaw: 3.142
+      wait_s: 6.0 # Bus stop
+
+  reached_pos_tol: 1.0
+  reached_yaw_tol: 0.15
+  loop: true
+
+stop_when_collide_s: 5.0

@@ -1,0 +1,5888 @@
+version: '1.0'
+name: map_med_1
+description: ''
+static_instances:
+- name: stroller_1
+  model_id: stroller
+  pose_world:
+    pos:
+    - -32.0
+    - 27.0
+    yaw: 0.0
+- name: stroller_2
+  model_id: stroller
+  pose_world:
+    pos:
+    - -32.0
+    - 27.0
+    yaw: 0.0
+- name: stroller_3
+  model_id: stroller
+  pose_world:
+    pos:
+    - -32.0
+    - 27.0
+    yaw: 0.0
+- name: stroller_4
+  model_id: stroller
+  pose_world:
+    pos:
+    - -9.0
+    - 2.0
+    yaw: 0.0
+- name: suv_5
+  model_id: suv
+  pose_world:
+    pos:
+    - -11.0
+    - 10.0
+    yaw: 0.0
+- name: traffic_light_6
+  model_id: traffic_light
+  pose_world:
+    pos:
+    - -15.0
+    - 5.0
+    yaw: 0.0
+- name: truck_7
+  model_id: truck
+  pose_world:
+    pos:
+    - -53.0
+    - 6.0
+    yaw: 6.2831853071795845
+- name: wall_8
+  model_id: wall
+  pose_world:
+    pos:
+    - -14.0
+    - -1.0
+    yaw: 0.0
+- name: wall_9
+  model_id: wall
+  pose_world:
+    pos:
+    - -24.0
+    - -1.0
+    yaw: 0.0
+- name: wall_10
+  model_id: wall
+  pose_world:
+    pos:
+    - -34.0
+    - -1.0
+    yaw: 0.0
+- name: wall_11
+  model_id: wall
+  pose_world:
+    pos:
+    - -43.0
+    - -1.0
+    yaw: 0.0
+- name: wall_12
+  model_id: wall
+  pose_world:
+    pos:
+    - -52.0
+    - -1.0
+    yaw: 0.0
+- name: wall_13
+  model_id: wall
+  pose_world:
+    pos:
+    - -62.0
+    - -1.0
+    yaw: 0.0
+- name: wall_14
+  model_id: wall
+  pose_world:
+    pos:
+    - -71.0
+    - -1.0
+    yaw: 0.0
+- name: wall_15
+  model_id: wall
+  pose_world:
+    pos:
+    - -81.0
+    - -1.0
+    yaw: 0.0
+- name: wall_16
+  model_id: wall
+  pose_world:
+    pos:
+    - -91.0
+    - -1.0
+    yaw: 0.0
+- name: wall_17
+  model_id: wall
+  pose_world:
+    pos:
+    - -91.0
+    - -1.0
+    yaw: 1.5707963267948941
+- name: wall_18
+  model_id: wall
+  pose_world:
+    pos:
+    - -91.0
+    - 9.0
+    yaw: 1.5707963267948941
+- name: wall_19
+  model_id: wall
+  pose_world:
+    pos:
+    - -91.0
+    - 19.0
+    yaw: 1.5707963267948941
+- name: wall_20
+  model_id: wall
+  pose_world:
+    pos:
+    - -91.0
+    - 39.0
+    yaw: 4.71238898038469
+- name: wall_21
+  model_id: wall
+  pose_world:
+    pos:
+    - -91.0
+    - 49.0
+    yaw: 4.71238898038469
+- name: wall_22
+  model_id: wall
+  pose_world:
+    pos:
+    - -91.0
+    - 59.0
+    yaw: 4.71238898038469
+- name: wall_23
+  model_id: wall
+  pose_world:
+    pos:
+    - -91.0
+    - 69.0
+    yaw: 4.71238898038469
+- name: wall_24
+  model_id: wall
+  pose_world:
+    pos:
+    - -91.0
+    - 79.0
+    yaw: 4.71238898038469
+- name: wall_25
+  model_id: wall
+  pose_world:
+    pos:
+    - -101.0
+    - 79.0
+    yaw: 6.2831853071795845
+- name: wall_26
+  model_id: wall
+  pose_world:
+    pos:
+    - -111.0
+    - 79.0
+    yaw: 6.2831853071795845
+- name: wall_27
+  model_id: wall
+  pose_world:
+    pos:
+    - -120.0
+    - 79.0
+    yaw: 6.2831853071795845
+- name: wall_28
+  model_id: wall
+  pose_world:
+    pos:
+    - -130.0
+    - 79.0
+    yaw: 6.2831853071795845
+- name: wall_29
+  model_id: wall
+  pose_world:
+    pos:
+    - -139.0
+    - 79.0
+    yaw: 0.0
+- name: wall_30
+  model_id: wall
+  pose_world:
+    pos:
+    - -149.0
+    - 79.0
+    yaw: 0.0
+- name: wall_31
+  model_id: wall
+  pose_world:
+    pos:
+    - -158.0
+    - 79.0
+    yaw: 0.0
+- name: wall_32
+  model_id: wall
+  pose_world:
+    pos:
+    - -168.0
+    - 79.0
+    yaw: 0.0
+- name: wall_33
+  model_id: wall
+  pose_world:
+    pos:
+    - -176.0
+    - 79.0
+    yaw: 0.0
+- name: wall_34
+  model_id: wall
+  pose_world:
+    pos:
+    - -186.0
+    - 79.0
+    yaw: 0.0
+- name: wall_35
+  model_id: wall
+  pose_world:
+    pos:
+    - -195.0
+    - 79.0
+    yaw: 0.0
+- name: wall_36
+  model_id: wall
+  pose_world:
+    pos:
+    - -205.0
+    - 79.0
+    yaw: 0.0
+- name: wall_37
+  model_id: wall
+  pose_world:
+    pos:
+    - -215.0
+    - 79.0
+    yaw: 0.0
+- name: wall_38
+  model_id: wall
+  pose_world:
+    pos:
+    - -225.0
+    - 79.0
+    yaw: 0.0
+- name: wall_39
+  model_id: wall
+  pose_world:
+    pos:
+    - -235.0
+    - 79.0
+    yaw: 0.0
+- name: wall_40
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 78.0
+    yaw: 0.0
+- name: wall_41
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 78.0
+    yaw: 1.5707963267948963
+- name: wall_42
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 88.0
+    yaw: 1.5707963267948963
+- name: wall_43
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 98.0
+    yaw: 1.5707963267948963
+- name: wall_44
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 106.0
+    yaw: 1.5707963267948963
+- name: wall_45
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 115.0
+    yaw: 1.5707963267948963
+- name: wall_46
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 124.0
+    yaw: 1.5707963267948963
+- name: wall_47
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 136.0
+    yaw: 1.5707963267948963
+- name: wall_48
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 145.0
+    yaw: 1.5707963267948963
+- name: wall_49
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 155.0
+    yaw: 1.5707963267948963
+- name: wall_50
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 164.0
+    yaw: 1.5707963267948963
+- name: wall_51
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 174.0
+    yaw: 1.5707963267948963
+- name: wall_52
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 184.0
+    yaw: 1.5707963267948963
+- name: wall_53
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 193.0
+    yaw: 1.5707963267948963
+- name: wall_54
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 202.0
+    yaw: 1.5707963267948963
+- name: wall_55
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 212.0
+    yaw: 1.5707963267948963
+- name: wall_56
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 221.0
+    yaw: 1.5707963267948963
+- name: wall_57
+  model_id: wall
+  pose_world:
+    pos:
+    - -245.0
+    - 231.0
+    yaw: 1.5707963267948963
+- name: wall_58
+  model_id: wall
+  pose_world:
+    pos:
+    - -239.0
+    - 248.0
+    yaw: 3.9269908169872423
+- name: wall_59
+  model_id: wall
+  pose_world:
+    pos:
+    - -239.0
+    - 248.0
+    yaw: 6.2831853071795845
+- name: wall_60
+  model_id: wall
+  pose_world:
+    pos:
+    - -229.0
+    - 248.0
+    yaw: 6.2831853071795845
+- name: wall_61
+  model_id: wall
+  pose_world:
+    pos:
+    - -219.0
+    - 248.0
+    yaw: 6.2831853071795845
+- name: wall_62
+  model_id: wall
+  pose_world:
+    pos:
+    - -209.0
+    - 248.0
+    yaw: 0.0
+- name: wall_63
+  model_id: wall
+  pose_world:
+    pos:
+    - -199.0
+    - 248.0
+    yaw: 0.0
+- name: wall_64
+  model_id: wall
+  pose_world:
+    pos:
+    - -189.0
+    - 248.0
+    yaw: 0.0
+- name: wall_65
+  model_id: wall
+  pose_world:
+    pos:
+    - -179.0
+    - 248.0
+    yaw: 0.0
+- name: wall_66
+  model_id: wall
+  pose_world:
+    pos:
+    - -169.0
+    - 248.0
+    yaw: 0.0
+- name: wall_67
+  model_id: wall
+  pose_world:
+    pos:
+    - -159.0
+    - 248.0
+    yaw: 0.0
+- name: wall_68
+  model_id: wall
+  pose_world:
+    pos:
+    - -149.0
+    - 248.0
+    yaw: 0.0
+- name: wall_69
+  model_id: wall
+  pose_world:
+    pos:
+    - -139.0
+    - 248.0
+    yaw: 0.0
+- name: wall_70
+  model_id: wall
+  pose_world:
+    pos:
+    - -129.0
+    - 248.0
+    yaw: 0.0
+- name: wall_71
+  model_id: wall
+  pose_world:
+    pos:
+    - -119.0
+    - 248.0
+    yaw: 0.0
+- name: wall_72
+  model_id: wall
+  pose_world:
+    pos:
+    - -109.0
+    - 248.0
+    yaw: 0.0
+- name: wall_73
+  model_id: wall
+  pose_world:
+    pos:
+    - -99.0
+    - 248.0
+    yaw: 0.0
+- name: wall_74
+  model_id: wall
+  pose_world:
+    pos:
+    - -89.0
+    - 248.0
+    yaw: 0.0
+- name: wall_75
+  model_id: wall
+  pose_world:
+    pos:
+    - -79.0
+    - 248.0
+    yaw: 0.0
+- name: wall_76
+  model_id: wall
+  pose_world:
+    pos:
+    - -69.0
+    - 248.0
+    yaw: 0.0
+- name: wall_77
+  model_id: wall
+  pose_world:
+    pos:
+    - -56.0
+    - 239.0
+    yaw: 1.8325957145940457
+- name: wall_78
+  model_id: wall
+  pose_world:
+    pos:
+    - -53.0
+    - 229.0
+    yaw: 1.8325957145940457
+- name: wall_79
+  model_id: wall
+  pose_world:
+    pos:
+    - -50.0
+    - 220.0
+    yaw: 1.8325957145940457
+- name: wall_80
+  model_id: wall
+  pose_world:
+    pos:
+    - -50.0
+    - 220.0
+    yaw: 6.2831853071795845
+- name: wall_81
+  model_id: wall
+  pose_world:
+    pos:
+    - -40.0
+    - 220.0
+    yaw: 1.0471975511965954
+- name: wall_82
+  model_id: wall
+  pose_world:
+    pos:
+    - -35.0
+    - 229.0
+    yaw: 1.5707963267948941
+- name: wall_83
+  model_id: wall
+  pose_world:
+    pos:
+    - -28.0
+    - 246.0
+    yaw: 3.92699081698724
+- name: wall_84
+  model_id: wall
+  pose_world:
+    pos:
+    - -28.0
+    - 244.0
+    yaw: 0.5235987755982932
+- name: wall_85
+  model_id: wall
+  pose_world:
+    pos:
+    - -20.0
+    - 248.0
+    yaw: 0.0
+- name: wall_86
+  model_id: wall
+  pose_world:
+    pos:
+    - -2.0
+    - 243.0
+    yaw: 2.6179938779914944
+- name: wall_87
+  model_id: wall
+  pose_world:
+    pos:
+    - 6.0
+    - 238.0
+    yaw: 2.6179938779914944
+- name: wall_88
+  model_id: wall
+  pose_world:
+    pos:
+    - 14.0
+    - 233.0
+    yaw: 2.6179938779914944
+- name: wall_89
+  model_id: wall
+  pose_world:
+    pos:
+    - 22.0
+    - 228.0
+    yaw: 2.6179938779914944
+- name: wall_90
+  model_id: wall
+  pose_world:
+    pos:
+    - 22.0
+    - 218.0
+    yaw: 1.5707963267948941
+- name: wall_91
+  model_id: wall
+  pose_world:
+    pos:
+    - 22.0
+    - 208.0
+    yaw: 1.5707963267948941
+- name: wall_92
+  model_id: wall
+  pose_world:
+    pos:
+    - 22.0
+    - 199.0
+    yaw: 1.5707963267948941
+- name: wall_93
+  model_id: wall
+  pose_world:
+    pos:
+    - 22.0
+    - 199.0
+    yaw: 0.0
+- name: wall_94
+  model_id: wall
+  pose_world:
+    pos:
+    - 32.0
+    - 199.0
+    yaw: 0.0
+- name: wall_95
+  model_id: wall
+  pose_world:
+    pos:
+    - 42.0
+    - 199.0
+    yaw: 0.0
+- name: wall_96
+  model_id: wall
+  pose_world:
+    pos:
+    - 52.0
+    - 199.0
+    yaw: 0.0
+- name: wall_97
+  model_id: wall
+  pose_world:
+    pos:
+    - 62.0
+    - 199.0
+    yaw: 5.235987755982988
+- name: wall_98
+  model_id: wall
+  pose_world:
+    pos:
+    - 67.0
+    - 190.0
+    yaw: 5.235987755982988
+- name: wall_99
+  model_id: wall
+  pose_world:
+    pos:
+    - 72.0
+    - 181.0
+    yaw: 5.235987755982988
+- name: wall_100
+  model_id: wall
+  pose_world:
+    pos:
+    - 77.0
+    - 172.0
+    yaw: 5.235987755982988
+- name: wall_101
+  model_id: wall
+  pose_world:
+    pos:
+    - 86.0
+    - 158.0
+    yaw: 5.235987755982988
+- name: wall_102
+  model_id: wall
+  pose_world:
+    pos:
+    - 91.0
+    - 149.0
+    yaw: 5.235987755982988
+- name: wall_103
+  model_id: wall
+  pose_world:
+    pos:
+    - 96.0
+    - 140.0
+    yaw: 0.0
+- name: wall_104
+  model_id: wall
+  pose_world:
+    pos:
+    - 106.0
+    - 141.0
+    yaw: 1.5707963267948941
+- name: wall_105
+  model_id: wall
+  pose_world:
+    pos:
+    - 106.0
+    - 151.0
+    yaw: 1.5707963267948941
+- name: wall_106
+  model_id: wall
+  pose_world:
+    pos:
+    - 82.0
+    - 163.0
+    yaw: 0.5235987755982967
+- name: wall_107
+  model_id: wall
+  pose_world:
+    pos:
+    - 86.0
+    - 157.0
+    yaw: 0.5235987755982967
+- name: wall_108
+  model_id: wall
+  pose_world:
+    pos:
+    - 90.0
+    - 168.0
+    yaw: 0.5235987755982967
+- name: wall_109
+  model_id: wall
+  pose_world:
+    pos:
+    - 105.0
+    - 162.0
+    yaw: 3.1415926535897913
+- name: wall_110
+  model_id: wall
+  pose_world:
+    pos:
+    - 93.0
+    - 182.0
+    yaw: 5.235987755982986
+- name: wall_111
+  model_id: wall
+  pose_world:
+    pos:
+    - 85.0
+    - 195.0
+    yaw: 5.235987755982986
+- name: wall_112
+  model_id: wall
+  pose_world:
+    pos:
+    - 89.0
+    - 188.0
+    yaw: 5.235987755982986
+- name: wall_113
+  model_id: wall
+  pose_world:
+    pos:
+    - 85.0
+    - 195.0
+    yaw: 2.356194490192345
+- name: wall_114
+  model_id: wall
+  pose_world:
+    pos:
+    - 78.0
+    - 202.0
+    yaw: 2.356194490192345
+- name: wall_115
+  model_id: wall
+  pose_world:
+    pos:
+    - 71.0
+    - 209.0
+    yaw: 3.1415926535897936
+- name: wall_116
+  model_id: wall
+  pose_world:
+    pos:
+    - 61.0
+    - 209.0
+    yaw: 2.3561944901923426
+- name: wall_117
+  model_id: wall
+  pose_world:
+    pos:
+    - 54.0
+    - 216.0
+    yaw: 1.8325957145940417
+- name: wall_118
+  model_id: wall
+  pose_world:
+    pos:
+    - 51.0
+    - 226.0
+    yaw: 1.5707963267948906
+- name: wall_119
+  model_id: wall
+  pose_world:
+    pos:
+    - 51.0
+    - 237.0
+    yaw: 1.04719755119659
+- name: wall_120
+  model_id: wall
+  pose_world:
+    pos:
+    - 56.0
+    - 246.0
+    yaw: 0.26179938779914025
+- name: wall_121
+  model_id: wall
+  pose_world:
+    pos:
+    - 66.0
+    - 249.0
+    yaw: 6.283185307179576
+- name: wall_122
+  model_id: wall
+  pose_world:
+    pos:
+    - 75.0
+    - 248.0
+    yaw: 6.283185307179576
+- name: wall_123
+  model_id: wall
+  pose_world:
+    pos:
+    - 85.0
+    - 249.0
+    yaw: 6.283185307179576
+- name: wall_124
+  model_id: wall
+  pose_world:
+    pos:
+    - 95.0
+    - 249.0
+    yaw: 6.283185307179576
+- name: wall_125
+  model_id: wall
+  pose_world:
+    pos:
+    - 105.0
+    - 249.0
+    yaw: 0.0
+- name: wall_126
+  model_id: wall
+  pose_world:
+    pos:
+    - 120.0
+    - 241.0
+    yaw: 2.0943951023931953
+- name: wall_127
+  model_id: wall
+  pose_world:
+    pos:
+    - 128.0
+    - 237.0
+    yaw: 2.6179938779914944
+- name: wall_128
+  model_id: wall
+  pose_world:
+    pos:
+    - 128.0
+    - 237.0
+    yaw: 6.021385919380435
+- name: wall_129
+  model_id: wall
+  pose_world:
+    pos:
+    - 138.0
+    - 234.0
+    yaw: 6.2831853071795845
+- name: wall_130
+  model_id: wall
+  pose_world:
+    pos:
+    - 147.0
+    - 234.0
+    yaw: 0.26179938779914735
+- name: wall_131
+  model_id: wall
+  pose_world:
+    pos:
+    - 156.0
+    - 236.0
+    yaw: 0.7853981633974483
+- name: wall_132
+  model_id: wall
+  pose_world:
+    pos:
+    - 163.0
+    - 243.0
+    yaw: 0.7853981633974483
+- name: wall_133
+  model_id: wall
+  pose_world:
+    pos:
+    - 178.0
+    - 249.0
+    yaw: 3.1415926535897936
+- name: wall_134
+  model_id: wall
+  pose_world:
+    pos:
+    - 187.0
+    - 249.0
+    yaw: 3.1415926535897936
+- name: wall_135
+  model_id: wall
+  pose_world:
+    pos:
+    - 197.0
+    - 249.0
+    yaw: 3.1415926535897936
+- name: wall_136
+  model_id: wall
+  pose_world:
+    pos:
+    - 206.0
+    - 248.0
+    yaw: 3.1415926535897936
+- name: wall_137
+  model_id: wall
+  pose_world:
+    pos:
+    - 215.0
+    - 243.0
+    yaw: 2.617993877991492
+- name: wall_138
+  model_id: wall
+  pose_world:
+    pos:
+    - 224.0
+    - 238.0
+    yaw: 2.617993877991492
+- name: wall_139
+  model_id: wall
+  pose_world:
+    pos:
+    - 233.0
+    - 233.0
+    yaw: 2.617993877991492
+- name: wall_140
+  model_id: wall
+  pose_world:
+    pos:
+    - 232.0
+    - 233.0
+    yaw: 5.759586531581284
+- name: wall_141
+  model_id: wall
+  pose_world:
+    pos:
+    - 241.0
+    - 218.0
+    yaw: 1.5707963267948923
+- name: wall_142
+  model_id: wall
+  pose_world:
+    pos:
+    - 241.0
+    - 208.0
+    yaw: 1.5707963267948923
+- name: wall_143
+  model_id: wall
+  pose_world:
+    pos:
+    - 241.0
+    - 198.0
+    yaw: 1.5707963267948923
+- name: wall_144
+  model_id: wall
+  pose_world:
+    pos:
+    - 241.0
+    - 189.0
+    yaw: 1.5707963267948923
+- name: wall_145
+  model_id: wall
+  pose_world:
+    pos:
+    - 241.0
+    - 179.0
+    yaw: 1.5707963267948923
+- name: wall_146
+  model_id: wall
+  pose_world:
+    pos:
+    - 241.0
+    - 171.0
+    yaw: 1.5707963267948963
+- name: wall_147
+  model_id: wall
+  pose_world:
+    pos:
+    - 241.0
+    - 161.0
+    yaw: 1.5707963267948963
+- name: wall_148
+  model_id: wall
+  pose_world:
+    pos:
+    - 241.0
+    - 152.0
+    yaw: 1.5707963267948963
+- name: wall_149
+  model_id: wall
+  pose_world:
+    pos:
+    - 241.0
+    - 142.0
+    yaw: 1.5707963267948963
+- name: wall_150
+  model_id: wall
+  pose_world:
+    pos:
+    - 241.0
+    - 133.0
+    yaw: 1.5707963267948963
+- name: wall_151
+  model_id: wall
+  pose_world:
+    pos:
+    - 240.0
+    - 132.0
+    yaw: 3.9269908169872423
+- name: wall_152
+  model_id: wall
+  pose_world:
+    pos:
+    - 233.0
+    - 125.0
+    yaw: 3.9269908169872423
+- name: wall_153
+  model_id: wall
+  pose_world:
+    pos:
+    - 225.0
+    - 117.0
+    yaw: 3.9269908169872423
+- name: wall_154
+  model_id: wall
+  pose_world:
+    pos:
+    - 217.0
+    - 109.0
+    yaw: 3.9269908169872423
+- name: wall_155
+  model_id: wall
+  pose_world:
+    pos:
+    - 210.0
+    - 102.0
+    yaw: 5.497787143782137
+- name: wall_156
+  model_id: wall
+  pose_world:
+    pos:
+    - 217.0
+    - 95.0
+    yaw: 5.497787143782137
+- name: wall_157
+  model_id: wall
+  pose_world:
+    pos:
+    - 224.0
+    - 88.0
+    yaw: 5.497787143782137
+- name: wall_158
+  model_id: wall
+  pose_world:
+    pos:
+    - 231.0
+    - 81.0
+    yaw: 5.497787143782137
+- name: wall_159
+  model_id: wall
+  pose_world:
+    pos:
+    - 246.0
+    - 67.0
+    yaw: 2.356194490192345
+- name: wall_160
+  model_id: wall
+  pose_world:
+    pos:
+    - 246.0
+    - 67.0
+    yaw: 4.974188368183839
+- name: wall_161
+  model_id: wall
+  pose_world:
+    pos:
+    - 244.0
+    - 49.0
+    yaw: 1.0471975511965954
+- name: wall_162
+  model_id: wall
+  pose_world:
+    pos:
+    - 240.0
+    - 42.0
+    yaw: 1.0471975511965954
+- name: wall_163
+  model_id: wall
+  pose_world:
+    pos:
+    - 235.0
+    - 34.0
+    yaw: 1.0471975511965954
+- name: wall_164
+  model_id: wall
+  pose_world:
+    pos:
+    - 231.0
+    - 27.0
+    yaw: 1.0471975511965954
+- name: wall_165
+  model_id: wall
+  pose_world:
+    pos:
+    - 227.0
+    - 19.0
+    yaw: 1.0471975511965976
+- name: wall_166
+  model_id: wall
+  pose_world:
+    pos:
+    - 221.0
+    - 10.0
+    yaw: 1.0471975511965976
+- name: wall_167
+  model_id: wall
+  pose_world:
+    pos:
+    - 216.0
+    - 2.0
+    yaw: 1.0471975511965976
+- name: wall_168
+  model_id: wall
+  pose_world:
+    pos:
+    - 211.0
+    - -6.0
+    yaw: 1.0471975511965976
+- name: wall_169
+  model_id: wall
+  pose_world:
+    pos:
+    - 209.0
+    - -15.0
+    yaw: 1.308996938995747
+- name: wall_170
+  model_id: wall
+  pose_world:
+    pos:
+    - 209.0
+    - -25.0
+    yaw: 1.5707963267948963
+- name: wall_171
+  model_id: wall
+  pose_world:
+    pos:
+    - 209.0
+    - -34.0
+    yaw: 1.5707963267948963
+- name: wall_172
+  model_id: wall
+  pose_world:
+    pos:
+    - 216.0
+    - -41.0
+    yaw: 2.356194490192345
+- name: wall_173
+  model_id: wall
+  pose_world:
+    pos:
+    - 223.0
+    - -48.0
+    yaw: 2.356194490192345
+- name: wall_174
+  model_id: wall
+  pose_world:
+    pos:
+    - 230.0
+    - -54.0
+    yaw: 2.356194490192345
+- name: wall_175
+  model_id: wall
+  pose_world:
+    pos:
+    - 237.0
+    - -61.0
+    yaw: 2.356194490192345
+- name: wall_176
+  model_id: wall
+  pose_world:
+    pos:
+    - 244.0
+    - -68.0
+    yaw: 2.356194490192345
+- name: wall_177
+  model_id: wall
+  pose_world:
+    pos:
+    - 246.0
+    - -70.0
+    yaw: 4.974188368183839
+- name: wall_178
+  model_id: wall
+  pose_world:
+    pos:
+    - 245.0
+    - -67.0
+    yaw: 4.974188368183839
+- name: wall_179
+  model_id: wall
+  pose_world:
+    pos:
+    - 246.0
+    - -90.0
+    yaw: 1.308996938995747
+- name: wall_180
+  model_id: wall
+  pose_world:
+    pos:
+    - 243.0
+    - -100.0
+    yaw: 1.308996938995747
+- name: wall_181
+  model_id: wall
+  pose_world:
+    pos:
+    - 241.0
+    - -109.0
+    yaw: 1.308996938995747
+- name: wall_182
+  model_id: wall
+  pose_world:
+    pos:
+    - 238.0
+    - -117.0
+    yaw: 1.308996938995747
+- name: wall_183
+  model_id: wall
+  pose_world:
+    pos:
+    - 235.0
+    - -126.0
+    yaw: 1.308996938995747
+- name: wall_184
+  model_id: wall
+  pose_world:
+    pos:
+    - 232.0
+    - -135.0
+    yaw: 1.308996938995747
+- name: wall_185
+  model_id: wall
+  pose_world:
+    pos:
+    - 229.0
+    - -144.0
+    yaw: 1.308996938995747
+- name: wall_186
+  model_id: wall
+  pose_world:
+    pos:
+    - 226.0
+    - -154.0
+    yaw: 1.308996938995747
+- name: wall_187
+  model_id: wall
+  pose_world:
+    pos:
+    - 223.0
+    - -163.0
+    yaw: 1.308996938995747
+- name: wall_188
+  model_id: wall
+  pose_world:
+    pos:
+    - 221.0
+    - -173.0
+    yaw: 1.308996938995747
+- name: wall_189
+  model_id: wall
+  pose_world:
+    pos:
+    - 218.0
+    - -184.0
+    yaw: 1.308996938995747
+- name: wall_190
+  model_id: wall
+  pose_world:
+    pos:
+    - 216.0
+    - -193.0
+    yaw: 1.308996938995747
+- name: wall_191
+  model_id: wall
+  pose_world:
+    pos:
+    - 214.0
+    - -202.0
+    yaw: 1.308996938995747
+- name: wall_192
+  model_id: wall
+  pose_world:
+    pos:
+    - 214.0
+    - -202.0
+    yaw: 4.4505895925855405
+- name: wall_193
+  model_id: wall
+  pose_world:
+    pos:
+    - 207.0
+    - -221.0
+    yaw: 1.0471975511965976
+- name: wall_194
+  model_id: wall
+  pose_world:
+    pos:
+    - 202.0
+    - -230.0
+    yaw: 1.0471975511965976
+- name: wall_195
+  model_id: wall
+  pose_world:
+    pos:
+    - 202.0
+    - -230.0
+    yaw: 3.9269908169872423
+- name: wall_196
+  model_id: wall
+  pose_world:
+    pos:
+    - 187.0
+    - -242.0
+    yaw: 0.5235987755982967
+- name: wall_197
+  model_id: wall
+  pose_world:
+    pos:
+    - 187.0
+    - -242.0
+    yaw: 3.403392041388939
+- name: wall_198
+  model_id: wall
+  pose_world:
+    pos:
+    - 178.0
+    - -245.0
+    yaw: 2.6179938779914886
+- name: wall_199
+  model_id: wall
+  pose_world:
+    pos:
+    - 169.0
+    - -240.0
+    yaw: 3.141592653589788
+- name: wall_200
+  model_id: wall
+  pose_world:
+    pos:
+    - 159.0
+    - -240.0
+    yaw: 3.141592653589788
+- name: wall_201
+  model_id: wall
+  pose_world:
+    pos:
+    - 139.0
+    - -241.0
+    yaw: 0.0
+- name: wall_202
+  model_id: wall
+  pose_world:
+    pos:
+    - 129.0
+    - -242.0
+    yaw: 0.0
+- name: wall_203
+  model_id: wall
+  pose_world:
+    pos:
+    - 119.0
+    - -242.0
+    yaw: 0.0
+- name: wall_204
+  model_id: wall
+  pose_world:
+    pos:
+    - 119.0
+    - -241.0
+    yaw: 2.356194490192345
+- name: wall_205
+  model_id: wall
+  pose_world:
+    pos:
+    - 112.0
+    - -234.0
+    yaw: 2.356194490192345
+- name: wall_206
+  model_id: wall
+  pose_world:
+    pos:
+    - 105.0
+    - -226.0
+    yaw: 2.356194490192345
+- name: wall_207
+  model_id: wall
+  pose_world:
+    pos:
+    - 98.0
+    - -219.0
+    yaw: 2.356194490192345
+- name: wall_208
+  model_id: wall
+  pose_world:
+    pos:
+    - 90.0
+    - -211.0
+    yaw: 2.356194490192345
+- name: wall_209
+  model_id: wall
+  pose_world:
+    pos:
+    - 83.0
+    - -204.0
+    yaw: 2.356194490192345
+- name: wall_210
+  model_id: wall
+  pose_world:
+    pos:
+    - 76.0
+    - -197.0
+    yaw: 2.356194490192345
+- name: wall_211
+  model_id: wall
+  pose_world:
+    pos:
+    - 69.0
+    - -190.0
+    yaw: 3.6651914291880927
+- name: wall_212
+  model_id: wall
+  pose_world:
+    pos:
+    - 61.0
+    - -195.0
+    yaw: 3.6651914291880927
+- name: wall_213
+  model_id: wall
+  pose_world:
+    pos:
+    - 53.0
+    - -201.0
+    yaw: 5.497787143782137
+- name: wall_214
+  model_id: wall
+  pose_world:
+    pos:
+    - 60.0
+    - -208.0
+    yaw: 5.497787143782137
+- name: wall_215
+  model_id: wall
+  pose_world:
+    pos:
+    - 67.0
+    - -215.0
+    yaw: 5.497787143782137
+- name: wall_216
+  model_id: wall
+  pose_world:
+    pos:
+    - 54.0
+    - -172.0
+    yaw: 5.497787143782137
+- name: wall_217
+  model_id: wall
+  pose_world:
+    pos:
+    - 39.0
+    - -185.0
+    yaw: 5.497787143782137
+- name: wall_218
+  model_id: wall
+  pose_world:
+    pos:
+    - 45.0
+    - -170.0
+    yaw: 6.021385919380435
+- name: wall_219
+  model_id: wall
+  pose_world:
+    pos:
+    - 36.0
+    - -168.0
+    yaw: 6.021385919380435
+- name: wall_220
+  model_id: wall
+  pose_world:
+    pos:
+    - 39.0
+    - -185.0
+    yaw: 2.0943951023931895
+- name: wall_221
+  model_id: wall
+  pose_world:
+    pos:
+    - 36.0
+    - -168.0
+    yaw: 4.450589592585532
+- name: wall_222
+  model_id: wall
+  pose_world:
+    pos:
+    - 61.0
+    - -178.0
+    yaw: 3.926990816987231
+- name: wall_223
+  model_id: wall
+  pose_world:
+    pos:
+    - 53.0
+    - -185.0
+    yaw: 3.926990816987231
+- name: wall_224
+  model_id: wall
+  pose_world:
+    pos:
+    - 74.0
+    - -222.0
+    yaw: 5.235987755982977
+- name: wall_225
+  model_id: wall
+  pose_world:
+    pos:
+    - 79.0
+    - -241.0
+    yaw: 1.5707963267948835
+- name: wall_226
+  model_id: wall
+  pose_world:
+    pos:
+    - 79.0
+    - -241.0
+    yaw: 3.9269908169872294
+- name: wall_227
+  model_id: wall
+  pose_world:
+    pos:
+    - 62.0
+    - -248.0
+    yaw: 6.283185307179572
+- name: wall_228
+  model_id: wall
+  pose_world:
+    pos:
+    - 53.0
+    - -248.0
+    yaw: 6.283185307179572
+- name: wall_229
+  model_id: wall
+  pose_world:
+    pos:
+    - 43.0
+    - -248.0
+    yaw: 6.283185307179572
+- name: wall_230
+  model_id: wall
+  pose_world:
+    pos:
+    - 33.0
+    - -248.0
+    yaw: 6.283185307179572
+- name: wall_231
+  model_id: wall
+  pose_world:
+    pos:
+    - 23.0
+    - -248.0
+    yaw: 6.283185307179572
+- name: wall_232
+  model_id: wall
+  pose_world:
+    pos:
+    - 13.0
+    - -248.0
+    yaw: 6.283185307179572
+- name: wall_233
+  model_id: wall
+  pose_world:
+    pos:
+    - 5.0
+    - -248.0
+    yaw: 0.0
+- name: wall_234
+  model_id: wall
+  pose_world:
+    pos:
+    - -4.0
+    - -249.0
+    yaw: 0.0
+- name: wall_235
+  model_id: wall
+  pose_world:
+    pos:
+    - -14.0
+    - -250.0
+    yaw: 0.0
+- name: wall_236
+  model_id: wall
+  pose_world:
+    pos:
+    - -23.0
+    - -250.0
+    yaw: 0.0
+- name: wall_237
+  model_id: wall
+  pose_world:
+    pos:
+    - -31.0
+    - -250.0
+    yaw: 0.0
+- name: wall_238
+  model_id: wall
+  pose_world:
+    pos:
+    - -40.0
+    - -248.0
+    yaw: 0.0
+- name: wall_239
+  model_id: wall
+  pose_world:
+    pos:
+    - -48.0
+    - -248.0
+    yaw: 0.0
+- name: wall_240
+  model_id: wall
+  pose_world:
+    pos:
+    - -58.0
+    - -248.0
+    yaw: 0.0
+- name: wall_241
+  model_id: wall
+  pose_world:
+    pos:
+    - -68.0
+    - -248.0
+    yaw: 0.0
+- name: wall_242
+  model_id: wall
+  pose_world:
+    pos:
+    - -77.0
+    - -248.0
+    yaw: 0.0
+- name: wall_243
+  model_id: wall
+  pose_world:
+    pos:
+    - -77.0
+    - -247.0
+    yaw: 2.6179938779914944
+- name: wall_244
+  model_id: wall
+  pose_world:
+    pos:
+    - -85.0
+    - -243.0
+    yaw: 2.6179938779914944
+- name: wall_245
+  model_id: wall
+  pose_world:
+    pos:
+    - -94.0
+    - -238.0
+    yaw: 2.3561944901923426
+- name: wall_246
+  model_id: wall
+  pose_world:
+    pos:
+    - -101.0
+    - -231.0
+    yaw: 2.3561944901923426
+- name: wall_247
+  model_id: wall
+  pose_world:
+    pos:
+    - -114.0
+    - -215.0
+    yaw: 5.235987755982986
+- name: wall_248
+  model_id: wall
+  pose_world:
+    pos:
+    - -119.0
+    - -206.0
+    yaw: 5.235987755982986
+- name: wall_249
+  model_id: wall
+  pose_world:
+    pos:
+    - -119.0
+    - -205.0
+    yaw: 1.83259571459404
+- name: wall_250
+  model_id: wall
+  pose_world:
+    pos:
+    - -122.0
+    - -194.0
+    yaw: 1.83259571459404
+- name: wall_251
+  model_id: wall
+  pose_world:
+    pos:
+    - -125.0
+    - -184.0
+    yaw: 3.9269908169872423
+- name: wall_252
+  model_id: wall
+  pose_world:
+    pos:
+    - -132.0
+    - -191.0
+    yaw: 3.9269908169872423
+- name: wall_253
+  model_id: wall
+  pose_world:
+    pos:
+    - -139.0
+    - -198.0
+    yaw: 3.9269908169872423
+- name: wall_254
+  model_id: wall
+  pose_world:
+    pos:
+    - -146.0
+    - -205.0
+    yaw: 3.9269908169872423
+- name: wall_255
+  model_id: wall
+  pose_world:
+    pos:
+    - -153.0
+    - -212.0
+    yaw: 3.9269908169872423
+- name: wall_256
+  model_id: wall
+  pose_world:
+    pos:
+    - -169.0
+    - -223.0
+    yaw: 0.26179938779914735
+- name: wall_257
+  model_id: wall
+  pose_world:
+    pos:
+    - -178.0
+    - -226.0
+    yaw: 0.26179938779914735
+- name: wall_258
+  model_id: wall
+  pose_world:
+    pos:
+    - -178.0
+    - -226.0
+    yaw: 2.879793265790644
+- name: wall_259
+  model_id: wall
+  pose_world:
+    pos:
+    - -188.0
+    - -223.0
+    yaw: 2.879793265790644
+- name: wall_260
+  model_id: wall
+  pose_world:
+    pos:
+    - -197.0
+    - -221.0
+    yaw: 2.879793265790644
+- name: wall_261
+  model_id: wall
+  pose_world:
+    pos:
+    - -207.0
+    - -219.0
+    yaw: 2.879793265790644
+- name: wall_262
+  model_id: wall
+  pose_world:
+    pos:
+    - -217.0
+    - -216.0
+    yaw: 2.879793265790644
+- name: wall_263
+  model_id: wall
+  pose_world:
+    pos:
+    - -234.0
+    - -207.0
+    yaw: 5.497787143782137
+- name: wall_264
+  model_id: wall
+  pose_world:
+    pos:
+    - -241.0
+    - -200.0
+    yaw: 5.497787143782137
+- name: wall_265
+  model_id: wall
+  pose_world:
+    pos:
+    - -241.0
+    - -199.0
+    yaw: 2.094395102393193
+- name: wall_266
+  model_id: wall
+  pose_world:
+    pos:
+    - -246.0
+    - -180.0
+    yaw: 4.712388980384688
+- name: wall_267
+  model_id: wall
+  pose_world:
+    pos:
+    - -246.0
+    - -180.0
+    yaw: 1.5707963267948963
+- name: wall_268
+  model_id: wall
+  pose_world:
+    pos:
+    - -246.0
+    - -169.0
+    yaw: 1.5707963267948963
+- name: wall_269
+  model_id: wall
+  pose_world:
+    pos:
+    - -246.0
+    - -157.0
+    yaw: 1.5707963267948963
+- name: wall_270
+  model_id: wall
+  pose_world:
+    pos:
+    - -246.0
+    - -146.0
+    yaw: 1.5707963267948963
+- name: wall_271
+  model_id: wall
+  pose_world:
+    pos:
+    - -246.0
+    - -134.0
+    yaw: 1.5707963267948963
+- name: wall_272
+  model_id: wall
+  pose_world:
+    pos:
+    - -246.0
+    - -123.0
+    yaw: 1.5707963267948963
+- name: wall_273
+  model_id: wall
+  pose_world:
+    pos:
+    - -246.0
+    - -112.0
+    yaw: 1.5707963267948963
+- name: wall_274
+  model_id: wall
+  pose_world:
+    pos:
+    - -246.0
+    - -101.0
+    yaw: 1.5707963267948963
+- name: wall_275
+  model_id: wall
+  pose_world:
+    pos:
+    - -246.0
+    - -91.0
+    yaw: 1.5707963267948963
+- name: wall_276
+  model_id: wall
+  pose_world:
+    pos:
+    - -246.0
+    - -81.0
+    yaw: 1.3089969389957448
+- name: wall_277
+  model_id: wall
+  pose_world:
+    pos:
+    - -244.0
+    - -73.0
+    yaw: 1.3089969389957448
+- name: wall_278
+  model_id: wall
+  pose_world:
+    pos:
+    - -242.0
+    - -64.0
+    yaw: 1.3089969389957448
+- name: wall_279
+  model_id: wall
+  pose_world:
+    pos:
+    - -240.0
+    - -54.0
+    yaw: 0.7853981633974443
+- name: wall_280
+  model_id: wall
+  pose_world:
+    pos:
+    - -233.0
+    - -48.0
+    yaw: 0.7853981633974443
+- name: wall_281
+  model_id: wall
+  pose_world:
+    pos:
+    - -226.0
+    - -41.0
+    yaw: 0.7853981633974443
+- name: wall_282
+  model_id: wall
+  pose_world:
+    pos:
+    - -219.0
+    - -35.0
+    yaw: 0.5235987755982932
+- name: wall_283
+  model_id: wall
+  pose_world:
+    pos:
+    - -212.0
+    - -30.0
+    yaw: 0.5235987755982932
+- name: wall_284
+  model_id: wall
+  pose_world:
+    pos:
+    - -204.0
+    - -25.0
+    yaw: 0.5235987755982932
+- name: wall_285
+  model_id: wall
+  pose_world:
+    pos:
+    - -195.0
+    - -21.0
+    yaw: 0.0
+- name: wall_286
+  model_id: wall
+  pose_world:
+    pos:
+    - -185.0
+    - -22.0
+    yaw: 0.0
+- name: wall_287
+  model_id: wall
+  pose_world:
+    pos:
+    - -175.0
+    - -22.0
+    yaw: 0.0
+- name: wall_288
+  model_id: wall
+  pose_world:
+    pos:
+    - -165.0
+    - -22.0
+    yaw: 0.0
+- name: wall_289
+  model_id: wall
+  pose_world:
+    pos:
+    - -155.0
+    - -23.0
+    yaw: 0.0
+- name: wall_290
+  model_id: wall
+  pose_world:
+    pos:
+    - -145.0
+    - -23.0
+    yaw: 0.0
+- name: wall_291
+  model_id: wall
+  pose_world:
+    pos:
+    - -136.0
+    - -23.0
+    yaw: 0.0
+- name: wall_292
+  model_id: wall
+  pose_world:
+    pos:
+    - -127.0
+    - -24.0
+    yaw: 0.0
+- name: wall_293
+  model_id: wall
+  pose_world:
+    pos:
+    - -118.0
+    - -25.0
+    yaw: 0.0
+- name: wall_294
+  model_id: wall
+  pose_world:
+    pos:
+    - -109.0
+    - -24.0
+    yaw: 0.0
+- name: wall_295
+  model_id: wall
+  pose_world:
+    pos:
+    - -100.0
+    - -24.0
+    yaw: 0.0
+- name: wall_296
+  model_id: wall
+  pose_world:
+    pos:
+    - -11.0
+    - -9.0
+    yaw: 0.7853981633974483
+- name: wall_297
+  model_id: wall
+  pose_world:
+    pos:
+    - -11.0
+    - -19.0
+    yaw: 1.5707963267948963
+- name: wall_298
+  model_id: wall
+  pose_world:
+    pos:
+    - -11.0
+    - -29.0
+    yaw: 1.5707963267948963
+- name: wall_299
+  model_id: wall
+  pose_world:
+    pos:
+    - -83.0
+    - -30.0
+    yaw: 2.356194490192345
+- name: wall_300
+  model_id: wall
+  pose_world:
+    pos:
+    - -76.0
+    - -37.0
+    yaw: 2.356194490192345
+- name: wall_301
+  model_id: wall
+  pose_world:
+    pos:
+    - -69.0
+    - -44.0
+    yaw: 2.356194490192345
+- name: wall_302
+  model_id: wall
+  pose_world:
+    pos:
+    - -62.0
+    - -51.0
+    yaw: 2.356194490192345
+- name: wall_303
+  model_id: wall
+  pose_world:
+    pos:
+    - -55.0
+    - -58.0
+    yaw: 2.356194490192345
+- name: wall_304
+  model_id: wall
+  pose_world:
+    pos:
+    - -46.0
+    - -55.0
+    yaw: 3.403392041388943
+- name: wall_305
+  model_id: wall
+  pose_world:
+    pos:
+    - -38.0
+    - -53.0
+    yaw: 3.403392041388943
+- name: wall_306
+  model_id: wall
+  pose_world:
+    pos:
+    - -30.0
+    - -50.0
+    yaw: 3.403392041388943
+- name: wall_307
+  model_id: wall
+  pose_world:
+    pos:
+    - -23.0
+    - -49.0
+    yaw: 3.403392041388943
+- name: wall_308
+  model_id: wall
+  pose_world:
+    pos:
+    - -15.0
+    - -46.0
+    yaw: 3.403392041388943
+- name: wall_309
+  model_id: wall
+  pose_world:
+    pos:
+    - -10.0
+    - -38.0
+    yaw: 4.188790204786391
+- name: wall_310
+  model_id: wall
+  pose_world:
+    pos:
+    - -10.0
+    - -30.0
+    yaw: 4.71238898038469
+- name: wall_311
+  model_id: wall
+  pose_world:
+    pos:
+    - -4.0
+    - 13.0
+    yaw: 3.1415926535897913
+- name: wall_312
+  model_id: wall
+  pose_world:
+    pos:
+    - -24.0
+    - 12.0
+    yaw: 0.0
+- name: wall_313
+  model_id: wall
+  pose_world:
+    pos:
+    - -34.0
+    - 13.0
+    yaw: 0.0
+- name: wall_314
+  model_id: wall
+  pose_world:
+    pos:
+    - -44.0
+    - 13.0
+    yaw: 0.0
+- name: wall_315
+  model_id: wall
+  pose_world:
+    pos:
+    - -54.0
+    - 13.0
+    yaw: 0.0
+- name: wall_316
+  model_id: wall
+  pose_world:
+    pos:
+    - -63.0
+    - 13.0
+    yaw: 0.0
+- name: wall_317
+  model_id: wall
+  pose_world:
+    pos:
+    - -73.0
+    - 13.0
+    yaw: 0.0
+- name: wall_318
+  model_id: wall
+  pose_world:
+    pos:
+    - -78.0
+    - 13.0
+    yaw: 0.0
+- name: wall_319
+  model_id: wall
+  pose_world:
+    pos:
+    - -78.0
+    - 13.0
+    yaw: 1.5707963267948963
+- name: wall_320
+  model_id: wall
+  pose_world:
+    pos:
+    - -78.0
+    - 23.0
+    yaw: 1.5707963267948963
+- name: wall_321
+  model_id: wall
+  pose_world:
+    pos:
+    - -78.0
+    - 33.0
+    yaw: 1.5707963267948963
+- name: wall_322
+  model_id: wall
+  pose_world:
+    pos:
+    - -78.0
+    - 45.0
+    yaw: 1.5707963267948963
+- name: wall_323
+  model_id: wall
+  pose_world:
+    pos:
+    - -78.0
+    - 55.0
+    yaw: 1.5707963267948963
+- name: wall_324
+  model_id: wall
+  pose_world:
+    pos:
+    - -78.0
+    - 65.0
+    yaw: 1.5707963267948963
+- name: wall_325
+  model_id: wall
+  pose_world:
+    pos:
+    - -78.0
+    - 72.0
+    yaw: 1.5707963267948963
+- name: wall_326
+  model_id: wall
+  pose_world:
+    pos:
+    - -78.0
+    - 81.0
+    yaw: 1.5707963267948963
+- name: wall_327
+  model_id: wall
+  pose_world:
+    pos:
+    - -78.0
+    - 92.0
+    yaw: 3.1415926535897936
+- name: wall_328
+  model_id: wall
+  pose_world:
+    pos:
+    - -88.0
+    - 92.0
+    yaw: 3.1415926535897936
+- name: wall_329
+  model_id: wall
+  pose_world:
+    pos:
+    - -108.0
+    - 92.0
+    yaw: 0.0
+- name: wall_330
+  model_id: wall
+  pose_world:
+    pos:
+    - -118.0
+    - 92.0
+    yaw: 0.0
+- name: wall_331
+  model_id: wall
+  pose_world:
+    pos:
+    - -127.0
+    - 92.0
+    yaw: 0.0
+- name: wall_332
+  model_id: wall
+  pose_world:
+    pos:
+    - -137.0
+    - 92.0
+    yaw: 0.0
+- name: wall_333
+  model_id: wall
+  pose_world:
+    pos:
+    - -146.0
+    - 92.0
+    yaw: 0.0
+- name: wall_334
+  model_id: wall
+  pose_world:
+    pos:
+    - -156.0
+    - 92.0
+    yaw: 0.0
+- name: wall_335
+  model_id: wall
+  pose_world:
+    pos:
+    - -165.0
+    - 92.0
+    yaw: 0.0
+- name: wall_336
+  model_id: wall
+  pose_world:
+    pos:
+    - -175.0
+    - 92.0
+    yaw: 0.0
+- name: wall_337
+  model_id: wall
+  pose_world:
+    pos:
+    - -185.0
+    - 92.0
+    yaw: 0.0
+- name: wall_338
+  model_id: wall
+  pose_world:
+    pos:
+    - -195.0
+    - 92.0
+    yaw: 0.0
+- name: wall_339
+  model_id: wall
+  pose_world:
+    pos:
+    - -204.0
+    - 92.0
+    yaw: 0.0
+- name: wall_340
+  model_id: wall
+  pose_world:
+    pos:
+    - -213.0
+    - 92.0
+    yaw: 0.0
+- name: wall_341
+  model_id: wall
+  pose_world:
+    pos:
+    - -222.0
+    - 92.0
+    yaw: 0.0
+- name: wall_342
+  model_id: wall
+  pose_world:
+    pos:
+    - -230.0
+    - 92.0
+    yaw: 0.0
+- name: wall_343
+  model_id: wall
+  pose_world:
+    pos:
+    - -230.0
+    - 93.0
+    yaw: 2.0943951023931953
+- name: wall_344
+  model_id: wall
+  pose_world:
+    pos:
+    - -234.0
+    - 101.0
+    yaw: 1.5707963267948963
+- name: wall_345
+  model_id: wall
+  pose_world:
+    pos:
+    - -234.0
+    - 109.0
+    yaw: 1.5707963267948963
+- name: wall_346
+  model_id: wall
+  pose_world:
+    pos:
+    - -234.0
+    - 118.0
+    yaw: 1.5707963267948963
+- name: wall_347
+  model_id: wall
+  pose_world:
+    pos:
+    - -234.0
+    - 128.0
+    yaw: 1.5707963267948963
+- name: wall_348
+  model_id: wall
+  pose_world:
+    pos:
+    - -234.0
+    - 138.0
+    yaw: 1.5707963267948963
+- name: wall_349
+  model_id: wall
+  pose_world:
+    pos:
+    - -234.0
+    - 147.0
+    yaw: 1.5707963267948963
+- name: wall_350
+  model_id: wall
+  pose_world:
+    pos:
+    - -234.0
+    - 156.0
+    yaw: 1.5707963267948963
+- name: wall_351
+  model_id: wall
+  pose_world:
+    pos:
+    - -234.0
+    - 164.0
+    yaw: 1.5707963267948963
+- name: wall_352
+  model_id: wall
+  pose_world:
+    pos:
+    - -234.0
+    - 173.0
+    yaw: 1.5707963267948963
+- name: wall_353
+  model_id: wall
+  pose_world:
+    pos:
+    - -234.0
+    - 182.0
+    yaw: 1.5707963267948963
+- name: wall_354
+  model_id: wall
+  pose_world:
+    pos:
+    - -234.0
+    - 193.0
+    yaw: 1.5707963267948963
+- name: wall_355
+  model_id: wall
+  pose_world:
+    pos:
+    - -234.0
+    - 202.0
+    yaw: 1.5707963267948963
+- name: wall_356
+  model_id: wall
+  pose_world:
+    pos:
+    - -234.0
+    - 212.0
+    yaw: 1.5707963267948963
+- name: wall_357
+  model_id: wall
+  pose_world:
+    pos:
+    - -234.0
+    - 221.0
+    yaw: 1.5707963267948963
+- name: wall_358
+  model_id: wall
+  pose_world:
+    pos:
+    - -234.0
+    - 230.0
+    yaw: 1.0471975511965976
+- name: wall_359
+  model_id: wall
+  pose_world:
+    pos:
+    - -220.0
+    - 238.0
+    yaw: 3.1415926535897936
+- name: wall_360
+  model_id: wall
+  pose_world:
+    pos:
+    - -210.0
+    - 238.0
+    yaw: 3.1415926535897936
+- name: wall_361
+  model_id: wall
+  pose_world:
+    pos:
+    - -201.0
+    - 238.0
+    yaw: 3.1415926535897936
+- name: wall_362
+  model_id: wall
+  pose_world:
+    pos:
+    - -192.0
+    - 238.0
+    yaw: 3.1415926535897936
+- name: wall_363
+  model_id: wall
+  pose_world:
+    pos:
+    - -192.0
+    - 237.0
+    yaw: 0.0
+- name: wall_364
+  model_id: wall
+  pose_world:
+    pos:
+    - -182.0
+    - 237.0
+    yaw: 0.0
+- name: wall_365
+  model_id: wall
+  pose_world:
+    pos:
+    - -172.0
+    - 237.0
+    yaw: 0.0
+- name: wall_366
+  model_id: wall
+  pose_world:
+    pos:
+    - -162.0
+    - 237.0
+    yaw: 0.0
+- name: wall_367
+  model_id: wall
+  pose_world:
+    pos:
+    - -152.0
+    - 237.0
+    yaw: 0.0
+- name: wall_368
+  model_id: wall
+  pose_world:
+    pos:
+    - -142.0
+    - 237.0
+    yaw: 0.0
+- name: wall_369
+  model_id: wall
+  pose_world:
+    pos:
+    - -132.0
+    - 237.0
+    yaw: 0.0
+- name: wall_370
+  model_id: wall
+  pose_world:
+    pos:
+    - -122.0
+    - 237.0
+    yaw: 0.0
+- name: wall_371
+  model_id: wall
+  pose_world:
+    pos:
+    - -112.0
+    - 237.0
+    yaw: 0.0
+- name: wall_372
+  model_id: wall
+  pose_world:
+    pos:
+    - -101.0
+    - 237.0
+    yaw: 0.0
+- name: wall_373
+  model_id: wall
+  pose_world:
+    pos:
+    - -91.0
+    - 237.0
+    yaw: 0.0
+- name: wall_374
+  model_id: wall
+  pose_world:
+    pos:
+    - -82.0
+    - 237.0
+    yaw: 0.0
+- name: wall_375
+  model_id: wall
+  pose_world:
+    pos:
+    - -69.0
+    - 228.0
+    yaw: 1.8325957145940457
+- name: wall_378
+  model_id: wall
+  pose_world:
+    pos:
+    - -57.0
+    - 202.0
+    yaw: 2.356194490192345
+- name: wall_379
+  model_id: wall
+  pose_world:
+    pos:
+    - -48.0
+    - 197.0
+    yaw: 2.6179938779914944
+- name: wall_380
+  model_id: wall
+  pose_world:
+    pos:
+    - -39.0
+    - 199.0
+    yaw: 3.403392041388943
+- name: wall_381
+  model_id: wall
+  pose_world:
+    pos:
+    - -30.0
+    - 202.0
+    yaw: 3.403392041388943
+- name: wall_382
+  model_id: wall
+  pose_world:
+    pos:
+    - -23.0
+    - 208.0
+    yaw: 3.9269908169872423
+- name: wall_383
+  model_id: wall
+  pose_world:
+    pos:
+    - -23.0
+    - 217.0
+    yaw: 4.71238898038469
+- name: wall_384
+  model_id: wall
+  pose_world:
+    pos:
+    - -23.0
+    - 216.0
+    yaw: 1.308996938995747
+- name: wall_385
+  model_id: wall
+  pose_world:
+    pos:
+    - -21.0
+    - 223.0
+    yaw: 1.308996938995747
+- name: wall_386
+  model_id: wall
+  pose_world:
+    pos:
+    - -9.0
+    - 233.0
+    yaw: 3.1415926535897936
+- name: wall_387
+  model_id: wall
+  pose_world:
+    pos:
+    - -9.0
+    - 233.0
+    yaw: 5.497787143782137
+- name: wall_388
+  model_id: wall
+  pose_world:
+    pos:
+    - -2.0
+    - 216.0
+    yaw: 1.5707963267948941
+- name: wall_389
+  model_id: wall
+  pose_world:
+    pos:
+    - -3.0
+    - 216.0
+    yaw: 5.235987755982986
+- name: wall_390
+  model_id: wall
+  pose_world:
+    pos:
+    - 2.0
+    - 208.0
+    yaw: 4.974188368183835
+- name: wall_391
+  model_id: wall
+  pose_world:
+    pos:
+    - 4.0
+    - 198.0
+    yaw: 4.974188368183835
+- name: wall_392
+  model_id: wall
+  pose_world:
+    pos:
+    - 6.0
+    - 188.0
+    yaw: 4.974188368183835
+- name: wall_393
+  model_id: wall
+  pose_world:
+    pos:
+    - 18.0
+    - 181.0
+    yaw: 3.403392041388943
+- name: wall_394
+  model_id: wall
+  pose_world:
+    pos:
+    - 26.0
+    - 183.0
+    yaw: 3.403392041388943
+- name: wall_395
+  model_id: wall
+  pose_world:
+    pos:
+    - 34.0
+    - 185.0
+    yaw: 3.403392041388943
+- name: wall_396
+  model_id: wall
+  pose_world:
+    pos:
+    - 42.0
+    - 187.0
+    yaw: 3.403392041388943
+- name: wall_397
+  model_id: wall
+  pose_world:
+    pos:
+    - 42.0
+    - 187.0
+    yaw: 6.2831853071795845
+- name: wall_398
+  model_id: wall
+  pose_world:
+    pos:
+    - 59.0
+    - 180.0
+    yaw: 2.3561944901923426
+- name: wall_399
+  model_id: wall
+  pose_world:
+    pos:
+    - 59.0
+    - 180.0
+    yaw: 5.235987755982986
+- name: wall_400
+  model_id: wall
+  pose_world:
+    pos:
+    - 64.0
+    - 171.0
+    yaw: 4.9741883681838335
+- name: wall_401
+  model_id: wall
+  pose_world:
+    pos:
+    - 67.0
+    - 162.0
+    yaw: 4.9741883681838335
+- name: wall_402
+  model_id: wall
+  pose_world:
+    pos:
+    - 69.0
+    - 153.0
+    yaw: 4.9741883681838335
+- name: wall_403
+  model_id: wall
+  pose_world:
+    pos:
+    - 72.0
+    - 144.0
+    yaw: 5.235987755982983
+- name: wall_404
+  model_id: wall
+  pose_world:
+    pos:
+    - 77.0
+    - 136.0
+    yaw: 5.235987755982983
+- name: wall_410
+  model_id: wall
+  pose_world:
+    pos:
+    - 116.0
+    - 111.0
+    yaw: 0.7853981633974407
+- name: wall_413
+  model_id: wall
+  pose_world:
+    pos:
+    - 133.0
+    - 136.0
+    yaw: 1.5707963267948888
+- name: wall_414
+  model_id: wall
+  pose_world:
+    pos:
+    - 133.0
+    - 146.0
+    yaw: 1.5707963267948888
+- name: wall_415
+  model_id: wall
+  pose_world:
+    pos:
+    - 133.0
+    - 156.0
+    yaw: 1.8325957145940381
+- name: wall_416
+  model_id: wall
+  pose_world:
+    pos:
+    - 130.0
+    - 166.0
+    yaw: 2.0943951023931877
+- name: wall_417
+  model_id: wall
+  pose_world:
+    pos:
+    - 125.0
+    - 175.0
+    yaw: 2.0943951023931877
+- name: wall_418
+  model_id: wall
+  pose_world:
+    pos:
+    - 120.0
+    - 183.0
+    yaw: 2.6179938779914944
+- name: wall_419
+  model_id: wall
+  pose_world:
+    pos:
+    - 112.0
+    - 187.0
+    yaw: 2.3561944901923426
+- name: wall_420
+  model_id: wall
+  pose_world:
+    pos:
+    - 105.0
+    - 194.0
+    yaw: 2.3561944901923426
+- name: wall_421
+  model_id: wall
+  pose_world:
+    pos:
+    - 98.0
+    - 201.0
+    yaw: 2.0943951023931913
+- name: wall_422
+  model_id: wall
+  pose_world:
+    pos:
+    - 93.0
+    - 210.0
+    yaw: 2.0943951023931913
+- name: wall_423
+  model_id: wall
+  pose_world:
+    pos:
+    - 88.0
+    - 219.0
+    yaw: 2.87979326579064
+- name: wall_424
+  model_id: wall
+  pose_world:
+    pos:
+    - 78.0
+    - 222.0
+    yaw: 2.87979326579064
+- name: wall_425
+  model_id: wall
+  pose_world:
+    pos:
+    - 68.0
+    - 234.0
+    yaw: 4.712388980384686
+- name: wall_426
+  model_id: wall
+  pose_world:
+    pos:
+    - 68.0
+    - 234.0
+    yaw: 0.2617993877991438
+- name: wall_427
+  model_id: wall
+  pose_world:
+    pos:
+    - 86.0
+    - 232.0
+    yaw: 2.6179938779914886
+- name: wall_428
+  model_id: wall
+  pose_world:
+    pos:
+    - 95.0
+    - 232.0
+    yaw: 3.141592653589788
+- name: wall_429
+  model_id: wall
+  pose_world:
+    pos:
+    - 104.0
+    - 232.0
+    yaw: 3.141592653589788
+- name: wall_430
+  model_id: wall
+  pose_world:
+    pos:
+    - 113.0
+    - 232.0
+    yaw: 3.141592653589788
+- name: wall_431
+  model_id: wall
+  pose_world:
+    pos:
+    - 113.0
+    - 232.0
+    yaw: 5.759586531581281
+- name: wall_432
+  model_id: wall
+  pose_world:
+    pos:
+    - 122.0
+    - 227.0
+    yaw: 5.759586531581281
+- name: wall_433
+  model_id: wall
+  pose_world:
+    pos:
+    - 130.0
+    - 222.0
+    yaw: 5.759586531581281
+- name: wall_434
+  model_id: wall
+  pose_world:
+    pos:
+    - 138.0
+    - 217.0
+    yaw: 5.759586531581281
+- name: wall_435
+  model_id: wall
+  pose_world:
+    pos:
+    - 147.0
+    - 212.0
+    yaw: 6.2831853071795845
+- name: wall_436
+  model_id: wall
+  pose_world:
+    pos:
+    - 156.0
+    - 212.0
+    yaw: 0.7853981633974461
+- name: wall_437
+  model_id: wall
+  pose_world:
+    pos:
+    - 163.0
+    - 219.0
+    yaw: 0.7853981633974443
+- name: wall_438
+  model_id: wall
+  pose_world:
+    pos:
+    - 169.0
+    - 225.0
+    yaw: 0.7853981633974443
+- name: wall_439
+  model_id: wall
+  pose_world:
+    pos:
+    - 176.0
+    - 232.0
+    yaw: 6.283185307179581
+- name: wall_440
+  model_id: wall
+  pose_world:
+    pos:
+    - 186.0
+    - 232.0
+    yaw: 6.283185307179581
+- name: wall_441
+  model_id: wall
+  pose_world:
+    pos:
+    - 196.0
+    - 232.0
+    yaw: 6.283185307179581
+- name: wall_442
+  model_id: wall
+  pose_world:
+    pos:
+    - 206.0
+    - 232.0
+    yaw: 5.497787143782132
+- name: wall_443
+  model_id: wall
+  pose_world:
+    pos:
+    - 212.0
+    - 225.0
+    yaw: 5.497787143782132
+- name: wall_444
+  model_id: wall
+  pose_world:
+    pos:
+    - 218.0
+    - 219.0
+    yaw: 5.497787143782132
+- name: wall_445
+  model_id: wall
+  pose_world:
+    pos:
+    - 225.0
+    - 212.0
+    yaw: 4.97418836818383
+- name: wall_446
+  model_id: wall
+  pose_world:
+    pos:
+    - 228.0
+    - 203.0
+    yaw: 4.712388980384679
+- name: wall_447
+  model_id: wall
+  pose_world:
+    pos:
+    - 228.0
+    - 193.0
+    yaw: 4.712388980384679
+- name: wall_448
+  model_id: wall
+  pose_world:
+    pos:
+    - 228.0
+    - 183.0
+    yaw: 4.712388980384679
+- name: wall_449
+  model_id: wall
+  pose_world:
+    pos:
+    - 228.0
+    - 173.0
+    yaw: 4.712388980384679
+- name: wall_450
+  model_id: wall
+  pose_world:
+    pos:
+    - 228.0
+    - 153.0
+    yaw: 1.5707963267948963
+- name: wall_451
+  model_id: wall
+  pose_world:
+    pos:
+    - 228.0
+    - 144.0
+    yaw: 1.5707963267948963
+- name: wall_452
+  model_id: wall
+  pose_world:
+    pos:
+    - 228.0
+    - 143.0
+    yaw: 4.4505895925855405
+- name: wall_453
+  model_id: wall
+  pose_world:
+    pos:
+    - 219.0
+    - 127.0
+    yaw: 0.7853981633974461
+- name: wall_454
+  model_id: wall
+  pose_world:
+    pos:
+    - 212.0
+    - 120.0
+    yaw: 0.7853981633974461
+- name: wall_455
+  model_id: wall
+  pose_world:
+    pos:
+    - 205.0
+    - 113.0
+    yaw: 0.7853981633974461
+- name: wall_456
+  model_id: wall
+  pose_world:
+    pos:
+    - 198.0
+    - 106.0
+    yaw: 0.7853981633974461
+- name: wall_457
+  model_id: wall
+  pose_world:
+    pos:
+    - 198.0
+    - 106.0
+    yaw: 4.18879020478639
+- name: wall_458
+  model_id: wall
+  pose_world:
+    pos:
+    - 201.0
+    - 91.0
+    yaw: 2.356194490192345
+- name: wall_459
+  model_id: wall
+  pose_world:
+    pos:
+    - 207.0
+    - 85.0
+    yaw: 2.356194490192345
+- name: wall_460
+  model_id: wall
+  pose_world:
+    pos:
+    - 213.0
+    - 79.0
+    yaw: 2.356194490192345
+- name: wall_461
+  model_id: wall
+  pose_world:
+    pos:
+    - 220.0
+    - 72.0
+    yaw: 2.356194490192345
+- name: wall_462
+  model_id: wall
+  pose_world:
+    pos:
+    - 226.0
+    - 66.0
+    yaw: 2.356194490192345
+- name: wall_463
+  model_id: wall
+  pose_world:
+    pos:
+    - 231.0
+    - 61.0
+    yaw: 2.356194490192345
+- name: wall_464
+  model_id: wall
+  pose_world:
+    pos:
+    - 231.0
+    - 61.0
+    yaw: 4.71238898038469
+- name: wall_465
+  model_id: wall
+  pose_world:
+    pos:
+    - 226.0
+    - 43.0
+    yaw: 1.0471975511965954
+- name: wall_466
+  model_id: wall
+  pose_world:
+    pos:
+    - 219.0
+    - 36.0
+    yaw: 0.7853981633974483
+- name: wall_467
+  model_id: wall
+  pose_world:
+    pos:
+    - 214.0
+    - 28.0
+    yaw: 1.0471975511965976
+- name: wall_468
+  model_id: wall
+  pose_world:
+    pos:
+    - 209.0
+    - 21.0
+    yaw: 1.0471975511965976
+- name: wall_469
+  model_id: wall
+  pose_world:
+    pos:
+    - 204.0
+    - 12.0
+    yaw: 1.0471975511965976
+- name: wall_470
+  model_id: wall
+  pose_world:
+    pos:
+    - 199.0
+    - 4.0
+    yaw: 1.0471975511965976
+- name: wall_471
+  model_id: wall
+  pose_world:
+    pos:
+    - 194.0
+    - -5.0
+    yaw: 1.0471975511965976
+- name: wall_472
+  model_id: wall
+  pose_world:
+    pos:
+    - 194.0
+    - -14.0
+    yaw: 1.5707963267948963
+- name: wall_473
+  model_id: wall
+  pose_world:
+    pos:
+    - 194.0
+    - -24.0
+    yaw: 1.5707963267948963
+- name: wall_474
+  model_id: wall
+  pose_world:
+    pos:
+    - 194.0
+    - -34.0
+    yaw: 1.5707963267948963
+- name: wall_475
+  model_id: wall
+  pose_world:
+    pos:
+    - 199.0
+    - -42.0
+    yaw: 2.0943951023931953
+- name: wall_476
+  model_id: wall
+  pose_world:
+    pos:
+    - 204.0
+    - -50.0
+    yaw: 2.0943951023931953
+- name: wall_477
+  model_id: wall
+  pose_world:
+    pos:
+    - 211.0
+    - -56.0
+    yaw: 2.356194490192345
+- name: wall_478
+  model_id: wall
+  pose_world:
+    pos:
+    - 217.0
+    - -62.0
+    yaw: 2.356194490192345
+- name: wall_479
+  model_id: wall
+  pose_world:
+    pos:
+    - 223.0
+    - -68.0
+    yaw: 2.356194490192345
+- name: wall_480
+  model_id: wall
+  pose_world:
+    pos:
+    - 230.0
+    - -75.0
+    yaw: 2.356194490192345
+- name: wall_481
+  model_id: wall
+  pose_world:
+    pos:
+    - 230.0
+    - -75.0
+    yaw: 4.974188368183839
+- name: wall_482
+  model_id: wall
+  pose_world:
+    pos:
+    - 230.0
+    - -94.0
+    yaw: 1.3089969389957448
+- name: wall_483
+  model_id: wall
+  pose_world:
+    pos:
+    - 227.0
+    - -103.0
+    yaw: 1.3089969389957448
+- name: wall_484
+  model_id: wall
+  pose_world:
+    pos:
+    - 225.0
+    - -112.0
+    yaw: 1.308996938995747
+- name: wall_485
+  model_id: wall
+  pose_world:
+    pos:
+    - 222.0
+    - -120.0
+    yaw: 1.308996938995747
+- name: wall_486
+  model_id: wall
+  pose_world:
+    pos:
+    - 219.0
+    - -128.0
+    yaw: 1.308996938995747
+- name: wall_487
+  model_id: wall
+  pose_world:
+    pos:
+    - 216.0
+    - -138.0
+    yaw: 1.308996938995747
+- name: wall_488
+  model_id: wall
+  pose_world:
+    pos:
+    - 213.0
+    - -146.0
+    yaw: 1.308996938995747
+- name: wall_489
+  model_id: wall
+  pose_world:
+    pos:
+    - 211.0
+    - -154.0
+    yaw: 1.308996938995747
+- name: wall_490
+  model_id: wall
+  pose_world:
+    pos:
+    - 208.0
+    - -162.0
+    yaw: 1.308996938995747
+- name: wall_491
+  model_id: wall
+  pose_world:
+    pos:
+    - 205.0
+    - -171.0
+    yaw: 1.308996938995747
+- name: wall_492
+  model_id: wall
+  pose_world:
+    pos:
+    - 202.0
+    - -180.0
+    yaw: 1.308996938995747
+- name: wall_493
+  model_id: wall
+  pose_world:
+    pos:
+    - 200.0
+    - -189.0
+    yaw: 1.3089969389957448
+- name: wall_494
+  model_id: wall
+  pose_world:
+    pos:
+    - 198.0
+    - -199.0
+    yaw: 1.308996938995747
+- name: wall_495
+  model_id: wall
+  pose_world:
+    pos:
+    - 195.0
+    - -209.0
+    yaw: 1.308996938995747
+- name: wall_496
+  model_id: wall
+  pose_world:
+    pos:
+    - 192.0
+    - -218.0
+    yaw: 1.308996938995747
+- name: wall_497
+  model_id: wall
+  pose_world:
+    pos:
+    - 185.0
+    - -225.0
+    yaw: 0.7853981633974483
+- name: wall_498
+  model_id: wall
+  pose_world:
+    pos:
+    - 185.0
+    - -225.0
+    yaw: 3.403392041388943
+- name: wall_499
+  model_id: wall
+  pose_world:
+    pos:
+    - 175.0
+    - -228.0
+    yaw: 3.1415926535897913
+- name: wall_500
+  model_id: wall
+  pose_world:
+    pos:
+    - 164.0
+    - -228.0
+    yaw: 3.1415926535897913
+- name: wall_501
+  model_id: wall
+  pose_world:
+    pos:
+    - 154.0
+    - -228.0
+    yaw: 3.1415926535897913
+- name: wall_502
+  model_id: wall
+  pose_world:
+    pos:
+    - 143.0
+    - -228.0
+    yaw: 3.1415926535897913
+- name: wall_503
+  model_id: wall
+  pose_world:
+    pos:
+    - 133.0
+    - -228.0
+    yaw: 2.87979326579064
+- name: wall_504
+  model_id: wall
+  pose_world:
+    pos:
+    - 124.0
+    - -226.0
+    yaw: 2.356194490192345
+- name: wall_505
+  model_id: wall
+  pose_world:
+    pos:
+    - 117.0
+    - -220.0
+    yaw: 2.356194490192345
+- name: wall_506
+  model_id: wall
+  pose_world:
+    pos:
+    - 111.0
+    - -214.0
+    yaw: 2.356194490192345
+- name: wall_507
+  model_id: wall
+  pose_world:
+    pos:
+    - 105.0
+    - -208.0
+    yaw: 2.356194490192345
+- name: wall_508
+  model_id: wall
+  pose_world:
+    pos:
+    - 99.0
+    - -202.0
+    yaw: 2.356194490192345
+- name: wall_509
+  model_id: wall
+  pose_world:
+    pos:
+    - 92.0
+    - -195.0
+    yaw: 2.356194490192345
+- name: wall_510
+  model_id: wall
+  pose_world:
+    pos:
+    - 86.0
+    - -189.0
+    yaw: 2.356194490192345
+- name: wall_511
+  model_id: wall
+  pose_world:
+    pos:
+    - 79.0
+    - -182.0
+    yaw: 2.356194490192345
+- name: wall_512
+  model_id: wall
+  pose_world:
+    pos:
+    - 73.0
+    - -176.0
+    yaw: 2.356194490192345
+- name: wall_515
+  model_id: wall
+  pose_world:
+    pos:
+    - 52.0
+    - -154.0
+    yaw: 3.1415926535897936
+- name: wall_516
+  model_id: wall
+  pose_world:
+    pos:
+    - 42.0
+    - -154.0
+    yaw: 3.1415926535897936
+- name: wall_517
+  model_id: wall
+  pose_world:
+    pos:
+    - 32.0
+    - -154.0
+    yaw: 3.1415926535897936
+- name: wall_518
+  model_id: wall
+  pose_world:
+    pos:
+    - 22.0
+    - -154.0
+    yaw: 4.188790204786391
+- name: wall_521
+  model_id: wall
+  pose_world:
+    pos:
+    - 9.0
+    - -179.0
+    yaw: 4.4505895925855405
+- name: wall_522
+  model_id: wall
+  pose_world:
+    pos:
+    - 7.0
+    - -188.0
+    yaw: 5.497787143782137
+- name: wall_523
+  model_id: wall
+  pose_world:
+    pos:
+    - 14.0
+    - -195.0
+    yaw: 5.497787143782137
+- name: wall_524
+  model_id: wall
+  pose_world:
+    pos:
+    - 20.0
+    - -202.0
+    yaw: 5.497787143782137
+- name: wall_525
+  model_id: wall
+  pose_world:
+    pos:
+    - 27.0
+    - -209.0
+    yaw: 5.497787143782137
+- name: wall_526
+  model_id: wall
+  pose_world:
+    pos:
+    - 34.0
+    - -217.0
+    yaw: 5.759586531581286
+- name: wall_527
+  model_id: wall
+  pose_world:
+    pos:
+    - 43.0
+    - -222.0
+    yaw: 6.021385919380435
+- name: wall_528
+  model_id: wall
+  pose_world:
+    pos:
+    - 52.0
+    - -225.0
+    yaw: 6.021385919380435
+- name: wall_529
+  model_id: wall
+  pose_world:
+    pos:
+    - 66.0
+    - -235.0
+    yaw: 2.094395102393193
+- name: wall_530
+  model_id: wall
+  pose_world:
+    pos:
+    - 56.0
+    - -236.0
+    yaw: 0.0
+- name: wall_531
+  model_id: wall
+  pose_world:
+    pos:
+    - 48.0
+    - -236.0
+    yaw: 0.0
+- name: wall_532
+  model_id: wall
+  pose_world:
+    pos:
+    - 39.0
+    - -236.0
+    yaw: 0.0
+- name: wall_533
+  model_id: wall
+  pose_world:
+    pos:
+    - 31.0
+    - -236.0
+    yaw: 0.0
+- name: wall_534
+  model_id: wall
+  pose_world:
+    pos:
+    - 22.0
+    - -236.0
+    yaw: 0.0
+- name: wall_535
+  model_id: wall
+  pose_world:
+    pos:
+    - 14.0
+    - -236.0
+    yaw: 0.0
+- name: wall_536
+  model_id: wall
+  pose_world:
+    pos:
+    - 5.0
+    - -236.0
+    yaw: 0.0
+- name: wall_537
+  model_id: wall
+  pose_world:
+    pos:
+    - -5.0
+    - -236.0
+    yaw: 0.0
+- name: wall_538
+  model_id: wall
+  pose_world:
+    pos:
+    - -13.0
+    - -236.0
+    yaw: 0.0
+- name: wall_539
+  model_id: wall
+  pose_world:
+    pos:
+    - -22.0
+    - -236.0
+    yaw: 0.0
+- name: wall_540
+  model_id: wall
+  pose_world:
+    pos:
+    - -32.0
+    - -236.0
+    yaw: 0.0
+- name: wall_541
+  model_id: wall
+  pose_world:
+    pos:
+    - -42.0
+    - -236.0
+    yaw: 0.0
+- name: wall_542
+  model_id: wall
+  pose_world:
+    pos:
+    - -51.0
+    - -236.0
+    yaw: 0.0
+- name: wall_543
+  model_id: wall
+  pose_world:
+    pos:
+    - -60.0
+    - -236.0
+    yaw: 0.0
+- name: wall_544
+  model_id: wall
+  pose_world:
+    pos:
+    - -69.0
+    - -236.0
+    yaw: 0.0
+- name: wall_545
+  model_id: wall
+  pose_world:
+    pos:
+    - -70.0
+    - -235.0
+    yaw: 2.6179938779914944
+- name: wall_546
+  model_id: wall
+  pose_world:
+    pos:
+    - -79.0
+    - -229.0
+    yaw: 2.6179938779914944
+- name: wall_547
+  model_id: wall
+  pose_world:
+    pos:
+    - -87.0
+    - -224.0
+    yaw: 2.356194490192345
+- name: wall_548
+  model_id: wall
+  pose_world:
+    pos:
+    - -94.0
+    - -217.0
+    yaw: 2.094395102393193
+- name: wall_549
+  model_id: wall
+  pose_world:
+    pos:
+    - -99.0
+    - -208.0
+    yaw: 2.094395102393193
+- name: wall_550
+  model_id: wall
+  pose_world:
+    pos:
+    - -104.0
+    - -199.0
+    yaw: 1.83259571459404
+- name: wall_551
+  model_id: wall
+  pose_world:
+    pos:
+    - -107.0
+    - -190.0
+    yaw: 1.83259571459404
+- name: wall_552
+  model_id: wall
+  pose_world:
+    pos:
+    - -109.0
+    - -182.0
+    yaw: 1.8325957145940457
+- name: wall_553
+  model_id: wall
+  pose_world:
+    pos:
+    - -112.0
+    - -173.0
+    yaw: 2.356194490192345
+- name: wall_554
+  model_id: wall
+  pose_world:
+    pos:
+    - -119.0
+    - -166.0
+    yaw: 2.879793265790644
+- name: wall_555
+  model_id: wall
+  pose_world:
+    pos:
+    - -129.0
+    - -164.0
+    yaw: 3.403392041388943
+- name: wall_556
+  model_id: wall
+  pose_world:
+    pos:
+    - -139.0
+    - -167.0
+    yaw: 3.9269908169872423
+- name: wall_557
+  model_id: wall
+  pose_world:
+    pos:
+    - -146.0
+    - -174.0
+    yaw: 4.18879020478639
+- name: wall_558
+  model_id: wall
+  pose_world:
+    pos:
+    - -151.0
+    - -182.0
+    yaw: 4.18879020478639
+- name: wall_559
+  model_id: wall
+  pose_world:
+    pos:
+    - -156.0
+    - -191.0
+    yaw: 4.188790204786388
+- name: wall_560
+  model_id: wall
+  pose_world:
+    pos:
+    - -161.0
+    - -200.0
+    yaw: 3.9269908169872365
+- name: wall_561
+  model_id: wall
+  pose_world:
+    pos:
+    - -167.0
+    - -206.0
+    yaw: 3.9269908169872365
+- name: wall_562
+  model_id: wall
+  pose_world:
+    pos:
+    - -185.0
+    - -211.0
+    yaw: 6.02138591938043
+- name: wall_563
+  model_id: wall
+  pose_world:
+    pos:
+    - -194.0
+    - -208.0
+    yaw: 6.02138591938043
+- name: wall_564
+  model_id: wall
+  pose_world:
+    pos:
+    - -205.0
+    - -206.0
+    yaw: 6.02138591938043
+- name: wall_565
+  model_id: wall
+  pose_world:
+    pos:
+    - -214.0
+    - -203.0
+    yaw: 6.02138591938043
+- name: wall_566
+  model_id: wall
+  pose_world:
+    pos:
+    - -215.0
+    - -203.0
+    yaw: 2.617993877991487
+- name: wall_567
+  model_id: wall
+  pose_world:
+    pos:
+    - -224.0
+    - -199.0
+    yaw: 2.094395102393186
+- name: wall_568
+  model_id: wall
+  pose_world:
+    pos:
+    - -230.0
+    - -191.0
+    yaw: 1.8325957145940346
+- name: wall_569
+  model_id: wall
+  pose_world:
+    pos:
+    - -233.0
+    - -182.0
+    yaw: 1.5707963267948835
+- name: wall_570
+  model_id: wall
+  pose_world:
+    pos:
+    - -233.0
+    - -173.0
+    yaw: 1.5707963267948835
+- name: wall_571
+  model_id: wall
+  pose_world:
+    pos:
+    - -233.0
+    - -164.0
+    yaw: 1.5707963267948835
+- name: wall_572
+  model_id: wall
+  pose_world:
+    pos:
+    - -233.0
+    - -155.0
+    yaw: 1.5707963267948835
+- name: wall_573
+  model_id: wall
+  pose_world:
+    pos:
+    - -233.0
+    - -145.0
+    yaw: 1.5707963267948835
+- name: wall_574
+  model_id: wall
+  pose_world:
+    pos:
+    - -233.0
+    - -135.0
+    yaw: 1.5707963267948835
+- name: wall_575
+  model_id: wall
+  pose_world:
+    pos:
+    - -233.0
+    - -127.0
+    yaw: 1.5707963267948835
+- name: wall_576
+  model_id: wall
+  pose_world:
+    pos:
+    - -233.0
+    - -118.0
+    yaw: 1.5707963267948835
+- name: wall_577
+  model_id: wall
+  pose_world:
+    pos:
+    - -233.0
+    - -108.0
+    yaw: 1.5707963267948835
+- name: wall_578
+  model_id: wall
+  pose_world:
+    pos:
+    - -233.0
+    - -100.0
+    yaw: 1.5707963267948835
+- name: wall_579
+  model_id: wall
+  pose_world:
+    pos:
+    - -233.0
+    - -90.0
+    yaw: 1.5707963267948835
+- name: wall_580
+  model_id: wall
+  pose_world:
+    pos:
+    - -231.0
+    - -73.0
+    yaw: 4.450589592585528
+- name: wall_581
+  model_id: wall
+  pose_world:
+    pos:
+    - -229.0
+    - -66.0
+    yaw: 4.450589592585528
+- name: wall_582
+  model_id: wall
+  pose_world:
+    pos:
+    - -227.0
+    - -60.0
+    yaw: 4.450589592585528
+- name: wall_583
+  model_id: wall
+  pose_world:
+    pos:
+    - -226.0
+    - -62.0
+    yaw: 1.047197551196583
+- name: wall_584
+  model_id: wall
+  pose_world:
+    pos:
+    - -221.0
+    - -54.0
+    yaw: 0.5235987755982825
+- name: wall_585
+  model_id: wall
+  pose_world:
+    pos:
+    - -213.0
+    - -49.0
+    yaw: 0.5235987755982825
+- name: wall_586
+  model_id: wall
+  pose_world:
+    pos:
+    - -204.0
+    - -44.0
+    yaw: 0.5235987755982807
+- name: wall_587
+  model_id: wall
+  pose_world:
+    pos:
+    - -198.0
+    - -41.0
+    yaw: 0.5235987755982807
+- name: wall_588
+  model_id: wall
+  pose_world:
+    pos:
+    - -189.0
+    - -36.0
+    yaw: 6.283185307179567
+- name: wall_589
+  model_id: wall
+  pose_world:
+    pos:
+    - -182.0
+    - -36.0
+    yaw: 6.283185307179567
+- name: wall_590
+  model_id: wall
+  pose_world:
+    pos:
+    - -173.0
+    - -36.0
+    yaw: 6.283185307179567
+- name: wall_591
+  model_id: wall
+  pose_world:
+    pos:
+    - -164.0
+    - -36.0
+    yaw: 6.283185307179567
+- name: wall_592
+  model_id: wall
+  pose_world:
+    pos:
+    - -156.0
+    - -36.0
+    yaw: 6.283185307179567
+- name: wall_593
+  model_id: wall
+  pose_world:
+    pos:
+    - -147.0
+    - -37.0
+    yaw: 6.283185307179567
+- name: wall_594
+  model_id: wall
+  pose_world:
+    pos:
+    - -139.0
+    - -37.0
+    yaw: 6.283185307179567
+- name: wall_595
+  model_id: wall
+  pose_world:
+    pos:
+    - -131.0
+    - -37.0
+    yaw: 6.283185307179567
+- name: wall_596
+  model_id: wall
+  pose_world:
+    pos:
+    - -123.0
+    - -37.0
+    yaw: 6.283185307179567
+- name: wall_597
+  model_id: wall
+  pose_world:
+    pos:
+    - -105.0
+    - -37.0
+    yaw: 3.1415926535897736
+- name: wall_598
+  model_id: wall
+  pose_world:
+    pos:
+    - -98.0
+    - -38.0
+    yaw: 3.1415926535897736
+- name: wall_599
+  model_id: wall
+  pose_world:
+    pos:
+    - -98.0
+    - -39.0
+    yaw: 5.759586531581267
+- name: wall_602
+  model_id: wall
+  pose_world:
+    pos:
+    - -72.0
+    - -62.0
+    yaw: 2.356194490192323
+- name: wall_603
+  model_id: wall
+  pose_world:
+    pos:
+    - -67.0
+    - -67.0
+    yaw: 2.356194490192323
+- name: wall_604
+  model_id: wall
+  pose_world:
+    pos:
+    - -61.0
+    - -72.0
+    yaw: 2.356194490192323
+- name: wall_605
+  model_id: wall
+  pose_world:
+    pos:
+    - -51.0
+    - -75.0
+    yaw: 2.8797932657906222
+- name: wall_606
+  model_id: wall
+  pose_world:
+    pos:
+    - -50.0
+    - -76.0
+    yaw: 0.26179938779912604
+- name: wall_607
+  model_id: wall
+  pose_world:
+    pos:
+    - -39.0
+    - -73.0
+    yaw: 0.5235987755982988
+- name: wall_608
+  model_id: wall
+  pose_world:
+    pos:
+    - -22.0
+    - -63.0
+    yaw: 3.6651914291880927
+- name: wall_609
+  model_id: wall
+  pose_world:
+    pos:
+    - -23.0
+    - -64.0
+    yaw: 0.26179938779914735
+- name: wall_610
+  model_id: wall
+  pose_world:
+    pos:
+    - -14.0
+    - -62.0
+    yaw: 0.26179938779914735
+- name: wall_611
+  model_id: wall
+  pose_world:
+    pos:
+    - -5.0
+    - -60.0
+    yaw: 0.26179938779914735
+- name: wall_612
+  model_id: wall
+  pose_world:
+    pos:
+    - 9.0
+    - -49.0
+    yaw: 4.18879020478639
+- name: wall_613
+  model_id: wall
+  pose_world:
+    pos:
+    - 11.0
+    - -40.0
+    yaw: 4.450589592585539
+- name: wall_614
+  model_id: wall
+  pose_world:
+    pos:
+    - 11.0
+    - -30.0
+    yaw: 4.712388980384688
+- name: wall_615
+  model_id: wall
+  pose_world:
+    pos:
+    - 11.0
+    - -20.0
+    yaw: 4.712388980384688
+- name: wall_huge_622
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -4.0
+    - 12.0
+    yaw: 1.5707963267948963
+- name: wall_623
+  model_id: wall
+  pose_world:
+    pos:
+    - -5.0
+    - 52.0
+    yaw: 2.356194490192345
+- name: wall_624
+  model_id: wall
+  pose_world:
+    pos:
+    - -11.0
+    - 58.0
+    yaw: 2.356194490192345
+- name: wall_625
+  model_id: wall
+  pose_world:
+    pos:
+    - -19.0
+    - 65.0
+    yaw: 2.356194490192345
+- name: wall_626
+  model_id: wall
+  pose_world:
+    pos:
+    - -27.0
+    - 72.0
+    yaw: 2.356194490192345
+- name: wall_627
+  model_id: wall
+  pose_world:
+    pos:
+    - -34.0
+    - 79.0
+    yaw: 2.356194490192345
+- name: wall_628
+  model_id: wall
+  pose_world:
+    pos:
+    - -41.0
+    - 85.0
+    yaw: 2.356194490192345
+- name: wall_629
+  model_id: wall
+  pose_world:
+    pos:
+    - -48.0
+    - 92.0
+    yaw: 2.356194490192345
+- name: wall_630
+  model_id: wall
+  pose_world:
+    pos:
+    - -55.0
+    - 98.0
+    yaw: 2.356194490192345
+- name: wall_631
+  model_id: wall
+  pose_world:
+    pos:
+    - -62.0
+    - 105.0
+    yaw: 3.1415926535897936
+- name: wall_632
+  model_id: wall
+  pose_world:
+    pos:
+    - -72.0
+    - 105.0
+    yaw: 3.1415926535897936
+- name: wall_633
+  model_id: wall
+  pose_world:
+    pos:
+    - -82.0
+    - 105.0
+    yaw: 3.1415926535897936
+- name: wall_635
+  model_id: wall
+  pose_world:
+    pos:
+    - -102.0
+    - 105.0
+    yaw: 0.0
+- name: wall_636
+  model_id: wall
+  pose_world:
+    pos:
+    - -112.0
+    - 105.0
+    yaw: 0.0
+- name: wall_637
+  model_id: wall
+  pose_world:
+    pos:
+    - -122.0
+    - 105.0
+    yaw: 0.0
+- name: wall_huge_638
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -161.0
+    - 105.0
+    yaw: 0.0
+- name: wall_huge_639
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -200.0
+    - 105.0
+    yaw: 0.0
+- name: wall_640
+  model_id: wall
+  pose_world:
+    pos:
+    - -200.0
+    - 105.0
+    yaw: 2.8797932657906418
+- name: wall_641
+  model_id: wall
+  pose_world:
+    pos:
+    - -209.0
+    - 107.0
+    yaw: 2.8797932657906418
+- name: wall_642
+  model_id: wall
+  pose_world:
+    pos:
+    - -219.0
+    - 109.0
+    yaw: 2.6179938779914904
+- name: wall_643
+  model_id: wall
+  pose_world:
+    pos:
+    - -228.0
+    - 123.0
+    yaw: 4.712388980384686
+- name: wall_644
+  model_id: wall
+  pose_world:
+    pos:
+    - -228.0
+    - 131.0
+    yaw: 4.712388980384686
+- name: wall_huge_645
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -227.0
+    - 130.0
+    yaw: 1.5707963267948963
+- name: wall_646
+  model_id: wall
+  pose_world:
+    pos:
+    - -227.0
+    - 170.0
+    yaw: 1.3089969389957448
+- name: wall_647
+  model_id: wall
+  pose_world:
+    pos:
+    - -224.0
+    - 179.0
+    yaw: 1.3089969389957448
+- name: wall_648
+  model_id: wall
+  pose_world:
+    pos:
+    - -221.0
+    - 188.0
+    yaw: 1.0471975511965954
+- name: wall_649
+  model_id: wall
+  pose_world:
+    pos:
+    - -216.0
+    - 196.0
+    yaw: 1.0471975511965954
+- name: wall_650
+  model_id: wall
+  pose_world:
+    pos:
+    - -211.0
+    - 204.0
+    yaw: 0.7853981633974425
+- name: wall_651
+  model_id: wall
+  pose_world:
+    pos:
+    - -204.0
+    - 211.0
+    yaw: 0.7853981633974425
+- name: wall_652
+  model_id: wall
+  pose_world:
+    pos:
+    - -188.0
+    - 223.0
+    yaw: 3.665191429188087
+- name: wall_653
+  model_id: wall
+  pose_world:
+    pos:
+    - -180.0
+    - 228.0
+    yaw: 3.665191429188087
+- name: wall_654
+  model_id: wall
+  pose_world:
+    pos:
+    - -180.0
+    - 228.0
+    yaw: 0.261799387799142
+- name: wall_655
+  model_id: wall
+  pose_world:
+    pos:
+    - -161.0
+    - 230.0
+    yaw: 3.141592653589786
+- name: wall_656
+  model_id: wall
+  pose_world:
+    pos:
+    - -151.0
+    - 230.0
+    yaw: 3.141592653589786
+- name: wall_huge_657
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -151.0
+    - 229.0
+    yaw: 0.0
+- name: wall_huge_658
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -111.0
+    - 229.0
+    yaw: 0.0
+- name: wall_659
+  model_id: wall
+  pose_world:
+    pos:
+    - 11.0
+    - -20.0
+    yaw: 1.5707963267948963
+- name: wall_660
+  model_id: wall
+  pose_world:
+    pos:
+    - 11.0
+    - -10.0
+    yaw: 1.0471975511965954
+- name: wall_huge_661
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 15.0
+    - 0.0
+    yaw: 0.0
+- name: wall_huge_662
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 15.0
+    - 13.0
+    yaw: 0.0
+- name: wall_huge_663
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 15.0
+    - 13.0
+    yaw: 1.5707963267948963
+- name: wall_664
+  model_id: wall
+  pose_world:
+    pos:
+    - 15.0
+    - 53.0
+    yaw: 2.0943951023931913
+- name: wall_665
+  model_id: wall
+  pose_world:
+    pos:
+    - 10.0
+    - 62.0
+    yaw: 2.356194490192345
+- name: wall_666
+  model_id: wall
+  pose_world:
+    pos:
+    - 3.0
+    - 69.0
+    yaw: 2.356194490192345
+- name: wall_667
+  model_id: wall
+  pose_world:
+    pos:
+    - -4.0
+    - 76.0
+    yaw: 2.356194490192345
+- name: wall_668
+  model_id: wall
+  pose_world:
+    pos:
+    - -11.0
+    - 83.0
+    yaw: 2.356194490192345
+- name: wall_669
+  model_id: wall
+  pose_world:
+    pos:
+    - -18.0
+    - 90.0
+    yaw: 2.3561944901923426
+- name: wall_670
+  model_id: wall
+  pose_world:
+    pos:
+    - -25.0
+    - 97.0
+    yaw: 2.3561944901923426
+- name: wall_671
+  model_id: wall
+  pose_world:
+    pos:
+    - -31.0
+    - 103.0
+    yaw: 2.3561944901923426
+- name: wall_672
+  model_id: wall
+  pose_world:
+    pos:
+    - -37.0
+    - 109.0
+    yaw: 2.3561944901923426
+- name: wall_673
+  model_id: wall
+  pose_world:
+    pos:
+    - -44.0
+    - 116.0
+    yaw: 2.3561944901923426
+- name: wall_huge_674
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -91.0
+    - 123.0
+    yaw: 0.0
+- name: wall_huge_675
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -130.0
+    - 123.0
+    yaw: 0.0
+- name: wall_huge_676
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -169.0
+    - 123.0
+    yaw: 0.0
+- name: wall_huge_678
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -201.0
+    - 123.0
+    yaw: 0.0
+- name: wall_679
+  model_id: wall
+  pose_world:
+    pos:
+    - -201.0
+    - 123.0
+    yaw: 2.87979326579064
+- name: wall_680
+  model_id: wall
+  pose_world:
+    pos:
+    - -213.0
+    - 134.0
+    yaw: 4.974188368183835
+- name: wall_huge_681
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -212.0
+    - 130.0
+    yaw: 1.5707963267948963
+- name: wall_682
+  model_id: wall
+  pose_world:
+    pos:
+    - -213.0
+    - 169.0
+    yaw: 1.0471975511965976
+- name: wall_683
+  model_id: wall
+  pose_world:
+    pos:
+    - -208.0
+    - 177.0
+    yaw: 1.0471975511965976
+- name: wall_684
+  model_id: wall
+  pose_world:
+    pos:
+    - -203.0
+    - 185.0
+    yaw: 1.0471975511965936
+- name: wall_685
+  model_id: wall
+  pose_world:
+    pos:
+    - -198.0
+    - 194.0
+    yaw: 0.7853981633974407
+- name: wall_686
+  model_id: wall
+  pose_world:
+    pos:
+    - -191.0
+    - 201.0
+    yaw: 0.7853981633974407
+- name: wall_687
+  model_id: wall
+  pose_world:
+    pos:
+    - -184.0
+    - 208.0
+    yaw: 0.5235987755982896
+- name: wall_688
+  model_id: wall
+  pose_world:
+    pos:
+    - -176.0
+    - 213.0
+    yaw: 0.5235987755982967
+- name: wall_huge_689
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -168.0
+    - 217.0
+    yaw: 0.0
+- name: wall_huge_690
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -128.0
+    - 217.0
+    yaw: 0.0
+- name: wall_691
+  model_id: wall
+  pose_world:
+    pos:
+    - -88.0
+    - 217.0
+    yaw: 0.0
+- name: wall_692
+  model_id: wall
+  pose_world:
+    pos:
+    - -71.0
+    - 211.0
+    yaw: 2.356194490192345
+- name: wall_693
+  model_id: wall
+  pose_world:
+    pos:
+    - -63.0
+    - 209.0
+    yaw: 2.879793265790644
+- name: wall_694
+  model_id: wall
+  pose_world:
+    pos:
+    - 55.0
+    - 13.0
+    yaw: 0.7853981633974483
+- name: wall_695
+  model_id: wall
+  pose_world:
+    pos:
+    - 62.0
+    - 20.0
+    yaw: 0.7853981633974483
+- name: wall_696
+  model_id: wall
+  pose_world:
+    pos:
+    - 69.0
+    - 27.0
+    yaw: 1.0471975511965976
+- name: wall_697
+  model_id: wall
+  pose_world:
+    pos:
+    - 74.0
+    - 35.0
+    yaw: 1.0471975511965976
+- name: wall_698
+  model_id: wall
+  pose_world:
+    pos:
+    - 79.0
+    - 43.0
+    yaw: 1.308996938995747
+- name: wall_699
+  model_id: wall
+  pose_world:
+    pos:
+    - 81.0
+    - 52.0
+    yaw: 1.308996938995747
+- name: wall_huge_700
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 84.0
+    - 62.0
+    yaw: 1.5707963267948963
+- name: wall_701
+  model_id: wall
+  pose_world:
+    pos:
+    - 84.0
+    - 101.0
+    yaw: 1.5707963267948963
+- name: wall_702
+  model_id: wall
+  pose_world:
+    pos:
+    - 84.0
+    - 110.0
+    yaw: 1.5707963267948963
+- name: wall_703
+  model_id: wall
+  pose_world:
+    pos:
+    - 84.0
+    - 120.0
+    yaw: 1.8325957145940457
+- name: wall_704
+  model_id: wall
+  pose_world:
+    pos:
+    - 55.0
+    - 0.0
+    yaw: 0.5235987755982988
+- name: wall_710
+  model_id: wall
+  pose_world:
+    pos:
+    - 64.0
+    - 5.0
+    yaw: 0.7853981633974483
+- name: wall_711
+  model_id: wall
+  pose_world:
+    pos:
+    - 71.0
+    - 12.0
+    yaw: 0.7853981633974483
+- name: wall_712
+  model_id: wall
+  pose_world:
+    pos:
+    - 78.0
+    - 19.0
+    yaw: 1.0471975511965976
+- name: wall_713
+  model_id: wall
+  pose_world:
+    pos:
+    - 83.0
+    - 27.0
+    yaw: 1.0471975511965976
+- name: wall_714
+  model_id: wall
+  pose_world:
+    pos:
+    - 88.0
+    - 35.0
+    yaw: 1.308996938995747
+- name: wall_715
+  model_id: wall
+  pose_world:
+    pos:
+    - 90.0
+    - 43.0
+    yaw: 1.308996938995747
+- name: wall_716
+  model_id: wall
+  pose_world:
+    pos:
+    - 93.0
+    - 53.0
+    yaw: 1.5707963267948963
+- name: wall_huge_717
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 93.0
+    - 63.0
+    yaw: 1.5707963267948963
+- name: wall_718
+  model_id: wall
+  pose_world:
+    pos:
+    - 92.0
+    - 103.0
+    yaw: 0.2617993877991494
+- name: wall_719
+  model_id: wall
+  pose_world:
+    pos:
+    - 101.0
+    - 105.0
+    yaw: 0.2617993877991494
+- name: wall_720
+  model_id: wall
+  pose_world:
+    pos:
+    - 110.0
+    - 108.0
+    yaw: 0.5235987755982988
+- name: wall_721
+  model_id: wall
+  pose_world:
+    pos:
+    - 133.0
+    - 136.0
+    yaw: 5.497787143782137
+- name: wall_722
+  model_id: wall
+  pose_world:
+    pos:
+    - 140.0
+    - 129.0
+    yaw: 5.497787143782137
+- name: wall_723
+  model_id: wall
+  pose_world:
+    pos:
+    - 147.0
+    - 122.0
+    yaw: 5.235987755982986
+- name: wall_724
+  model_id: wall
+  pose_world:
+    pos:
+    - 152.0
+    - 113.0
+    yaw: 5.235987755982986
+- name: wall_725
+  model_id: wall
+  pose_world:
+    pos:
+    - 157.0
+    - 104.0
+    yaw: 4.974188368183835
+- name: wall_726
+  model_id: wall
+  pose_world:
+    pos:
+    - 159.0
+    - 94.0
+    yaw: 4.974188368183835
+- name: wall_727
+  model_id: wall
+  pose_world:
+    pos:
+    - 162.0
+    - 84.0
+    yaw: 4.974188368183835
+- name: wall_728
+  model_id: wall
+  pose_world:
+    pos:
+    - 164.0
+    - 74.0
+    yaw: 4.71238898038469
+- name: wall_729
+  model_id: wall
+  pose_world:
+    pos:
+    - 123.0
+    - 118.0
+    yaw: 6.021385919380435
+- name: wall_730
+  model_id: wall
+  pose_world:
+    pos:
+    - 133.0
+    - 115.0
+    yaw: 5.235987755982986
+- name: wall_731
+  model_id: wall
+  pose_world:
+    pos:
+    - 138.0
+    - 106.0
+    yaw: 5.235987755982986
+- name: wall_732
+  model_id: wall
+  pose_world:
+    pos:
+    - 143.0
+    - 97.0
+    yaw: 4.974188368183835
+- name: wall_733
+  model_id: wall
+  pose_world:
+    pos:
+    - 146.0
+    - 87.0
+    yaw: 4.974188368183835
+- name: wall_734
+  model_id: wall
+  pose_world:
+    pos:
+    - 149.0
+    - 76.0
+    yaw: 4.712388980384684
+- name: wall_huge_735
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 150.0
+    - 26.0
+    yaw: 1.5707963267948963
+- name: wall_huge_736
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 165.0
+    - 26.0
+    yaw: 1.5707963267948963
+- name: wall_huge_738
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 150.0
+    - -14.0
+    yaw: 1.5707963267948963
+- name: wall_huge_739
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 150.0
+    - -54.0
+    yaw: 1.5707963267948963
+- name: wall_huge_740
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 150.0
+    - -94.0
+    yaw: 1.5707963267948963
+- name: wall_741
+  model_id: wall
+  pose_world:
+    pos:
+    - 144.0
+    - -104.0
+    yaw: 1.0471975511965976
+- name: wall_742
+  model_id: wall
+  pose_world:
+    pos:
+    - 139.0
+    - -113.0
+    yaw: 1.0471975511965976
+- name: wall_743
+  model_id: wall
+  pose_world:
+    pos:
+    - 139.0
+    - -113.0
+    yaw: 3.9269908169872423
+- name: wall_744
+  model_id: wall
+  pose_world:
+    pos:
+    - 132.0
+    - -121.0
+    yaw: 3.9269908169872423
+- name: wall_745
+  model_id: wall
+  pose_world:
+    pos:
+    - 115.0
+    - -132.0
+    yaw: 0.2617993877991494
+- name: wall_746
+  model_id: wall
+  pose_world:
+    pos:
+    - 105.0
+    - -135.0
+    yaw: 0.2617993877991494
+- name: wall_747
+  model_id: wall
+  pose_world:
+    pos:
+    - 52.0
+    - -154.0
+    yaw: 0.2617993877991494
+- name: wall_748
+  model_id: wall
+  pose_world:
+    pos:
+    - 62.0
+    - -151.0
+    yaw: 0.2617993877991494
+- name: wall_749
+  model_id: wall
+  pose_world:
+    pos:
+    - 72.0
+    - -148.0
+    yaw: 0.2617993877991494
+- name: wall_750
+  model_id: wall
+  pose_world:
+    pos:
+    - 81.0
+    - -145.0
+    yaw: 0.2617993877991494
+- name: wall_751
+  model_id: wall
+  pose_world:
+    pos:
+    - 97.0
+    - -140.0
+    yaw: 0.5235987755982988
+- name: wall_752
+  model_id: wall
+  pose_world:
+    pos:
+    - 97.0
+    - -140.0
+    yaw: 3.403392041388941
+- name: wall_753
+  model_id: wall
+  pose_world:
+    pos:
+    - 66.0
+    - -169.0
+    yaw: 0.5235987755982988
+- name: wall_754
+  model_id: wall
+  pose_world:
+    pos:
+    - 74.0
+    - -164.0
+    yaw: 0.5235987755982988
+- name: wall_755
+  model_id: wall
+  pose_world:
+    pos:
+    - 89.0
+    - -155.0
+    yaw: 3.6651914291880927
+- name: wall_756
+  model_id: wall
+  pose_world:
+    pos:
+    - 89.0
+    - -155.0
+    yaw: 0.26179938779914735
+- name: wall_757
+  model_id: wall
+  pose_world:
+    pos:
+    - 98.0
+    - -153.0
+    yaw: 0.26179938779914735
+- name: wall_758
+  model_id: wall
+  pose_world:
+    pos:
+    - 107.0
+    - -150.0
+    yaw: 0.26179938779914735
+- name: wall_759
+  model_id: wall
+  pose_world:
+    pos:
+    - 116.0
+    - -148.0
+    yaw: 0.26179938779914735
+- name: wall_760
+  model_id: wall
+  pose_world:
+    pos:
+    - 125.0
+    - -146.0
+    yaw: 0.5235987755982967
+- name: wall_761
+  model_id: wall
+  pose_world:
+    pos:
+    - 133.0
+    - -141.0
+    yaw: 0.7853981633974461
+- name: wall_762
+  model_id: wall
+  pose_world:
+    pos:
+    - 140.0
+    - -134.0
+    yaw: 0.7853981633974461
+- name: wall_763
+  model_id: wall
+  pose_world:
+    pos:
+    - 147.0
+    - -127.0
+    yaw: 0.7853981633974461
+- name: wall_764
+  model_id: wall
+  pose_world:
+    pos:
+    - 154.0
+    - -120.0
+    yaw: 0.7853981633974461
+- name: wall_765
+  model_id: wall
+  pose_world:
+    pos:
+    - 162.0
+    - -112.0
+    yaw: 1.3089969389957448
+- name: wall_766
+  model_id: wall
+  pose_world:
+    pos:
+    - 165.0
+    - -103.0
+    yaw: 1.5707963267948941
+- name: wall_huge_768
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 165.0
+    - -14.0
+    yaw: 1.5707963267948963
+- name: wall_huge_769
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 165.0
+    - -54.0
+    yaw: 1.5707963267948963
+- name: wall_huge_770
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 165.0
+    - -93.0
+    yaw: 1.5707963267948963
+- name: wall_huge_772
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 17.0
+    - -162.0
+    yaw: 2.6179938779914944
+- name: wall_huge_773
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 9.0
+    - -179.0
+    yaw: 2.6179938779914944
+- name: wall_huge_774
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -25.0
+    - -159.0
+    yaw: 2.8797932657906418
+- name: wall_huge_775
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -103.0
+    - -150.0
+    yaw: 0.0
+- name: wall_huge_776
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -142.0
+    - -150.0
+    yaw: 0.0
+- name: wall_huge_777
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -180.0
+    - -150.0
+    yaw: 0.0
+- name: wall_huge_779
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -17.0
+    - -142.0
+    yaw: 2.879793265790644
+- name: wall_huge_780
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -56.0
+    - -132.0
+    yaw: 3.1415926535897913
+- name: wall_huge_781
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -96.0
+    - -132.0
+    yaw: 3.1415926535897913
+- name: wall_huge_782
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -136.0
+    - -132.0
+    yaw: 3.1415926535897913
+- name: wall_784
+  model_id: wall
+  pose_world:
+    pos:
+    - -190.0
+    - -149.0
+    yaw: 0.0
+- name: wall_785
+  model_id: wall
+  pose_world:
+    pos:
+    - -200.0
+    - -149.0
+    yaw: 0.0
+- name: wall_786
+  model_id: wall
+  pose_world:
+    pos:
+    - -200.0
+    - -149.0
+    yaw: 2.879793265790644
+- name: wall_787
+  model_id: wall
+  pose_world:
+    pos:
+    - -210.0
+    - -147.0
+    yaw: 2.617993877991492
+- name: wall_788
+  model_id: wall
+  pose_world:
+    pos:
+    - -225.0
+    - -136.0
+    yaw: 5.497787143782135
+- name: wall_789
+  model_id: wall
+  pose_world:
+    pos:
+    - -225.0
+    - -136.0
+    yaw: 1.8325957145940417
+- name: wall_790
+  model_id: wall
+  pose_world:
+    pos:
+    - -228.0
+    - -118.0
+    yaw: 4.712388980384686
+- name: wall_791
+  model_id: wall
+  pose_world:
+    pos:
+    - -228.0
+    - -118.0
+    yaw: 1.5707963267948941
+- name: wall_792
+  model_id: wall
+  pose_world:
+    pos:
+    - -228.0
+    - -109.0
+    yaw: 1.5707963267948941
+- name: wall_793
+  model_id: wall
+  pose_world:
+    pos:
+    - -228.0
+    - -100.0
+    yaw: 1.5707963267948941
+- name: wall_794
+  model_id: wall
+  pose_world:
+    pos:
+    - -228.0
+    - -91.0
+    yaw: 1.5707963267948941
+- name: wall_795
+  model_id: wall
+  pose_world:
+    pos:
+    - -228.0
+    - -81.0
+    yaw: 1.0471975511965976
+- name: wall_796
+  model_id: wall
+  pose_world:
+    pos:
+    - -223.0
+    - -72.0
+    yaw: 1.0471975511965976
+- name: wall_797
+  model_id: wall
+  pose_world:
+    pos:
+    - -211.0
+    - -59.0
+    yaw: 3.6651914291880927
+- name: wall_798
+  model_id: wall
+  pose_world:
+    pos:
+    - -204.0
+    - -55.0
+    yaw: 3.6651914291880927
+- name: wall_799
+  model_id: wall
+  pose_world:
+    pos:
+    - -204.0
+    - -55.0
+    yaw: 0.26179938779914735
+- name: wall_800
+  model_id: wall
+  pose_world:
+    pos:
+    - -196.0
+    - -53.0
+    yaw: 0.26179938779914735
+- name: wall_801
+  model_id: wall
+  pose_world:
+    pos:
+    - -178.0
+    - -50.0
+    yaw: 3.1415926535897913
+- name: wall_huge_802
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -178.0
+    - -50.0
+    yaw: 0.0
+- name: wall_huge_803
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -138.0
+    - -50.0
+    yaw: 0.0
+- name: wall_804
+  model_id: wall
+  pose_world:
+    pos:
+    - -98.0
+    - -49.0
+    yaw: 0.5235987755982988
+- name: wall_805
+  model_id: wall
+  pose_world:
+    pos:
+    - -186.0
+    - -133.0
+    yaw: 0.0
+- name: wall_806
+  model_id: wall
+  pose_world:
+    pos:
+    - -196.0
+    - -133.0
+    yaw: 0.0
+- name: wall_807
+  model_id: wall
+  pose_world:
+    pos:
+    - -196.0
+    - -133.0
+    yaw: 2.879793265790644
+- name: wall_808
+  model_id: wall
+  pose_world:
+    pos:
+    - -206.0
+    - -130.0
+    yaw: 2.6179938779914944
+- name: wall_809
+  model_id: wall
+  pose_world:
+    pos:
+    - -215.0
+    - -126.0
+    yaw: 1.5707963267948941
+- name: wall_huge_810
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -215.0
+    - -121.0
+    yaw: 1.5707963267948963
+- name: wall_811
+  model_id: wall
+  pose_world:
+    pos:
+    - -215.0
+    - -82.0
+    yaw: 1.0471975511965976
+- name: wall_812
+  model_id: wall
+  pose_world:
+    pos:
+    - -210.0
+    - -74.0
+    yaw: 0.7853981633974461
+- name: wall_813
+  model_id: wall
+  pose_world:
+    pos:
+    - -203.0
+    - -67.0
+    yaw: 0.5235987755982932
+- name: wall_huge_814
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -194.0
+    - -62.0
+    yaw: 0.0
+- name: wall_huge_815
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -156.0
+    - -62.0
+    yaw: 0.0
+- name: wall_816
+  model_id: wall
+  pose_world:
+    pos:
+    - -116.0
+    - -61.0
+    yaw: 0.0
+- name: wall_817
+  model_id: wall
+  pose_world:
+    pos:
+    - -106.0
+    - -61.0
+    yaw: 0.0
+- name: wall_818
+  model_id: wall
+  pose_world:
+    pos:
+    - -96.0
+    - -61.0
+    yaw: 0.0
+- name: wall_819
+  model_id: wall
+  pose_world:
+    pos:
+    - -86.0
+    - -61.0
+    yaw: 0.5235987755982988
+robot_routes:
+- name: route_1
+  start:
+    pos:
+    - 7.0
+    - 7.0
+    yaw: 1.5707963267948966
+  waypoints:
+  - name: wp_1
+    pos:
+    - 7.0
+    - 31.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - 4.0
+    - 52.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - -9.0
+    - 72.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - -36.0
+    - 94.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - -63.0
+    - 113.0
+    tolerance: 2.0
+  - name: wp_6
+    pos:
+    - -96.0
+    - 116.0
+    tolerance: 2.0
+  - name: wp_7
+    pos:
+    - -138.0
+    - 116.0
+    tolerance: 2.0
+  - name: wp_8
+    pos:
+    - -171.0
+    - 118.0
+    tolerance: 2.0
+  - name: wp_9
+    pos:
+    - -202.0
+    - 118.0
+    tolerance: 2.0
+  - name: wp_10
+    pos:
+    - -221.0
+    - 141.0
+    tolerance: 2.0
+  - name: wp_11
+    pos:
+    - -220.0
+    - 165.0
+    tolerance: 2.0
+  - name: wp_12
+    pos:
+    - -209.0
+    - 194.0
+    tolerance: 2.0
+  - name: wp_13
+    pos:
+    - -190.0
+    - 213.0
+    tolerance: 2.0
+  - name: wp_14
+    pos:
+    - -169.0
+    - 222.0
+    tolerance: 2.0
+  - name: wp_15
+    pos:
+    - -133.0
+    - 224.0
+    tolerance: 2.0
+  - name: wp_16
+    pos:
+    - -104.0
+    - 223.0
+    tolerance: 2.0
+  - name: wp_17
+    pos:
+    - -81.0
+    - 223.0
+    tolerance: 2.0
+  - name: wp_18
+    pos:
+    - -55.0
+    - 217.0
+    tolerance: 2.0
+  - name: wp_19
+    pos:
+    - -26.0
+    - 223.0
+    tolerance: 2.0
+  - name: wp_20
+    pos:
+    - -22.0
+    - 240.0
+    tolerance: 2.0
+  - name: wp_21
+    pos:
+    - -3.0
+    - 235.0
+    tolerance: 2.0
+  - name: wp_22
+    pos:
+    - 13.0
+    - 219.0
+    tolerance: 2.0
+  - name: wp_23
+    pos:
+    - 17.0
+    - 198.0
+    tolerance: 2.0
+  - name: wp_24
+    pos:
+    - 19.0
+    - 190.0
+    tolerance: 2.0
+  - name: wp_25
+    pos:
+    - 48.0
+    - 190.0
+    tolerance: 2.0
+  - name: wp_26
+    pos:
+    - 68.0
+    - 176.0
+    tolerance: 2.0
+  - name: wp_27
+    pos:
+    - 75.0
+    - 160.0
+    tolerance: 2.0
+  - name: wp_28
+    pos:
+    - 82.0
+    - 143.0
+    tolerance: 2.0
+  - name: wp_29
+    pos:
+    - 91.0
+    - 125.0
+    tolerance: 2.0
+  - name: wp_30
+    pos:
+    - 89.0
+    - 102.0
+    tolerance: 2.0
+  - name: wp_31
+    pos:
+    - 90.0
+    - 79.0
+    tolerance: 2.0
+  - name: wp_32
+    pos:
+    - 87.0
+    - 49.0
+    tolerance: 2.0
+  - name: wp_33
+    pos:
+    - 70.0
+    - 19.0
+    tolerance: 2.0
+  - name: wp_34
+    pos:
+    - 56.0
+    - 5.0
+    tolerance: 2.0
+  - name: wp_35
+    pos:
+    - 31.0
+    - 6.0
+    tolerance: 2.0
+  - name: wp_36
+    pos:
+    - 8.0
+    - 5.0
+    tolerance: 2.0
+- name: route_2
+  start:
+    pos:
+    - 9.0
+    - 5.0
+    yaw: -1.9195673303788037
+  waypoints:
+  - name: wp_1
+    pos:
+    - 1.0
+    - -17.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - -2.0
+    - -44.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - -25.0
+    - -58.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - -47.0
+    - -65.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - -70.0
+    - -53.0
+    tolerance: 2.0
+  - name: wp_6
+    pos:
+    - -97.0
+    - -52.0
+    tolerance: 2.0
+  - name: wp_7
+    pos:
+    - -123.0
+    - -57.0
+    tolerance: 2.0
+  - name: wp_8
+    pos:
+    - -161.0
+    - -56.0
+    tolerance: 2.0
+  - name: wp_9
+    pos:
+    - -193.0
+    - -57.0
+    tolerance: 2.0
+  - name: wp_10
+    pos:
+    - -218.0
+    - -76.0
+    tolerance: 2.0
+  - name: wp_11
+    pos:
+    - -224.0
+    - -99.0
+    tolerance: 2.0
+  - name: wp_12
+    pos:
+    - -218.0
+    - -127.0
+    tolerance: 2.0
+  - name: wp_13
+    pos:
+    - -186.0
+    - -143.0
+    tolerance: 2.0
+  - name: wp_14
+    pos:
+    - -156.0
+    - -143.0
+    tolerance: 2.0
+  - name: wp_15
+    pos:
+    - -116.0
+    - -139.0
+    tolerance: 2.0
+  - name: wp_16
+    pos:
+    - -116.0
+    - -139.0
+    tolerance: 2.0
+  - name: wp_17
+    pos:
+    - -90.0
+    - -142.0
+    tolerance: 2.0
+  - name: wp_18
+    pos:
+    - -90.0
+    - -142.0
+    tolerance: 2.0
+  - name: wp_19
+    pos:
+    - -55.0
+    - -146.0
+    tolerance: 2.0
+  - name: wp_20
+    pos:
+    - -55.0
+    - -146.0
+    tolerance: 2.0
+  - name: wp_21
+    pos:
+    - -21.0
+    - -154.0
+    tolerance: 2.0
+  - name: wp_22
+    pos:
+    - -21.0
+    - -154.0
+    tolerance: 2.0
+  - name: wp_23
+    pos:
+    - 7.0
+    - -165.0
+    tolerance: 2.0
+  - name: wp_24
+    pos:
+    - 21.0
+    - -172.0
+    tolerance: 2.0
+  - name: wp_25
+    pos:
+    - 55.0
+    - -159.0
+    tolerance: 2.0
+  - name: wp_26
+    pos:
+    - 76.0
+    - -156.0
+    tolerance: 2.0
+  - name: wp_27
+    pos:
+    - 124.0
+    - -138.0
+    tolerance: 2.0
+  - name: wp_28
+    pos:
+    - 152.0
+    - -113.0
+    tolerance: 2.0
+  - name: wp_29
+    pos:
+    - 158.0
+    - -72.0
+    tolerance: 2.0
+  - name: wp_30
+    pos:
+    - 159.0
+    - 71.0
+    tolerance: 2.0
+  - name: wp_31
+    pos:
+    - 136.0
+    - 123.0
+    tolerance: 2.0
+  - name: wp_32
+    pos:
+    - 94.0
+    - 113.0
+    tolerance: 2.0
+  - name: wp_33
+    pos:
+    - 88.0
+    - 69.0
+    tolerance: 2.0
+  - name: wp_34
+    pos:
+    - 77.0
+    - 31.0
+    tolerance: 2.0
+  - name: wp_35
+    pos:
+    - 55.0
+    - 7.0
+    tolerance: 2.0
+  - name: wp_36
+    pos:
+    - 9.0
+    - 2.0
+    tolerance: 2.0
+bounds:
+  min:
+  - -250.0
+  - -250.0
+  max:
+  - 250.0
+  - 250.0

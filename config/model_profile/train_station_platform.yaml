@@ -1,0 +1,337 @@
+name: train_station_platform
+category: structure
+parts:
+  # Main platform
+  - name: platform_base
+    geom:
+      type: box
+      hx: 30.0
+      hy: 3.0
+      z_min: 0.0
+      z_max: 0.5
+    material:
+      name: concrete_platform
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: platform_edge_yellow
+    geom:
+      type: box
+      hx: 30.0
+      hy: 0.3
+      z_min: 0.5
+      z_max: 0.51
+    material:
+      name: safety_yellow
+      rgba: [1.0, 0.9, 0.0, 1.0]
+    rel_pose:
+      pos: [0.0, -2.7]
+      yaw: 0.0
+
+  # Shelter/Canopy supports
+  - name: shelter_column_1
+    geom:
+      type: circle
+      radius: 0.2
+      z_min: 0.5
+      z_max: 4.0
+    material:
+      name: steel_column
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [-20.0, 0.0]
+      yaw: 0.0
+
+  - name: shelter_column_2
+    geom:
+      type: circle
+      radius: 0.2
+      z_min: 0.5
+      z_max: 4.0
+    material:
+      name: steel_column
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [-10.0, 0.0]
+      yaw: 0.0
+
+  - name: shelter_column_3
+    geom:
+      type: circle
+      radius: 0.2
+      z_min: 0.5
+      z_max: 4.0
+    material:
+      name: steel_column
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: shelter_column_4
+    geom:
+      type: circle
+      radius: 0.2
+      z_min: 0.5
+      z_max: 4.0
+    material:
+      name: steel_column
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [10.0, 0.0]
+      yaw: 0.0
+
+  - name: shelter_column_5
+    geom:
+      type: circle
+      radius: 0.2
+      z_min: 0.5
+      z_max: 4.0
+    material:
+      name: steel_column
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [20.0, 0.0]
+      yaw: 0.0
+
+  # Canopy roof
+  - name: canopy_roof
+    geom:
+      type: box
+      hx: 30.0
+      hy: 4.0
+      z_min: 4.0
+      z_max: 4.3
+    material:
+      name: translucent_roof
+      rgba: [0.8, 0.9, 1.0, 0.7]
+    rel_pose:
+      pos: [0.0, 0.5]
+      yaw: 0.0
+
+  # Benches
+  - name: bench_1
+    geom:
+      type: box
+      hx: 1.5
+      hy: 0.4
+      z_min: 0.9
+      z_max: 1.0
+    material:
+      name: station_bench
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [-15.0, 1.5]
+      yaw: 0.0
+
+  - name: bench_2
+    geom:
+      type: box
+      hx: 1.5
+      hy: 0.4
+      z_min: 0.9
+      z_max: 1.0
+    material:
+      name: station_bench
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [-5.0, 1.5]
+      yaw: 0.0
+
+  - name: bench_3
+    geom:
+      type: box
+      hx: 1.5
+      hy: 0.4
+      z_min: 0.9
+      z_max: 1.0
+    material:
+      name: station_bench
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [5.0, 1.5]
+      yaw: 0.0
+
+  - name: bench_4
+    geom:
+      type: box
+      hx: 1.5
+      hy: 0.4
+      z_min: 0.9
+      z_max: 1.0
+    material:
+      name: station_bench
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [15.0, 1.5]
+      yaw: 0.0
+
+  # Information board
+  - name: info_board_post
+    geom:
+      type: circle
+      radius: 0.1
+      z_min: 0.5
+      z_max: 3.0
+    material:
+      name: info_post
+      rgba: [0.4, 0.4, 0.4, 1.0]
+    rel_pose:
+      pos: [0.0, 2.0]
+      yaw: 0.0
+
+  - name: info_board
+    geom:
+      type: box
+      hx: 2.0
+      hy: 0.1
+      z_min: 2.0
+      z_max: 2.8
+    material:
+      name: info_display
+      rgba: [0.1, 0.1, 0.1, 1.0]
+    rel_pose:
+      pos: [0.0, 2.0]
+      yaw: 0.0
+
+  # Ticket machines
+  - name: ticket_machine_1
+    geom:
+      type: box
+      hx: 0.6
+      hy: 0.4
+      z_min: 0.5
+      z_max: 2.0
+    material:
+      name: ticket_machine
+      rgba: [0.2, 0.5, 0.7, 1.0]
+    rel_pose:
+      pos: [-25.0, 2.0]
+      yaw: 0.0
+
+  - name: ticket_machine_2
+    geom:
+      type: box
+      hx: 0.6
+      hy: 0.4
+      z_min: 0.5
+      z_max: 2.0
+    material:
+      name: ticket_machine
+      rgba: [0.2, 0.5, 0.7, 1.0]
+    rel_pose:
+      pos: [25.0, 2.0]
+      yaw: 0.0
+
+  # Trash bins
+  - name: trash_bin_1
+    geom:
+      type: circle
+      radius: 0.3
+      z_min: 0.5
+      z_max: 1.2
+    material:
+      name: trash_bin
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [-20.0, 2.5]
+      yaw: 0.0
+
+  - name: trash_bin_2
+    geom:
+      type: circle
+      radius: 0.3
+      z_min: 0.5
+      z_max: 1.2
+    material:
+      name: trash_bin
+      rgba: [0.3, 0.3, 0.3, 1.0]
+    rel_pose:
+      pos: [20.0, 2.5]
+      yaw: 0.0
+
+  # Platform lights
+  - name: light_pole_1
+    geom:
+      type: circle
+      radius: 0.1
+      z_min: 0.5
+      z_max: 5.0
+    material:
+      name: light_pole
+      rgba: [0.2, 0.2, 0.2, 1.0]
+    rel_pose:
+      pos: [-25.0, -1.0]
+      yaw: 0.0
+
+  - name: light_pole_2
+    geom:
+      type: circle
+      radius: 0.1
+      z_min: 0.5
+      z_max: 5.0
+    material:
+      name: light_pole
+      rgba: [0.2, 0.2, 0.2, 1.0]
+    rel_pose:
+      pos: [25.0, -1.0]
+      yaw: 0.0
+
+  # Safety fence along platform edge
+  - name: safety_fence_section_1
+    geom:
+      type: box
+      hx: 10.0
+      hy: 0.1
+      z_min: 0.5
+      z_max: 1.5
+    material:
+      name: safety_fence
+      rgba: [0.8, 0.8, 0.0, 1.0]
+    rel_pose:
+      pos: [-20.0, 3.0]
+      yaw: 0.0
+
+  - name: safety_fence_section_2
+    geom:
+      type: box
+      hx: 10.0
+      hy: 0.1
+      z_min: 0.5
+      z_max: 1.5
+    material:
+      name: safety_fence
+      rgba: [0.8, 0.8, 0.0, 1.0]
+    rel_pose:
+      pos: [20.0, 3.0]
+      yaw: 0.0
+
+  - name: safety_fence_end_left
+    geom:
+      type: box
+      hx: 3.0
+      hy: 0.1
+      z_min: 0.5
+      z_max: 1.5
+    material:
+      name: safety_fence
+      rgba: [0.8, 0.8, 0.0, 1.0]
+    rel_pose:
+      pos: [-30.0, 0.0]
+      yaw: 1.5708
+
+  - name: safety_fence_end_right
+    geom:
+      type: box
+      hx: 3.0
+      hy: 0.1
+      z_min: 0.5
+      z_max: 1.5
+    material:
+      name: safety_fence
+      rgba: [0.8, 0.8, 0.0, 1.0]
+    rel_pose:
+      pos: [30.0, 0.0]
+      yaw: 1.5708

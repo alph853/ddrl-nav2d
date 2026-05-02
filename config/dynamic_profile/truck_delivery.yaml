@@ -1,0 +1,72 @@
+name: truck_delivery
+
+# Delivery truck - slower, larger turning radius
+cfg:
+  type: ackermann_follow
+
+  kin:
+    caps_fwd:
+      max_speed: 10.0
+      max_accel: 1.5
+      max_decel: 3.0
+      cmd_rate_hz: 50.0
+      cmd_delay_s: 0.03
+      accel_noise_std: 0.03
+      steer_noise_std: 0.008
+    caps_rev:
+      max_speed: 4.0
+      max_accel: 1.0
+      max_decel: 2.0
+      cmd_rate_hz: 50.0
+      cmd_delay_s: 0.03
+      accel_noise_std: 0.03
+      steer_noise_std: 0.008
+    wheel_base: 3.5
+    max_steer_angle: 0.393 # ~22.5 deg
+    max_steer_rate: 1.396 # ~80 deg/s
+    min_turn_radius: 9.0
+
+  pp:
+    lookahead_m: 3.0
+    min_lookahead_m: 2.0
+    max_lookahead_m: 6.0
+    speed_coupled_to_curvature: true
+    kv: 0.65
+
+  speed_pid:
+    kp: 1.2
+    ki: 0.15
+    kd: 0.08
+    integral_windup_limit: 2.5
+    d_filter_hz: 5.0
+
+  cruise_speed_min: 5.0
+  cruise_speed_max: 10.0
+  cornering_speed_min: 2.5
+  arrival_stop_decel_bias: 1.4
+
+# Delivery route with stops
+waypoints_local:
+  points:
+    - p_local:
+        pos: [0.0, 0.0]
+        yaw: 0.0
+      wait_s: 5.0 # Loading/unloading
+    - p_local:
+        pos: [35.0, 0.0]
+        yaw: 0.0
+      wait_s: 0.0
+    - p_local:
+        pos: [35.0, 25.0]
+        yaw: 1.571
+      wait_s: 5.0 # Loading/unloading
+    - p_local:
+        pos: [0.0, 25.0]
+        yaw: 3.142
+      wait_s: 0.0
+
+  reached_pos_tol: 0.8
+  reached_yaw_tol: 0.15
+  loop: true
+
+stop_when_collide_s: 4.0

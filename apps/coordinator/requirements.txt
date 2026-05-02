@@ -1,0 +1,3 @@
+grpcio>=1.58.0
+protobuf
+loguru>=0.7.0

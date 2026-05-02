@@ -1,0 +1,15 @@
+architecture:
+  azimuth_bins: 32
+  policy_model: mlp
+  z_bands:
+    - [0.0, 0.4]
+    - [0.4, 1.6]
+    - [1.6, 3.0]
+  range_max_m: 35.0
+  state_dim: 5
+  action_dim: 2
+  mlp_hidden_dim: 256
+  lstm_hidden_dim: 256
+  normalize_observation: true
+  observation_clip: 10.0
+  action_init_std: 0.03

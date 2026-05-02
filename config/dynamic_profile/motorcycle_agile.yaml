@@ -1,0 +1,72 @@
+name: motorcycle_agile
+
+# Agile motorcycle - toned down for less abrupt traffic interactions
+cfg:
+  type: ackermann_follow
+
+  kin:
+    caps_fwd:
+      max_speed: 14.0
+      max_accel: 3.0
+      max_decel: 5.0
+      cmd_rate_hz: 50.0
+      cmd_delay_s: 0.01
+      accel_noise_std: 0.04
+      steer_noise_std: 0.01
+    caps_rev:
+      max_speed: 4.5
+      max_accel: 1.8
+      max_decel: 3.0
+      cmd_rate_hz: 50.0
+      cmd_delay_s: 0.01
+      accel_noise_std: 0.04
+      steer_noise_std: 0.01
+    wheel_base: 1.5
+    max_steer_angle: 0.611 # ~35 deg
+    max_steer_rate: 2.094 # ~120 deg/s
+    min_turn_radius: 3.8
+
+  pp:
+    lookahead_m: 2.5
+    min_lookahead_m: 1.5
+    max_lookahead_m: 5.0
+    speed_coupled_to_curvature: true
+    kv: 0.4
+
+  speed_pid:
+    kp: 1.6
+    ki: 0.2
+    kd: 0.1
+    integral_windup_limit: 4.0
+    d_filter_hz: 8.0
+
+  cruise_speed_min: 9.0
+  cruise_speed_max: 14.0
+  cornering_speed_min: 4.0
+  arrival_stop_decel_bias: 1.1
+
+# Agile urban path
+waypoints_local:
+  points:
+    - p_local:
+        pos: [0.0, 0.0]
+        yaw: 0.0
+      wait_s: 0.0
+    - p_local:
+        pos: [40.0, 0.0]
+        yaw: 0.0
+      wait_s: 0.5
+    - p_local:
+        pos: [40.0, 30.0]
+        yaw: 1.571
+      wait_s: 0.0
+    - p_local:
+        pos: [0.0, 30.0]
+        yaw: 3.142
+      wait_s: 0.5
+
+  reached_pos_tol: 0.5
+  reached_yaw_tol: 0.1
+  loop: true
+
+stop_when_collide_s: 2.0

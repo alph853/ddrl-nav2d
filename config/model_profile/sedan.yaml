@@ -1,0 +1,44 @@
+name: sedan
+category: vehicle
+parts:
+  - name: body
+    geom:
+      type: box
+      hx: 1.5
+      hy: 1.0
+      z_min: 0.0
+      z_max: 1.5
+    material:
+      name: sedan_body
+      rgba: [0.8, 0.2, 0.2, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: roof
+    geom:
+      type: box
+      hx: 1.5
+      hy: 0.8
+      z_min: 1.5
+      z_max: 1.8
+    material:
+      name: sedan_roof
+      rgba: [0.7, 0.2, 0.2, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: engine
+    geom:
+      type: box
+      hx: 0.5
+      hy: 0.85
+      z_min: 0.0
+      z_max: 1.5
+    material:
+      name: sedan_body
+      rgba: [0.8, 0.2, 0.2, 1.0]
+    rel_pose:
+      pos: [2.0, 0.0]
+      yaw: 0.0

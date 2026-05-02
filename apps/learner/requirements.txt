@@ -1,0 +1,11 @@
+torch
+grpcio
+grpcio-tools
+protobuf
+PyYAML
+loguru>=0.7.0
+numpy
+onnx
+matplotlib
+tensorboard
+setuptools

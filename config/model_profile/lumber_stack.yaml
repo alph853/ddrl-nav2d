@@ -1,0 +1,59 @@
+name: lumber_stack
+category: obstacle
+parts:
+  # Large stacked lumber pile
+  - name: stack_base
+    geom:
+      type: box
+      hx: 2.5
+      hy: 1.5
+      z_min: 0.0
+      z_max: 0.5
+    material:
+      name: planks
+      rgba: [0.65, 0.45, 0.25, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: stack_layer_2
+    geom:
+      type: box
+      hx: 2.5
+      hy: 1.5
+      z_min: 0.5
+      z_max: 1.0
+    material:
+      name: planks
+      rgba: [0.63, 0.43, 0.23, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 1.5708
+
+  - name: stack_layer_3
+    geom:
+      type: box
+      hx: 2.5
+      hy: 1.5
+      z_min: 1.0
+      z_max: 1.5
+    material:
+      name: planks
+      rgba: [0.67, 0.47, 0.27, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: stack_layer_4
+    geom:
+      type: box
+      hx: 2.5
+      hy: 1.5
+      z_min: 1.5
+      z_max: 2.0
+    material:
+      name: planks
+      rgba: [0.64, 0.44, 0.24, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 1.5708

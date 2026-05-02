@@ -1,0 +1,18 @@
+# syntax=docker/dockerfile:1.6
+
+FROM python:3.11-slim AS runner
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+WORKDIR /opt/ddrl-coordinator
+
+COPY apps/coordinator/requirements.txt requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY apps/coordinator ./
+ENV PYTHONPATH=/opt/ddrl-coordinator/src
+
+EXPOSE 10800
+
+ENTRYPOINT ["python3", "-u", "main.py"]

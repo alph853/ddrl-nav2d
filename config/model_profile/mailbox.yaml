@@ -1,0 +1,29 @@
+name: mailbox
+category: infrastructure
+parts:
+  - name: post
+    geom:
+      type: circle
+      radius: 0.08
+      z_min: 0.0
+      z_max: 1.2
+    material:
+      name: mailbox_post
+      rgba: [0.5, 0.35, 0.2, 1.0] # brown
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: box
+    geom:
+      type: box
+      hx: 0.25
+      hy: 0.2
+      z_min: 1.0
+      z_max: 1.4
+    material:
+      name: mailbox_body
+      rgba: [0.2, 0.3, 0.8, 1.0] # blue
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

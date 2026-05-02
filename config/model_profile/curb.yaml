@@ -1,0 +1,19 @@
+name: curb
+category: structure
+parts:
+  - name: curb_segment
+    geom:
+      type: polygon
+      vertices:
+        - [0.0, 0.0]
+        - [5.0, 0.0]
+        - [5.0, 0.3]
+        - [0.0, 0.3]
+      z_min: 0.0
+      z_max: 0.15
+    material:
+      name: curb_concrete
+      rgba: [0.6, 0.6, 0.6, 1.0] # gray
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

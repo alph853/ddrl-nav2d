@@ -1,0 +1,16 @@
+name: tile_sidewalk
+category: ground_tile
+parts:
+  - name: sidewalk_surface
+    geom:
+      type: box
+      hx: 2.0
+      hy: 2.0
+      z_min: 0.0
+      z_max: 0.001
+    material:
+      name: sidewalk_concrete
+      rgba: [0.85, 0.85, 0.85, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

@@ -1,0 +1,71 @@
+physics:
+  fixed_dt: 0.01
+  max_substeps_per_step: 8
+
+decision:
+  decision_dt: 0.05
+  action_delay_s: 0.0
+  first_order_tau_s: 0.0
+
+episode:
+  max_decision_steps: 0
+  max_sim_seconds: 600.0
+  collision_timeout_s: 3.0
+
+rng_seed: 1234567
+
+spawn_manager:
+  min_spawn_distance: 30.0
+  max_spawn_distance: 75.0
+  min_inter_object_distance: 7.0
+  avoid_fov: true
+  angular_bias:
+    front_angle_deg: 140.0
+    flank_angle_deg: 50.0
+    rear_angle_deg: 120.0
+    front_weight: 4.0
+    flank_weight: 1.0
+    rear_weight: 0.25
+  distance_bias:
+    near_distance: 26.0
+    far_distance: 45.0
+    near_weight_slow: 1.5
+    near_weight_fast: 0.5
+    far_weight_slow: 0.7
+    far_weight_fast: 1.6
+    slow_speed_mps: 2.5
+    fast_speed_mps: 12.0
+  occlusion:
+    allow_in_fov: true
+    static_blocker_radius: 3.5
+    dynamic_blocker_radius: 2.5
+  respect_map_geometry: true
+  max_spawns_per_frame: 3
+  max_spawn_attempts_per_frame: 16
+  min_active_objects: 10
+  max_active_objects: 25
+  max_distance_from_robot: 75.0
+  min_distance_from_robot: 12.0
+  despawn_on_collision: false
+  max_position_samples: 50
+  stuck_timeout: 5.0
+
+  curriculum:
+    enabled: true
+    phases:
+      - name: intro0
+        promote_on_success_rate: 1.0
+        success_rate_window: 30
+        maps:
+          [
+            map_intro_3,
+            map_intro_4,
+            map_easy_1,
+            map_easy_2,
+          ]
+        spawn:
+          min_spawn_distance: 70
+          max_spawn_distance: 90
+          min_active_objects: 0
+          max_active_objects: 0
+          min_inter_object_distance: 8

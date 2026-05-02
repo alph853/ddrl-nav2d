@@ -1,0 +1,49 @@
+# Visualizer Configuration
+# This file configures the DDRL visualizer settings
+
+# Backend: VTK (currently only VTK is supported)
+backend: vtk
+
+# Window settings
+window_width: 1920
+window_height: 1080
+window_title: "DDRL Visualizer"
+
+# Performance settings
+target_fps: 60 # Target frames per second
+
+# Interactive style configuration
+interactive_style:
+  sensitivity: 2.0
+  zoom:
+    max_zoom_in: 0.8
+    max_zoom_out: 40.0
+
+  pan:
+    max_pan: 1.5 # Max pan relative to world size
+
+  rotate:
+    max_pitch: 80.0 # degrees
+    min_pitch: -80.0 # degrees
+
+camera_settings:
+  smooth_alpha: 0.15 # Exponential smoothing factor (0-1)
+
+  chase:
+    back_distance: 40.0 # Meters behind target
+    up_distance: 60.0 # Meters above target
+    focal_height: 1.5 # Height of focal point above ground
+
+  top_down:
+    height: 80.0 # Camera height above target
+
+  orbit:
+    radius: 40.0 # Orbit radius in meters
+    height: 60.0 # Orbit height above target
+    speed: 0.8 # Orbit speed in rad/s
+    focal_height: 1.5 # Height of focal point above ground
+
+  first_person:
+    eye_height: 2.0 # Height of camera above robot base (meters)
+    forward_offset: 0.3 # Forward offset from robot center (meters)
+    focal_distance: 10.0 # How far ahead the camera looks (meters)

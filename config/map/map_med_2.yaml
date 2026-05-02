@@ -1,0 +1,2862 @@
+version: '1.0'
+name: map_med_2
+description: ''
+static_instances:
+- name: roundabout_small_121
+  model_id: roundabout_small
+  pose_world:
+    pos:
+    - -4.0
+    - 79.0
+    yaw: 0.0
+- name: wall_huge_130
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -195.0
+    - 56.0
+    yaw: 0.0
+- name: wall_huge_131
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -156.0
+    - 56.0
+    yaw: 0.0
+- name: wall_huge_132
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -115.0
+    - 56.0
+    yaw: 0.0
+- name: wall_huge_133
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -74.0
+    - 57.0
+    yaw: 0.0
+- name: wall_huge_134
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -32.0
+    - 17.0
+    yaw: 1.5707963267948963
+- name: wall_huge_139
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 194.0
+    - 56.0
+    yaw: 3.1415926535897913
+- name: wall_huge_146
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -147.0
+    - 101.0
+    yaw: 3.1415926535897913
+- name: wall_huge_147
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -106.0
+    - 101.0
+    yaw: 3.1415926535897913
+- name: wall_huge_148
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -65.0
+    - 101.0
+    yaw: 3.1415926535897913
+- name: wall_huge_151
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -55.0
+    - 58.0
+    yaw: 3.1415926535897913
+- name: wall_huge_152
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 104.0
+    - 55.0
+    yaw: 3.1415926535897913
+- name: wall_huge_154
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 174.0
+    - 56.0
+    yaw: 3.1415926535897913
+- name: wall_huge_155
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 209.0
+    - 56.0
+    yaw: 3.1415926535897913
+- name: wall_huge_156
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -190.0
+    - 102.0
+    yaw: 3.1415926535897913
+- name: wall_huge_157
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -174.0
+    - 102.0
+    yaw: 3.1415926535897913
+- name: wall_huge_158
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -189.0
+    - 57.0
+    yaw: 3.1415926535897913
+- name: wall_huge_159
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -84.0
+    - 101.0
+    yaw: 3.1415926535897913
+- name: wall_huge_160
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -132.0
+    - 102.0
+    yaw: 3.1415926535897913
+- name: wall_huge_164
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 81.0
+    - 99.0
+    yaw: 3.1415926535897913
+- name: wall_huge_165
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 120.0
+    - 99.0
+    yaw: 3.1415926535897913
+- name: wall_huge_166
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 156.0
+    - 98.0
+    yaw: 3.1415926535897913
+- name: wall_huge_167
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 192.0
+    - 98.0
+    yaw: 3.1415926535897913
+- name: wall_huge_168
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 210.0
+    - 97.0
+    yaw: 3.1415926535897913
+- name: wall_huge_171
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -29.0
+    - 101.0
+    yaw: 3.1415926535897913
+- name: wall_huge_172
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 65.0
+    - 99.0
+    yaw: 3.1415926535897913
+- name: wall_huge_173
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -30.0
+    - 140.0
+    yaw: 4.712388980384686
+- name: wall_huge_174
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -30.0
+    - 179.0
+    yaw: 4.712388980384686
+- name: wall_huge_175
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -30.0
+    - 220.0
+    yaw: 4.712388980384686
+- name: wall_huge_176
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -30.0
+    - 230.0
+    yaw: 4.712388980384686
+- name: wall_huge_177
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 25.0
+    - 138.0
+    yaw: 4.712388980384686
+- name: wall_huge_178
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 25.0
+    - 178.0
+    yaw: 4.712388980384686
+- name: wall_huge_179
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 24.0
+    - 217.0
+    yaw: 4.712388980384686
+- name: wall_huge_180
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 24.0
+    - 229.0
+    yaw: 4.712388980384686
+- name: wall_huge_187
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -32.0
+    - -22.0
+    yaw: 1.5707963267948963
+- name: wall_huge_188
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 28.0
+    - -23.0
+    yaw: 1.5707963267948963
+- name: parking_structure_192
+  model_id: parking_structure
+  pose_world:
+    pos:
+    - -46.0
+    - 113.0
+    yaw: 0.0
+- name: construction_site_195
+  model_id: construction_site
+  pose_world:
+    pos:
+    - -217.0
+    - 47.0
+    yaw: 0.0
+- name: construction_zone_medium_196
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -200.0
+    - 52.0
+    yaw: 0.0
+- name: construction_zone_medium_197
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -200.0
+    - 46.0
+    yaw: 0.0
+- name: construction_zone_medium_201
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -200.0
+    - 40.0
+    yaw: 0.0
+- name: construction_zone_medium_202
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -185.0
+    - 52.0
+    yaw: 0.0
+- name: construction_zone_medium_203
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -185.0
+    - 46.0
+    yaw: 0.0
+- name: construction_zone_medium_204
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -185.0
+    - 40.0
+    yaw: 0.0
+- name: wall_huge_205
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -229.0
+    - -44.0
+    yaw: 0.0
+- name: wall_huge_206
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -189.0
+    - -44.0
+    yaw: 0.0
+- name: wall_huge_207
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -150.0
+    - -44.0
+    yaw: 0.0
+- name: wall_huge_208
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -112.0
+    - -44.0
+    yaw: 0.0
+- name: wall_huge_210
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -33.0
+    - -3.0
+    yaw: 4.71238898038469
+- name: wall_huge_211
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 27.0
+    - -6.0
+    yaw: 4.71238898038469
+- name: wall_huge_212
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 26.0
+    - -46.0
+    yaw: 6.2831853071795845
+- name: wall_huge_213
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 62.0
+    - -46.0
+    yaw: 6.2831853071795845
+- name: wall_huge_217
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -230.0
+    - -70.0
+    yaw: 6.2831853071795845
+- name: wall_huge_218
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -151.0
+    - -70.0
+    yaw: 6.2831853071795845
+- name: wall_huge_219
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -110.0
+    - -70.0
+    yaw: 6.2831853071795845
+- name: wall_huge_220
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -72.0
+    - -70.0
+    yaw: 6.2831853071795845
+- name: wall_huge_221
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 26.0
+    - -70.0
+    yaw: 6.2831853071795845
+- name: wall_huge_226
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -190.0
+    - -109.0
+    yaw: 1.5707963267948941
+- name: wall_huge_227
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -191.0
+    - -150.0
+    yaw: 1.5707963267948941
+- name: wall_huge_228
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -202.0
+    - -187.0
+    yaw: 1.308996938995743
+- name: wall_huge_229
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -200.0
+    - -181.0
+    yaw: 3.9269908169872383
+- name: wall_huge_230
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -176.0
+    - -210.0
+    yaw: 1.308996938995747
+- name: wall_huge_231
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -166.0
+    - -175.0
+    yaw: 1.5707963267948963
+- name: wall_huge_232
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -166.0
+    - -137.0
+    yaw: 1.5707963267948963
+- name: wall_huge_233
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -166.0
+    - -110.0
+    yaw: 1.5707963267948963
+- name: wall_234
+  model_id: wall
+  pose_world:
+    pos:
+    - -166.0
+    - -70.0
+    yaw: 0.0
+- name: wall_235
+  model_id: wall
+  pose_world:
+    pos:
+    - -155.0
+    - -70.0
+    yaw: 0.0
+- name: wall_huge_236
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -32.0
+    - -110.0
+    yaw: 1.5707963267948963
+- name: wall_huge_237
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -32.0
+    - -147.0
+    yaw: 1.5707963267948963
+- name: wall_huge_238
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - -32.0
+    - -180.0
+    yaw: 1.5707963267948963
+- name: wall_huge_244
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 104.0
+    - 14.0
+    yaw: 1.5707963267948963
+- name: wall_huge_245
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 104.0
+    - -25.0
+    yaw: 1.5707963267948963
+- name: wall_huge_246
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 104.0
+    - -46.0
+    yaw: 1.5707963267948963
+- name: wall_huge_247
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 135.0
+    - -46.0
+    yaw: 1.5707963267948963
+- name: wall_huge_248
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 135.0
+    - -5.0
+    yaw: 1.5707963267948963
+- name: wall_huge_249
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 135.0
+    - 16.0
+    yaw: 1.5707963267948963
+- name: traffic_light_261
+  model_id: traffic_light
+  pose_world:
+    pos:
+    - -33.0
+    - 59.0
+    yaw: 0.0
+- name: traffic_light_262
+  model_id: traffic_light
+  pose_world:
+    pos:
+    - -29.0
+    - 101.0
+    yaw: 0.0
+- name: traffic_light_263
+  model_id: traffic_light
+  pose_world:
+    pos:
+    - 26.0
+    - 53.0
+    yaw: 0.0
+- name: traffic_light_264
+  model_id: traffic_light
+  pose_world:
+    pos:
+    - 24.0
+    - 98.0
+    yaw: 0.0
+- name: tile_restricted_zone_265
+  model_id: tile_restricted_zone
+  pose_world:
+    pos:
+    - 22.0
+    - 193.0
+    yaw: 0.0
+- name: tile_restricted_zone_267
+  model_id: tile_restricted_zone
+  pose_world:
+    pos:
+    - 22.0
+    - 189.0
+    yaw: 0.0
+- name: tile_restricted_zone_269
+  model_id: tile_restricted_zone
+  pose_world:
+    pos:
+    - 23.0
+    - 185.0
+    yaw: 0.0
+- name: tile_restricted_zone_270
+  model_id: tile_restricted_zone
+  pose_world:
+    pos:
+    - 22.0
+    - 180.0
+    yaw: 0.0
+- name: tile_restricted_zone_271
+  model_id: tile_restricted_zone
+  pose_world:
+    pos:
+    - 22.0
+    - 185.0
+    yaw: 0.0
+- name: construction_zone_small_285
+  model_id: construction_zone_small
+  pose_world:
+    pos:
+    - -225.0
+    - 37.0
+    yaw: 0.0
+- name: construction_zone_small_286
+  model_id: construction_zone_small
+  pose_world:
+    pos:
+    - -218.0
+    - 37.0
+    yaw: 0.0
+- name: construction_zone_small_287
+  model_id: construction_zone_small
+  pose_world:
+    pos:
+    - -211.0
+    - 37.0
+    yaw: 0.0
+- name: construction_zone_small_288
+  model_id: construction_zone_small
+  pose_world:
+    pos:
+    - -225.0
+    - 33.0
+    yaw: 0.0
+- name: construction_zone_small_289
+  model_id: construction_zone_small
+  pose_world:
+    pos:
+    - -218.0
+    - 33.0
+    yaw: 0.0
+- name: construction_zone_small_290
+  model_id: construction_zone_small
+  pose_world:
+    pos:
+    - -211.0
+    - 33.0
+    yaw: 0.0
+- name: construction_zone_medium_291
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -200.0
+    - 34.0
+    yaw: 0.0
+- name: construction_zone_medium_292
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -185.0
+    - 34.0
+    yaw: 0.0
+- name: construction_zone_medium_293
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -170.0
+    - 52.0
+    yaw: 0.0
+- name: construction_zone_medium_294
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -170.0
+    - 46.0
+    yaw: 0.0
+- name: construction_zone_medium_295
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -170.0
+    - 39.0
+    yaw: 0.0
+- name: construction_zone_medium_296
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -170.0
+    - 34.0
+    yaw: 0.0
+- name: factory_small_298
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -153.0
+    - 41.0
+    yaw: 1.5707963267948963
+- name: factory_small_299
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -133.0
+    - 41.0
+    yaw: 1.5707963267948963
+- name: factory_small_300
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -113.0
+    - 41.0
+    yaw: 1.5707963267948963
+- name: factory_small_301
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -93.0
+    - 42.0
+    yaw: 1.5707963267948963
+- name: factory_small_302
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -73.0
+    - 42.0
+    yaw: 1.5707963267948963
+- name: factory_small_303
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -53.0
+    - 42.0
+    yaw: 1.5707963267948963
+- name: big_building_305
+  model_id: big_building
+  pose_world:
+    pos:
+    - 40.0
+    - 164.0
+    yaw: 0.0
+- name: big_building_306
+  model_id: big_building
+  pose_world:
+    pos:
+    - 40.0
+    - 140.0
+    yaw: 0.0
+- name: forest_dense_309
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - 35.0
+    - 114.0
+    yaw: 1.5707963267948963
+- name: gas_station_321
+  model_id: gas_station
+  pose_world:
+    pos:
+    - -203.0
+    - -82.0
+    yaw: 4.712388980384688
+- name: oak_tree_323
+  model_id: oak_tree
+  pose_world:
+    pos:
+    - 30.0
+    - 223.0
+    yaw: 0.0
+- name: oak_tree_324
+  model_id: oak_tree
+  pose_world:
+    pos:
+    - 41.0
+    - 224.0
+    yaw: 0.0
+- name: forest_dense_325
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - 76.0
+    - 169.0
+    yaw: 0.0
+- name: forest_dense_326
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - 77.0
+    - 151.0
+    yaw: 0.0
+- name: forest_dense_327
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - 75.0
+    - 135.0
+    yaw: 0.0
+- name: big_building_328
+  model_id: big_building
+  pose_world:
+    pos:
+    - 73.0
+    - 111.0
+    yaw: 0.0
+- name: big_building_329
+  model_id: big_building
+  pose_world:
+    pos:
+    - 102.0
+    - 111.0
+    yaw: 0.0
+- name: small_building_346
+  model_id: small_building
+  pose_world:
+    pos:
+    - -38.0
+    - 26.0
+    yaw: 0.0
+- name: small_building_348
+  model_id: small_building
+  pose_world:
+    pos:
+    - -38.0
+    - 17.0
+    yaw: 0.0
+- name: small_building_349
+  model_id: small_building
+  pose_world:
+    pos:
+    - -38.0
+    - 8.0
+    yaw: 0.0
+- name: small_building_350
+  model_id: small_building
+  pose_world:
+    pos:
+    - -38.0
+    - 0.0
+    yaw: 0.0
+- name: small_building_351
+  model_id: small_building
+  pose_world:
+    pos:
+    - -38.0
+    - -9.0
+    yaw: 0.0
+- name: small_building_352
+  model_id: small_building
+  pose_world:
+    pos:
+    - -38.0
+    - -18.0
+    yaw: 0.0
+- name: small_building_353
+  model_id: small_building
+  pose_world:
+    pos:
+    - -38.0
+    - -27.0
+    yaw: 0.0
+- name: small_building_354
+  model_id: small_building
+  pose_world:
+    pos:
+    - -38.0
+    - -37.0
+    yaw: 0.0
+- name: parking_structure_355
+  model_id: parking_structure
+  pose_world:
+    pos:
+    - 86.0
+    - 41.0
+    yaw: 0.0
+- name: parking_structure_356
+  model_id: parking_structure
+  pose_world:
+    pos:
+    - -50.0
+    - -83.0
+    yaw: 0.0
+- name: medium_building_357
+  model_id: medium_building
+  pose_world:
+    pos:
+    - -39.0
+    - 130.0
+    yaw: 0.0
+- name: medium_building_358
+  model_id: medium_building
+  pose_world:
+    pos:
+    - -39.0
+    - 143.0
+    yaw: 0.0
+- name: medium_building_359
+  model_id: medium_building
+  pose_world:
+    pos:
+    - -39.0
+    - 157.0
+    yaw: 0.0
+- name: medium_building_360
+  model_id: medium_building
+  pose_world:
+    pos:
+    - -39.0
+    - 170.0
+    yaw: 0.0
+- name: medium_building_361
+  model_id: medium_building
+  pose_world:
+    pos:
+    - -39.0
+    - 183.0
+    yaw: 0.0
+- name: medium_building_362
+  model_id: medium_building
+  pose_world:
+    pos:
+    - -39.0
+    - 196.0
+    yaw: 0.0
+- name: medium_building_363
+  model_id: medium_building
+  pose_world:
+    pos:
+    - -38.0
+    - 210.0
+    yaw: 0.0
+- name: medium_building_364
+  model_id: medium_building
+  pose_world:
+    pos:
+    - -38.0
+    - 222.0
+    yaw: 0.0
+- name: big_building_365
+  model_id: big_building
+  pose_world:
+    pos:
+    - 133.0
+    - 110.0
+    yaw: 0.0
+- name: big_building_366
+  model_id: big_building
+  pose_world:
+    pos:
+    - 165.0
+    - 111.0
+    yaw: 0.0
+- name: forest_dense_367
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - 197.0
+    - 113.0
+    yaw: 1.5707963267948963
+- name: big_building_368
+  model_id: big_building
+  pose_world:
+    pos:
+    - 71.0
+    - 218.0
+    yaw: 3.1415926535897936
+- name: big_building_369
+  model_id: big_building
+  pose_world:
+    pos:
+    - 102.0
+    - 218.0
+    yaw: 3.1415926535897936
+- name: big_building_370
+  model_id: big_building
+  pose_world:
+    pos:
+    - 134.0
+    - 218.0
+    yaw: 3.1415926535897936
+- name: big_building_371
+  model_id: big_building
+  pose_world:
+    pos:
+    - 166.0
+    - 218.0
+    yaw: 3.1415926535897936
+- name: big_building_372
+  model_id: big_building
+  pose_world:
+    pos:
+    - 193.0
+    - 146.0
+    yaw: 3.1415926535897936
+- name: big_building_373
+  model_id: big_building
+  pose_world:
+    pos:
+    - 193.0
+    - 172.0
+    yaw: 3.1415926535897936
+- name: bamboo_grove_374
+  model_id: bamboo_grove
+  pose_world:
+    pos:
+    - 193.0
+    - 223.0
+    yaw: 0.0
+- name: bamboo_grove_375
+  model_id: bamboo_grove
+  pose_world:
+    pos:
+    - 203.0
+    - 223.0
+    yaw: 0.0
+- name: bamboo_grove_376
+  model_id: bamboo_grove
+  pose_world:
+    pos:
+    - 194.0
+    - 197.0
+    yaw: 0.0
+- name: bamboo_grove_377
+  model_id: bamboo_grove
+  pose_world:
+    pos:
+    - 200.0
+    - 207.0
+    yaw: 0.0
+- name: bamboo_grove_378
+  model_id: bamboo_grove
+  pose_world:
+    pos:
+    - 193.0
+    - 214.0
+    yaw: 0.0
+- name: bamboo_grove_379
+  model_id: bamboo_grove
+  pose_world:
+    pos:
+    - 205.0
+    - 216.0
+    yaw: 0.0
+- name: bamboo_grove_380
+  model_id: bamboo_grove
+  pose_world:
+    pos:
+    - 204.0
+    - 195.0
+    yaw: 0.0
+- name: bamboo_grove_381
+  model_id: bamboo_grove
+  pose_world:
+    pos:
+    - 192.0
+    - 205.0
+    yaw: 0.0
+- name: playground_385
+  model_id: playground
+  pose_world:
+    pos:
+    - 137.0
+    - 184.0
+    yaw: 0.0
+- name: tile_water_387
+  model_id: tile_water
+  pose_world:
+    pos:
+    - 105.0
+    - 143.0
+    yaw: 0.0
+- name: tile_water_388
+  model_id: tile_water
+  pose_world:
+    pos:
+    - 110.0
+    - 143.0
+    yaw: 0.0
+- name: tile_water_389
+  model_id: tile_water
+  pose_world:
+    pos:
+    - 115.0
+    - 143.0
+    yaw: 0.0
+- name: tile_water_390
+  model_id: tile_water
+  pose_world:
+    pos:
+    - 114.0
+    - 139.0
+    yaw: 0.0
+- name: tile_water_391
+  model_id: tile_water
+  pose_world:
+    pos:
+    - 110.0
+    - 138.0
+    yaw: 0.0
+- name: tile_water_392
+  model_id: tile_water
+  pose_world:
+    pos:
+    - 106.0
+    - 141.0
+    yaw: 0.0
+- name: tile_water_393
+  model_id: tile_water
+  pose_world:
+    pos:
+    - 104.0
+    - 139.0
+    yaw: 0.0
+- name: tile_water_394
+  model_id: tile_water
+  pose_world:
+    pos:
+    - 111.0
+    - 142.0
+    yaw: 0.0
+- name: tile_water_395
+  model_id: tile_water
+  pose_world:
+    pos:
+    - 109.0
+    - 141.0
+    yaw: 0.0
+- name: forest_dense_396
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - 40.0
+    - 38.0
+    yaw: 1.5707963267948963
+- name: forest_dense_397
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - 41.0
+    - 7.0
+    yaw: 1.5707963267948963
+- name: forest_dense_398
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - 40.0
+    - -26.0
+    yaw: 1.5707963267948963
+- name: small_building_399
+  model_id: small_building
+  pose_world:
+    pos:
+    - 95.0
+    - 26.0
+    yaw: 0.0
+- name: small_building_400
+  model_id: small_building
+  pose_world:
+    pos:
+    - 96.0
+    - 18.0
+    yaw: 0.0
+- name: small_building_401
+  model_id: small_building
+  pose_world:
+    pos:
+    - 96.0
+    - 8.0
+    yaw: 0.0
+- name: small_building_402
+  model_id: small_building
+  pose_world:
+    pos:
+    - 97.0
+    - -2.0
+    yaw: 0.0
+- name: small_building_403
+  model_id: small_building
+  pose_world:
+    pos:
+    - 97.0
+    - -13.0
+    yaw: 0.0
+- name: small_building_404
+  model_id: small_building
+  pose_world:
+    pos:
+    - 97.0
+    - -22.0
+    yaw: 0.0
+- name: small_building_405
+  model_id: small_building
+  pose_world:
+    pos:
+    - 97.0
+    - -32.0
+    yaw: 0.0
+- name: small_building_406
+  model_id: small_building
+  pose_world:
+    pos:
+    - 57.0
+    - -39.0
+    yaw: 0.0
+- name: small_building_407
+  model_id: small_building
+  pose_world:
+    pos:
+    - 66.0
+    - -39.0
+    yaw: 0.0
+- name: small_building_408
+  model_id: small_building
+  pose_world:
+    pos:
+    - 76.0
+    - -40.0
+    yaw: 0.0
+- name: small_building_409
+  model_id: small_building
+  pose_world:
+    pos:
+    - 85.0
+    - -39.0
+    yaw: 0.0
+- name: small_building_410
+  model_id: small_building
+  pose_world:
+    pos:
+    - 96.0
+    - -40.0
+    yaw: 0.0
+- name: construction_zone_medium_411
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -225.0
+    - -36.0
+    yaw: 1.5707963267948963
+- name: construction_zone_medium_412
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -217.0
+    - -36.0
+    yaw: 1.5707963267948963
+- name: construction_zone_medium_413
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -209.0
+    - -35.0
+    yaw: 1.5707963267948963
+- name: construction_zone_medium_414
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -200.0
+    - -35.0
+    yaw: 1.5707963267948963
+- name: construction_zone_medium_415
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -191.0
+    - -35.0
+    yaw: 1.5707963267948963
+- name: construction_zone_medium_416
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -182.0
+    - -35.0
+    yaw: 1.5707963267948963
+- name: construction_zone_medium_417
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -173.0
+    - -35.0
+    yaw: 1.5707963267948963
+- name: construction_zone_medium_418
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -163.0
+    - -35.0
+    yaw: 1.5707963267948963
+- name: construction_site_419
+  model_id: construction_site
+  pose_world:
+    pos:
+    - -218.0
+    - -19.0
+    yaw: 0.0
+- name: construction_site_420
+  model_id: construction_site
+  pose_world:
+    pos:
+    - -196.0
+    - -19.0
+    yaw: 0.0
+- name: construction_site_421
+  model_id: construction_site
+  pose_world:
+    pos:
+    - -175.0
+    - -19.0
+    yaw: 0.0
+- name: construction_site_422
+  model_id: construction_site
+  pose_world:
+    pos:
+    - -153.0
+    - -19.0
+    yaw: 0.0
+- name: construction_zone_medium_423
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -155.0
+    - -36.0
+    yaw: 1.5707963267948963
+- name: construction_zone_medium_424
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -147.0
+    - -35.0
+    yaw: 1.5707963267948963
+- name: factory_small_425
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -219.0
+    - 8.0
+    yaw: 1.5707963267948963
+- name: factory_small_426
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -199.0
+    - 7.0
+    yaw: 1.5707963267948963
+- name: factory_small_427
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -179.0
+    - 6.0
+    yaw: 1.5707963267948963
+- name: factory_small_428
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -159.0
+    - 6.0
+    yaw: 1.5707963267948963
+- name: factory_small_429
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -138.0
+    - 6.0
+    yaw: 1.5707963267948963
+- name: factory_small_430
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -116.0
+    - 6.0
+    yaw: 1.5707963267948963
+- name: factory_small_431
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -92.0
+    - 6.0
+    yaw: 1.5707963267948963
+- name: factory_small_432
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -67.0
+    - 6.0
+    yaw: 1.5707963267948963
+- name: factory_small_433
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -127.0
+    - -29.0
+    yaw: 1.5707963267948963
+- name: factory_small_434
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -65.0
+    - -27.0
+    yaw: 1.5707963267948963
+- name: factory_small_435
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -96.0
+    - -29.0
+    yaw: 6.2831853071795845
+- name: jungle_patch_436
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - 60.0
+    - 48.0
+    yaw: 0.0
+- name: jungle_patch_437
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - 59.0
+    - 35.0
+    yaw: 0.0
+- name: jungle_patch_438
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - 78.0
+    - 22.0
+    yaw: 0.0
+- name: jungle_patch_439
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - 61.0
+    - 24.0
+    yaw: 0.0
+- name: jungle_patch_440
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - 62.0
+    - 9.0
+    yaw: 0.0
+- name: jungle_patch_441
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - 60.0
+    - -4.0
+    yaw: 0.0
+- name: jungle_patch_442
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - 60.0
+    - -20.0
+    yaw: 0.0
+- name: jungle_patch_443
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - 80.0
+    - -19.0
+    yaw: 0.0
+- name: jungle_patch_444
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - 79.0
+    - 4.0
+    yaw: 0.0
+- name: medium_building_445
+  model_id: medium_building
+  pose_world:
+    pos:
+    - 144.0
+    - 49.0
+    yaw: 0.0
+- name: medium_building_446
+  model_id: medium_building
+  pose_world:
+    pos:
+    - 144.0
+    - 36.0
+    yaw: 0.0
+- name: medium_building_447
+  model_id: medium_building
+  pose_world:
+    pos:
+    - 145.0
+    - 23.0
+    yaw: 0.0
+- name: medium_building_448
+  model_id: medium_building
+  pose_world:
+    pos:
+    - 144.0
+    - 9.0
+    yaw: 0.0
+- name: medium_building_449
+  model_id: medium_building
+  pose_world:
+    pos:
+    - 144.0
+    - -4.0
+    yaw: 0.0
+- name: medium_building_450
+  model_id: medium_building
+  pose_world:
+    pos:
+    - 143.0
+    - -17.0
+    yaw: 0.0
+- name: medium_building_451
+  model_id: medium_building
+  pose_world:
+    pos:
+    - 144.0
+    - -31.0
+    yaw: 0.0
+- name: medium_building_455
+  model_id: medium_building
+  pose_world:
+    pos:
+    - 163.0
+    - 47.0
+    yaw: 1.5707963267948963
+- name: medium_building_456
+  model_id: medium_building
+  pose_world:
+    pos:
+    - 178.0
+    - 46.0
+    yaw: 1.5707963267948963
+- name: medium_building_457
+  model_id: medium_building
+  pose_world:
+    pos:
+    - 197.0
+    - 47.0
+    yaw: 1.5707963267948963
+- name: palm_tree_458
+  model_id: palm_tree
+  pose_world:
+    pos:
+    - -47.0
+    - 27.0
+    yaw: 0.0
+- name: palm_tree_459
+  model_id: palm_tree
+  pose_world:
+    pos:
+    - -101.0
+    - -15.0
+    yaw: 0.0
+- name: palm_tree_460
+  model_id: palm_tree
+  pose_world:
+    pos:
+    - -94.0
+    - -14.0
+    yaw: 0.0
+- name: palm_tree_461
+  model_id: palm_tree
+  pose_world:
+    pos:
+    - -88.0
+    - -16.0
+    yaw: 0.0
+- name: palm_tree_462
+  model_id: palm_tree
+  pose_world:
+    pos:
+    - -173.0
+    - 29.0
+    yaw: 0.0
+- name: big_building_467
+  model_id: big_building
+  pose_world:
+    pos:
+    - -149.0
+    - -81.0
+    yaw: 0.0
+- name: big_building_468
+  model_id: big_building
+  pose_world:
+    pos:
+    - -118.0
+    - -81.0
+    yaw: 0.0
+- name: big_building_469
+  model_id: big_building
+  pose_world:
+    pos:
+    - -85.0
+    - -81.0
+    yaw: 0.0
+- name: gas_station_470
+  model_id: gas_station
+  pose_world:
+    pos:
+    - -215.0
+    - 118.0
+    yaw: 0.0
+- name: palace_471
+  model_id: palace
+  pose_world:
+    pos:
+    - 118.0
+    - -140.0
+    yaw: 3.1415926535897913
+- name: forest_dense_472
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - 70.0
+    - -195.0
+    yaw: 0.0
+- name: forest_dense_473
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - 105.0
+    - -194.0
+    yaw: 0.0
+- name: forest_dense_474
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - 155.0
+    - -194.0
+    yaw: 0.0
+- name: tree_1_475
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 37.0
+    - -84.0
+    yaw: 0.0
+- name: tree_1_476
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 37.0
+    - -97.0
+    yaw: 0.0
+- name: tree_1_477
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 38.0
+    - -110.0
+    yaw: 0.0
+- name: tree_1_478
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 35.0
+    - -120.0
+    yaw: 0.0
+- name: tree_1_479
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 36.0
+    - -129.0
+    yaw: 0.0
+- name: tree_1_480
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 34.0
+    - -141.0
+    yaw: 0.0
+- name: tree_1_481
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 35.0
+    - -151.0
+    yaw: 0.0
+- name: tree_1_482
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 36.0
+    - -163.0
+    yaw: 0.0
+- name: tree_1_483
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 35.0
+    - -175.0
+    yaw: 0.0
+- name: tree_1_484
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 34.0
+    - -191.0
+    yaw: 0.0
+- name: tree_1_485
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 42.0
+    - -188.0
+    yaw: 0.0
+- name: tree_1_486
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 39.0
+    - -172.0
+    yaw: 0.0
+- name: tree_1_487
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 40.0
+    - -151.0
+    yaw: 0.0
+- name: tree_1_488
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 43.0
+    - -127.0
+    yaw: 0.0
+- name: tree_1_489
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 43.0
+    - -113.0
+    yaw: 0.0
+- name: tree_1_490
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 37.0
+    - -85.0
+    yaw: 0.0
+- name: tree_1_491
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 33.0
+    - -71.0
+    yaw: 0.0
+- name: tree_1_492
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 41.0
+    - -74.0
+    yaw: 0.0
+- name: tree_1_493
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 30.0
+    - -85.0
+    yaw: 0.0
+- name: tree_1_494
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 203.0
+    - -77.0
+    yaw: 0.0
+- name: tree_1_495
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 200.0
+    - -86.0
+    yaw: 0.0
+- name: tree_1_496
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 198.0
+    - -92.0
+    yaw: 0.0
+- name: tree_1_497
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 200.0
+    - -104.0
+    yaw: 0.0
+- name: tree_1_498
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 201.0
+    - -109.0
+    yaw: 0.0
+- name: tree_1_499
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 205.0
+    - -123.0
+    yaw: 0.0
+- name: tree_1_500
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 205.0
+    - -129.0
+    yaw: 0.0
+- name: tree_1_501
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 206.0
+    - -133.0
+    yaw: 0.0
+- name: tree_1_502
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 205.0
+    - -145.0
+    yaw: 0.0
+- name: tree_1_503
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 204.0
+    - -149.0
+    yaw: 0.0
+- name: tree_1_504
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 204.0
+    - -154.0
+    yaw: 0.0
+- name: tree_1_505
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 204.0
+    - -162.0
+    yaw: 0.0
+- name: tree_1_506
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 204.0
+    - -173.0
+    yaw: 0.0
+- name: tree_1_507
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 203.0
+    - -181.0
+    yaw: 0.0
+- name: tree_1_508
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 203.0
+    - -187.0
+    yaw: 0.0
+- name: tree_1_509
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 199.0
+    - -191.0
+    yaw: 0.0
+- name: tree_1_510
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 192.0
+    - -186.0
+    yaw: 0.0
+- name: tree_1_511
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 191.0
+    - -178.0
+    yaw: 0.0
+- name: tree_1_512
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 194.0
+    - -169.0
+    yaw: 0.0
+- name: tree_1_513
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 195.0
+    - -163.0
+    yaw: 0.0
+- name: tree_1_514
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 197.0
+    - -152.0
+    yaw: 0.0
+- name: tree_1_515
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 197.0
+    - -143.0
+    yaw: 0.0
+- name: tree_1_516
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 197.0
+    - -133.0
+    yaw: 0.0
+- name: tree_1_517
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 197.0
+    - -127.0
+    yaw: 0.0
+- name: tree_1_518
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 196.0
+    - -117.0
+    yaw: 0.0
+- name: tree_1_519
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 196.0
+    - -111.0
+    yaw: 0.0
+- name: tree_1_520
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 196.0
+    - -104.0
+    yaw: 0.0
+- name: tree_1_521
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 195.0
+    - -100.0
+    yaw: 0.0
+- name: tree_1_522
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 195.0
+    - -91.0
+    yaw: 0.0
+- name: tree_1_523
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 195.0
+    - -85.0
+    yaw: 0.0
+- name: tree_1_524
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 196.0
+    - -76.0
+    yaw: 0.0
+- name: tree_1_525
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 196.0
+    - -71.0
+    yaw: 0.0
+- name: tree_1_526
+  model_id: tree_1
+  pose_world:
+    pos:
+    - 196.0
+    - -68.0
+    yaw: 0.0
+- name: big_building_527
+  model_id: big_building
+  pose_world:
+    pos:
+    - -163.0
+    - 114.0
+    yaw: 0.0
+- name: big_building_528
+  model_id: big_building
+  pose_world:
+    pos:
+    - -131.0
+    - 114.0
+    yaw: 0.0
+- name: big_building_529
+  model_id: big_building
+  pose_world:
+    pos:
+    - -101.0
+    - 113.0
+    yaw: 0.0
+- name: playground_530
+  model_id: playground
+  pose_world:
+    pos:
+    - -155.0
+    - -104.0
+    yaw: 0.0
+- name: playground_531
+  model_id: playground
+  pose_world:
+    pos:
+    - -155.0
+    - -125.0
+    yaw: 0.0
+- name: playground_532
+  model_id: playground
+  pose_world:
+    pos:
+    - -133.0
+    - -105.0
+    yaw: 0.0
+- name: playground_533
+  model_id: playground
+  pose_world:
+    pos:
+    - -136.0
+    - -126.0
+    yaw: 0.0
+- name: playground_534
+  model_id: playground
+  pose_world:
+    pos:
+    - -115.0
+    - -126.0
+    yaw: 0.0
+- name: playground_535
+  model_id: playground
+  pose_world:
+    pos:
+    - -113.0
+    - -104.0
+    yaw: 0.0
+- name: playground_536
+  model_id: playground
+  pose_world:
+    pos:
+    - 185.0
+    - 112.0
+    yaw: 0.0
+- name: wall_big_537
+  model_id: wall_big
+  pose_world:
+    pos:
+    - -53.0
+    - -180.0
+    yaw: 0.0
+- name: wall_big_538
+  model_id: wall_big
+  pose_world:
+    pos:
+    - -53.0
+    - -206.0
+    yaw: 0.0
+- name: parking_structure_539
+  model_id: parking_structure
+  pose_world:
+    pos:
+    - -65.0
+    - -193.0
+    yaw: 0.0
+- name: forest_dense_540
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - -60.0
+    - -173.0
+    yaw: 0.0
+- name: forest_dense_541
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - -85.0
+    - -180.0
+    yaw: 1.0471975511965976
+- name: forest_dense_542
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - -86.0
+    - -206.0
+    yaw: 1.5707963267948963
+- name: forest_dense_543
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - -66.0
+    - -213.0
+    yaw: 3.1415926535897936
+- name: jungle_patch_544
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -98.0
+    - -175.0
+    yaw: 0.0
+- name: jungle_patch_545
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -102.0
+    - -193.0
+    yaw: 0.0
+- name: jungle_patch_546
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -98.0
+    - -196.0
+    yaw: 0.0
+- name: jungle_patch_547
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -100.0
+    - -211.0
+    yaw: 0.0
+- name: jungle_patch_548
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -88.0
+    - -220.0
+    yaw: 0.0
+- name: jungle_patch_549
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -73.0
+    - -226.0
+    yaw: 0.0
+- name: jungle_patch_550
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -54.0
+    - -227.0
+    yaw: 0.0
+- name: jungle_patch_551
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -47.0
+    - -220.0
+    yaw: 0.0
+- name: jungle_patch_552
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -76.0
+    - -164.0
+    yaw: 0.0
+- name: jungle_patch_553
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -92.0
+    - -160.0
+    yaw: 0.0
+- name: jungle_patch_554
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -102.0
+    - -182.0
+    yaw: 0.0
+- name: jungle_patch_555
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -107.0
+    - -202.0
+    yaw: 0.0
+- name: jungle_patch_556
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -99.0
+    - -219.0
+    yaw: 0.0
+- name: jungle_patch_557
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -83.0
+    - -225.0
+    yaw: 0.0
+- name: jungle_patch_558
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -78.0
+    - -235.0
+    yaw: 0.0
+- name: jungle_patch_559
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -83.0
+    - -246.0
+    yaw: 0.0
+- name: jungle_patch_560
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -72.0
+    - -245.0
+    yaw: 0.0
+- name: jungle_patch_561
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -88.0
+    - -234.0
+    yaw: 0.0
+- name: wall_long_562
+  model_id: wall_long
+  pose_world:
+    pos:
+    - -229.0
+    - 57.0
+    yaw: 4.71238898038469
+- name: wall_long_563
+  model_id: wall_long
+  pose_world:
+    pos:
+    - -229.0
+    - 37.0
+    yaw: 4.71238898038469
+- name: wall_long_564
+  model_id: wall_long
+  pose_world:
+    pos:
+    - -229.0
+    - 17.0
+    yaw: 4.71238898038469
+- name: wall_long_565
+  model_id: wall_long
+  pose_world:
+    pos:
+    - -229.0
+    - -5.0
+    yaw: 4.71238898038469
+- name: wall_long_566
+  model_id: wall_long
+  pose_world:
+    pos:
+    - -229.0
+    - -45.0
+    yaw: 1.5707963267948966
+- name: forest_dense_567
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - -223.0
+    - 202.0
+    yaw: 0.0
+- name: forest_dense_568
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - -192.0
+    - 211.0
+    yaw: 0.5235987755982988
+- name: forest_dense_569
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - -239.0
+    - 225.0
+    yaw: 1.8325957145940457
+- name: small_building_570
+  model_id: small_building
+  pose_world:
+    pos:
+    - -224.0
+    - 228.0
+    yaw: 0.0
+- name: tree_1_571
+  model_id: tree_1
+  pose_world:
+    pos:
+    - -227.0
+    - 235.0
+    yaw: 0.0
+- name: tree_1_572
+  model_id: tree_1
+  pose_world:
+    pos:
+    - -224.0
+    - 235.0
+    yaw: 0.0
+- name: tree_1_573
+  model_id: tree_1
+  pose_world:
+    pos:
+    - -225.0
+    - 239.0
+    yaw: 0.0
+- name: palm_tree_574
+  model_id: palm_tree
+  pose_world:
+    pos:
+    - -227.0
+    - 237.0
+    yaw: 0.0
+- name: wall_long_577
+  model_id: wall_long
+  pose_world:
+    pos:
+    - 188.0
+    - -236.0
+    yaw: 0.0
+- name: wall_long_578
+  model_id: wall_long
+  pose_world:
+    pos:
+    - 208.0
+    - -236.0
+    yaw: 0.0
+- name: wall_long_579
+  model_id: wall_long
+  pose_world:
+    pos:
+    - 229.0
+    - -236.0
+    yaw: 0.0
+- name: wall_long_580
+  model_id: wall_long
+  pose_world:
+    pos:
+    - 209.0
+    - 56.0
+    yaw: 0.0
+- name: wall_long_581
+  model_id: wall_long
+  pose_world:
+    pos:
+    - 229.0
+    - 56.0
+    yaw: 0.0
+- name: big_building_582
+  model_id: big_building
+  pose_world:
+    pos:
+    - -220.0
+    - 79.0
+    yaw: 0.0
+- name: jungle_patch_583
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -213.0
+    - 62.0
+    yaw: 0.0
+- name: jungle_patch_584
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -224.0
+    - 61.0
+    yaw: 0.0
+- name: jungle_patch_585
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -214.0
+    - 97.0
+    yaw: 0.0
+- name: jungle_patch_586
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -226.0
+    - 97.0
+    yaw: 0.0
+- name: construction_site_587
+  model_id: construction_site
+  pose_world:
+    pos:
+    - 13.0
+    - 219.0
+    yaw: 0.0
+- name: construction_zone_medium_588
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -8.0
+    - 224.0
+    yaw: 0.0
+- name: construction_zone_medium_589
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -17.0
+    - 216.0
+    yaw: 0.0
+- name: construction_zone_medium_590
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - -20.0
+    - 208.0
+    yaw: 0.0
+- name: construction_zone_small_591
+  model_id: construction_zone_small
+  pose_world:
+    pos:
+    - -3.0
+    - 216.0
+    yaw: 0.0
+- name: construction_zone_small_592
+  model_id: construction_zone_small
+  pose_world:
+    pos:
+    - -7.0
+    - 210.0
+    yaw: 0.0
+- name: construction_zone_small_593
+  model_id: construction_zone_small
+  pose_world:
+    pos:
+    - 0.0
+    - 207.0
+    yaw: 0.0
+- name: construction_zone_small_594
+  model_id: construction_zone_small
+  pose_world:
+    pos:
+    - -20.0
+    - 224.0
+    yaw: 0.0
+- name: traffic_cone_single_595
+  model_id: traffic_cone_single
+  pose_world:
+    pos:
+    - 134.0
+    - 198.0
+    yaw: 0.0
+- name: wood_pile_596
+  model_id: wood_pile
+  pose_world:
+    pos:
+    - 139.0
+    - 198.0
+    yaw: 0.0
+- name: wood_pile_597
+  model_id: wood_pile
+  pose_world:
+    pos:
+    - 136.0
+    - 202.0
+    yaw: 0.0
+- name: wood_pile_598
+  model_id: wood_pile
+  pose_world:
+    pos:
+    - 130.0
+    - 202.0
+    yaw: 0.0
+- name: wood_pile_599
+  model_id: wood_pile
+  pose_world:
+    pos:
+    - 131.0
+    - 200.0
+    yaw: 0.0
+- name: wood_pile_600
+  model_id: wood_pile
+  pose_world:
+    pos:
+    - 131.0
+    - 196.0
+    yaw: 0.0
+- name: wood_pile_602
+  model_id: wood_pile
+  pose_world:
+    pos:
+    - 137.0
+    - 199.0
+    yaw: 0.5235987755982988
+- name: bridge_long_603
+  model_id: bridge_long
+  pose_world:
+    pos:
+    - -102.0
+    - 216.0
+    yaw: 1.5707963267948963
+- name: big_building_604
+  model_id: big_building
+  pose_world:
+    pos:
+    - -135.0
+    - 237.0
+    yaw: 0.0
+- name: big_building_605
+  model_id: big_building
+  pose_world:
+    pos:
+    - -135.0
+    - 206.0
+    yaw: 0.0
+- name: big_building_606
+  model_id: big_building
+  pose_world:
+    pos:
+    - -135.0
+    - 178.0
+    yaw: 0.0
+- name: lumber_stack_607
+  model_id: lumber_stack
+  pose_world:
+    pos:
+    - -239.0
+    - 93.0
+    yaw: 0.0
+- name: lumber_stack_608
+  model_id: lumber_stack
+  pose_world:
+    pos:
+    - -245.0
+    - 83.0
+    yaw: 0.0
+- name: lumber_stack_609
+  model_id: lumber_stack
+  pose_world:
+    pos:
+    - -241.0
+    - 74.0
+    yaw: 0.5235987755982988
+- name: jungle_patch_610
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -246.0
+    - 91.0
+    yaw: 0.0
+- name: jungle_patch_611
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -239.0
+    - 82.0
+    yaw: 0.0
+- name: jungle_patch_612
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -246.0
+    - 76.0
+    yaw: 0.0
+robot_routes:
+- name: route_1
+  start:
+    pos:
+    - -200.0
+    - -220.0
+    yaw: 1.1071487177940904
+  waypoints:
+  - name: wp_1
+    pos:
+    - -181.0
+    - -182.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - -178.0
+    - -132.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - -177.0
+    - -78.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - -173.0
+    - -53.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - -106.0
+    - -56.0
+    tolerance: 2.0
+  - name: wp_6
+    pos:
+    - -53.0
+    - -56.0
+    tolerance: 2.0
+  - name: wp_7
+    pos:
+    - -44.0
+    - -46.0
+    tolerance: 2.0
+  - name: wp_8
+    pos:
+    - -44.0
+    - -9.0
+    tolerance: 2.0
+  - name: wp_9
+    pos:
+    - -45.0
+    - 23.0
+    tolerance: 2.0
+  - name: wp_10
+    pos:
+    - -221.0
+    - 26.0
+    tolerance: 2.0
+- name: route_2
+  start:
+    pos:
+    - 122.0
+    - -210.0
+    yaw: -2.1164513813218884
+  waypoints:
+  - name: wp_1
+    pos:
+    - 105.0
+    - -238.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - 47.0
+    - -247.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - 0.0
+    - -237.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - 3.0
+    - -153.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - 3.0
+    - 50.0
+    tolerance: 2.0
+  - name: wp_6
+    pos:
+    - 49.0
+    - 74.0
+    tolerance: 2.0
+  - name: wp_7
+    pos:
+    - 109.0
+    - 77.0
+    tolerance: 2.0
+  - name: wp_8
+    pos:
+    - 215.0
+    - 77.0
+    tolerance: 2.0
+  - name: wp_9
+    pos:
+    - 238.0
+    - 114.0
+    tolerance: 2.0
+  - name: wp_10
+    pos:
+    - 215.0
+    - 127.0
+    tolerance: 2.0
+  - name: wp_11
+    pos:
+    - 134.0
+    - 134.0
+    tolerance: 2.0
+  - name: wp_12
+    pos:
+    - 79.0
+    - 193.0
+    tolerance: 2.0
+  - name: wp_13
+    pos:
+    - 38.0
+    - 210.0
+    tolerance: 2.0
+- name: route_3
+  start:
+    pos:
+    - 175.0
+    - 26.0
+    yaw: -1.6549345673260676
+  waypoints:
+  - name: wp_1
+    pos:
+    - 168.0
+    - -57.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - 113.0
+    - -57.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - 123.0
+    - 75.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - 50.0
+    - 73.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - 52.0
+    - -1.0
+    tolerance: 2.0
+  - name: wp_6
+    pos:
+    - 52.0
+    - -12.0
+    tolerance: 2.0
+  - name: wp_7
+    pos:
+    - 70.0
+    - -11.0
+    tolerance: 2.0
+  - name: wp_8
+    pos:
+    - 70.0
+    - -30.0
+    tolerance: 2.0
+- name: route_4
+  start:
+    pos:
+    - -203.0
+    - -108.0
+    yaw: 2.646040980103965
+  waypoints:
+  - name: wp_1
+    pos:
+    - -240.0
+    - -88.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - -239.0
+    - -55.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - -21.0
+    - -58.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - -4.0
+    - 60.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - -28.0
+    - 82.0
+    tolerance: 2.0
+  - name: wp_6
+    pos:
+    - -4.0
+    - 119.0
+    tolerance: 2.0
+  - name: wp_7
+    pos:
+    - -4.0
+    - 196.0
+    tolerance: 2.0
+  - name: wp_8
+    pos:
+    - 12.0
+    - 91.0
+    tolerance: 2.0
+  - name: wp_9
+    pos:
+    - 51.0
+    - 79.0
+    tolerance: 2.0
+  - name: wp_10
+    pos:
+    - 232.0
+    - 83.0
+    tolerance: 2.0
+  - name: wp_11
+    pos:
+    - 233.0
+    - 127.0
+    tolerance: 2.0
+  - name: wp_12
+    pos:
+    - 128.0
+    - 129.0
+    tolerance: 2.0
+  - name: wp_13
+    pos:
+    - 109.0
+    - 177.0
+    tolerance: 2.0
+  - name: wp_14
+    pos:
+    - 46.0
+    - 198.0
+    tolerance: 2.0
+  - name: wp_15
+    pos:
+    - 48.0
+    - 236.0
+    tolerance: 2.0
+  - name: wp_16
+    pos:
+    - -51.0
+    - 238.0
+    tolerance: 2.0
+  - name: wp_17
+    pos:
+    - -78.0
+    - 146.0
+    tolerance: 2.0
+  - name: wp_18
+    pos:
+    - -137.0
+    - 141.0
+    tolerance: 2.0
+  - name: wp_19
+    pos:
+    - -178.0
+    - 151.0
+    tolerance: 2.0
+  - name: wp_20
+    pos:
+    - -169.0
+    - 230.0
+    tolerance: 2.0
+  - name: wp_21
+    pos:
+    - -210.0
+    - 230.0
+    tolerance: 2.0
+bounds:
+  min:
+  - -250.0
+  - -250.0
+  max:
+  - 250.0
+  - 250.0

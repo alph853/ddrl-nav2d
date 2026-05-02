@@ -1,0 +1,42 @@
+name: scooter
+category: vehicle
+parts:
+  - name: deck
+    geom:
+      type: box
+      hx: 0.5
+      hy: 0.2
+      z_min: 0.1
+      z_max: 0.15
+    material:
+      name: scooter_deck
+      rgba: [0.2, 0.2, 0.2, 1.0] # black
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: handlebar_post
+    geom:
+      type: circle
+      radius: 0.03
+      z_min: 0.15
+      z_max: 1.0
+    material:
+      name: scooter_post
+      rgba: [0.4, 0.4, 0.4, 1.0] # gray
+    rel_pose:
+      pos: [0.3, 0.0]
+      yaw: 0.0
+
+  - name: rider
+    geom:
+      type: circle
+      radius: 0.25
+      z_min: 0.5
+      z_max: 1.6
+    material:
+      name: scooter_rider
+      rgba: [0.2, 0.6, 0.8, 1.0] # blue
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

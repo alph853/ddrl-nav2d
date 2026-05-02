@@ -1,0 +1,44 @@
+name: barrier
+category: obstacle
+parts:
+  - name: barrier_body
+    geom:
+      type: box
+      hx: 1.0
+      hy: 0.15
+      z_min: 0.0
+      z_max: 1.0
+    material:
+      name: barrier_material
+      rgba: [0.9, 0.9, 0.1, 1.0] # yellow
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: stripe_1
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.16
+      z_min: 0.2
+      z_max: 0.8
+    material:
+      name: barrier_stripe
+      rgba: [0.1, 0.1, 0.1, 1.0] # black stripe
+    rel_pose:
+      pos: [-0.6, 0.0]
+      yaw: 0.0
+
+  - name: stripe_2
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.16
+      z_min: 0.2
+      z_max: 0.8
+    material:
+      name: barrier_stripe
+      rgba: [0.1, 0.1, 0.1, 1.0] # black stripe
+    rel_pose:
+      pos: [0.6, 0.0]
+      yaw: 0.0

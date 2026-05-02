@@ -1,0 +1,164 @@
+version: '1.0'
+name: map_intro_2
+description: ''
+static_instances:
+- name: jungle_patch_4
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - 15.0
+    - 19.0
+    yaw: 0.0
+- name: lumber_stack_5
+  model_id: lumber_stack
+  pose_world:
+    pos:
+    - -19.0
+    - -1.0
+    yaw: 0.0
+robot_routes:
+- name: route_3
+  start:
+    pos:
+    - 15.0
+    - -18.0
+    yaw: 2.5899376710612465
+  waypoints:
+  - name: wp_1
+    pos:
+    - 2.0
+    - -10.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - -6.0
+    - -2.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - -19.0
+    - 8.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - -30.0
+    - 0.0
+    tolerance: 2.0
+- name: route_4
+  start:
+    pos:
+    - -32.0
+    - 27.0
+    yaw: -0.5880026035475675
+  waypoints:
+  - name: wp_1
+    pos:
+    - -20.0
+    - 19.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - -9.0
+    - 9.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - -2.0
+    - 1.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - 6.0
+    - -5.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - 15.0
+    - -18.0
+    tolerance: 2.0
+- name: route_5
+  start:
+    pos:
+    - 19.0
+    - 37.0
+    yaw: -2.651635327336065
+  waypoints:
+  - name: wp_1
+    pos:
+    - 4.0
+    - 29.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - -8.0
+    - 19.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - -23.0
+    - 9.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - -30.0
+    - -4.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - -20.0
+    - -13.0
+    tolerance: 2.0
+  - name: wp_6
+    pos:
+    - -4.0
+    - -16.0
+    tolerance: 2.0
+  - name: wp_7
+    pos:
+    - 14.0
+    - -19.0
+    tolerance: 2.0
+- name: route_1
+  start:
+    pos:
+    - 16.0
+    - -19.0
+    yaw: 1.5707963267948966
+  waypoints:
+  - name: wp_1
+    pos:
+    - 16.0
+    - -7.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - 16.0
+    - 7.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - 6.0
+    - 8.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - 5.0
+    - 19.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - 5.0
+    - 33.0
+    tolerance: 2.0
+  - name: wp_6
+    pos:
+    - 19.0
+    - 36.0
+    tolerance: 2.0
+bounds:
+  min:
+  - -75.0
+  - -75.0
+  max:
+  - 75.0
+  - 75.0

@@ -1,0 +1,34 @@
+# Log level: TRACE, DEBUG, INFO, WARN, ERROR, CRITICAL, OFF
+default_level: INFO
+
+# Output destinations
+log_to_console: true
+log_to_file: false
+log_file_path: logs/ddrl.log
+
+# Asynchronous logging (improves performance but may lose messages on crash)
+async_logging: false
+async_queue_size: 8192
+
+# Log format patterns (spdlog format)
+# Available placeholders:
+#   %v - message
+#   %l - log level
+#   %n - logger name
+#   %g - file name
+#   %# - line number
+#   %Y-%m-%d %H:%M:%S.%e - timestamp
+#   %^ %$ - color range for console
+console_pattern: "[%^%l%$] [%n] [%g:%#] %v"
+file_pattern: "[%Y-%m-%d %H:%M:%S.%e] [%l] [%n] [%g:%#] %v"
+
+# Flush settings
+flush_on_error: true
+
+# File log settings
+max_file_size_mb: 50  # Maximum size per log file in MB
+max_files: 3          # Number of rotated files to keep
+
+# Backtrace support (stores recent logs to dump on error)
+enable_backtrace: false
+backtrace_size: 32   # Number of messages to store in backtrace buffer

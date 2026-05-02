@@ -1,0 +1,52 @@
+name: pet_wander
+
+# Pet (dog/cat) wandering - still erratic, but less abrupt
+cfg:
+  type: linear_const_vel
+
+  caps:
+    max_speed: 1.5
+    max_accel: 1.0
+    max_decel: 2.5
+    cmd_rate_hz: 15.0
+    cmd_delay_s: 0.15
+    accel_noise_std: 0.06 # Keep some unpredictability without sharp bursts
+    steer_noise_std: 0.0
+
+  speed_min: 0.5
+  speed_max: 1.2
+  brake_to_stop: true
+
+# Erratic wandering pattern
+waypoints_local:
+  points:
+    - p_local:
+        pos: [0.0, 0.0]
+        yaw: 0.0
+      wait_s: 2.0 # Sniffing around
+    - p_local:
+        pos: [3.0, 2.0]
+        yaw: 0.588
+      wait_s: 1.5
+    - p_local:
+        pos: [5.0, 0.5]
+        yaw: -0.393
+      wait_s: 2.5
+    - p_local:
+        pos: [7.0, 3.0]
+        yaw: 1.178
+      wait_s: 1.0
+    - p_local:
+        pos: [4.0, 4.0]
+        yaw: 2.356
+      wait_s: 3.0
+    - p_local:
+        pos: [1.0, 2.0]
+        yaw: -2.356
+      wait_s: 2.0
+
+  reached_pos_tol: 0.6
+  reached_yaw_tol: 0.5 # Don't care much about orientation
+  loop: true
+
+stop_when_collide_s: 1.0 # Quick recovery, but less twitchy

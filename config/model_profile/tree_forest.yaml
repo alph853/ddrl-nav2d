@@ -1,0 +1,645 @@
+name: forest_dense
+category: vegetation
+parts:
+  # Pine trees - Row 1
+  - name: pine_trunk_1
+    geom:
+      type: circle
+      radius: 0.5
+      z_min: 0.0
+      z_max: 12.0
+    material:
+      name: pine_bark
+      rgba: [0.45, 0.35, 0.25, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: pine_canopy_1
+    geom:
+      type: circle
+      radius: 2.5
+      z_min: 8.0
+      z_max: 15.0
+    material:
+      name: pine_needles
+      rgba: [0.15, 0.35, 0.15, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: pine_trunk_2
+    geom:
+      type: circle
+      radius: 0.5
+      z_min: 0.0
+      z_max: 12.0
+    material:
+      name: pine_bark
+      rgba: [0.45, 0.35, 0.25, 1.0]
+    rel_pose:
+      pos: [7.0, 0.5]
+      yaw: 0.0
+
+  - name: pine_canopy_2
+    geom:
+      type: circle
+      radius: 2.5
+      z_min: 8.0
+      z_max: 15.0
+    material:
+      name: pine_needles
+      rgba: [0.15, 0.35, 0.15, 1.0]
+    rel_pose:
+      pos: [7.0, 0.5]
+      yaw: 0.0
+
+  - name: pine_trunk_3
+    geom:
+      type: circle
+      radius: 0.5
+      z_min: 0.0
+      z_max: 12.0
+    material:
+      name: pine_bark
+      rgba: [0.45, 0.35, 0.25, 1.0]
+    rel_pose:
+      pos: [-7.0, -0.5]
+      yaw: 0.0
+
+  - name: pine_canopy_3
+    geom:
+      type: circle
+      radius: 2.5
+      z_min: 8.0
+      z_max: 15.0
+    material:
+      name: pine_needles
+      rgba: [0.15, 0.35, 0.15, 1.0]
+    rel_pose:
+      pos: [-7.0, -0.5]
+      yaw: 0.0
+
+  # Oak trees - Row 2
+  - name: oak_trunk_1
+    geom:
+      type: circle
+      radius: 0.7
+      z_min: 0.0
+      z_max: 9.0
+    material:
+      name: oak_bark
+      rgba: [0.4, 0.3, 0.2, 1.0]
+    rel_pose:
+      pos: [3.5, 2.5]
+      yaw: 0.0
+
+  - name: oak_canopy_1
+    geom:
+      type: circle
+      radius: 2.8
+      z_min: 6.5
+      z_max: 12.0
+    material:
+      name: oak_leaves
+      rgba: [0.2, 0.45, 0.15, 1.0]
+    rel_pose:
+      pos: [3.5, 2.5]
+      yaw: 0.0
+
+  - name: oak_trunk_2
+    geom:
+      type: circle
+      radius: 0.7
+      z_min: 0.0
+      z_max: 9.0
+    material:
+      name: oak_bark
+      rgba: [0.4, 0.3, 0.2, 1.0]
+    rel_pose:
+      pos: [10.5, 2.0]
+      yaw: 0.0
+
+  - name: oak_canopy_2
+    geom:
+      type: circle
+      radius: 2.8
+      z_min: 6.5
+      z_max: 12.0
+    material:
+      name: oak_leaves
+      rgba: [0.2, 0.45, 0.15, 1.0]
+    rel_pose:
+      pos: [10.5, 2.0]
+      yaw: 0.0
+
+  - name: oak_trunk_3
+    geom:
+      type: circle
+      radius: 0.7
+      z_min: 0.0
+      z_max: 9.0
+    material:
+      name: oak_bark
+      rgba: [0.4, 0.3, 0.2, 1.0]
+    rel_pose:
+      pos: [-3.5, 3.0]
+      yaw: 0.0
+
+  - name: oak_canopy_3
+    geom:
+      type: circle
+      radius: 2.8
+      z_min: 6.5
+      z_max: 12.0
+    material:
+      name: oak_leaves
+      rgba: [0.2, 0.45, 0.15, 1.0]
+    rel_pose:
+      pos: [-3.5, 3.0]
+      yaw: 0.0
+
+  - name: oak_trunk_4
+    geom:
+      type: circle
+      radius: 0.7
+      z_min: 0.0
+      z_max: 9.0
+    material:
+      name: oak_bark
+      rgba: [0.4, 0.3, 0.2, 1.0]
+    rel_pose:
+      pos: [-10.5, 2.5]
+      yaw: 0.0
+
+  - name: oak_canopy_4
+    geom:
+      type: circle
+      radius: 2.8
+      z_min: 6.5
+      z_max: 12.0
+    material:
+      name: oak_leaves
+      rgba: [0.2, 0.45, 0.15, 1.0]
+    rel_pose:
+      pos: [-10.5, 2.5]
+      yaw: 0.0
+
+  # Birch trees - Row 3
+  - name: birch_trunk_1
+    geom:
+      type: circle
+      radius: 0.4
+      z_min: 0.0
+      z_max: 10.0
+    material:
+      name: birch_bark
+      rgba: [0.9, 0.9, 0.85, 1.0]
+    rel_pose:
+      pos: [-3.0, 2.0]
+      yaw: 0.0
+
+  - name: birch_canopy_1
+    geom:
+      type: circle
+      radius: 2.0
+      z_min: 7.0
+      z_max: 12.0
+    material:
+      name: birch_leaves
+      rgba: [0.3, 0.5, 0.2, 1.0]
+    rel_pose:
+      pos: [-3.0, 2.0]
+      yaw: 0.0
+
+  - name: birch_trunk_2
+    geom:
+      type: circle
+      radius: 0.4
+      z_min: 0.0
+      z_max: 10.0
+    material:
+      name: birch_bark
+      rgba: [0.9, 0.9, 0.85, 1.0]
+    rel_pose:
+      pos: [4.0, -3.0]
+      yaw: 0.0
+
+  - name: birch_canopy_2
+    geom:
+      type: circle
+      radius: 2.0
+      z_min: 7.0
+      z_max: 12.0
+    material:
+      name: birch_leaves
+      rgba: [0.3, 0.5, 0.2, 1.0]
+    rel_pose:
+      pos: [4.0, -3.0]
+      yaw: 0.0
+
+  - name: birch_trunk_3
+    geom:
+      type: circle
+      radius: 0.4
+      z_min: 0.0
+      z_max: 10.0
+    material:
+      name: birch_bark
+      rgba: [0.9, 0.9, 0.85, 1.0]
+    rel_pose:
+      pos: [-4.0, -3.5]
+      yaw: 0.0
+
+  - name: birch_canopy_3
+    geom:
+      type: circle
+      radius: 2.0
+      z_min: 7.0
+      z_max: 12.0
+    material:
+      name: birch_leaves
+      rgba: [0.3, 0.5, 0.2, 1.0]
+    rel_pose:
+      pos: [-4.0, -3.5]
+      yaw: 0.0
+
+  - name: birch_trunk_4
+    geom:
+      type: circle
+      radius: 0.4
+      z_min: 0.0
+      z_max: 10.0
+    material:
+      name: birch_bark
+      rgba: [0.9, 0.9, 0.85, 1.0]
+    rel_pose:
+      pos: [11.0, -2.5]
+      yaw: 0.0
+
+  - name: birch_canopy_4
+    geom:
+      type: circle
+      radius: 2.0
+      z_min: 7.0
+      z_max: 12.0
+    material:
+      name: birch_leaves
+      rgba: [0.3, 0.5, 0.2, 1.0]
+    rel_pose:
+      pos: [11.0, -2.5]
+      yaw: 0.0
+
+  - name: birch_trunk_5
+    geom:
+      type: circle
+      radius: 0.4
+      z_min: 0.0
+      z_max: 10.0
+    material:
+      name: birch_bark
+      rgba: [0.9, 0.9, 0.85, 1.0]
+    rel_pose:
+      pos: [-11.0, -3.0]
+      yaw: 0.0
+
+  - name: birch_canopy_5
+    geom:
+      type: circle
+      radius: 2.0
+      z_min: 7.0
+      z_max: 12.0
+    material:
+      name: birch_leaves
+      rgba: [0.3, 0.5, 0.2, 1.0]
+    rel_pose:
+      pos: [-11.0, -3.0]
+      yaw: 0.0
+
+  # Young trees scattered
+  - name: young_trunk_1
+    geom:
+      type: circle
+      radius: 0.3
+      z_min: 0.0
+      z_max: 5.0
+    material:
+      name: young_bark
+      rgba: [0.5, 0.4, 0.3, 1.0]
+    rel_pose:
+      pos: [2.0, -2.5]
+      yaw: 0.0
+
+  - name: young_canopy_1
+    geom:
+      type: circle
+      radius: 1.5
+      z_min: 3.5
+      z_max: 6.5
+    material:
+      name: young_leaves
+      rgba: [0.25, 0.5, 0.2, 1.0]
+    rel_pose:
+      pos: [2.0, -2.5]
+      yaw: 0.0
+
+  - name: young_trunk_2
+    geom:
+      type: circle
+      radius: 0.3
+      z_min: 0.0
+      z_max: 5.0
+    material:
+      name: young_bark
+      rgba: [0.5, 0.4, 0.3, 1.0]
+    rel_pose:
+      pos: [8.0, -4.0]
+      yaw: 0.0
+
+  - name: young_canopy_2
+    geom:
+      type: circle
+      radius: 1.5
+      z_min: 3.5
+      z_max: 6.5
+    material:
+      name: young_leaves
+      rgba: [0.25, 0.5, 0.2, 1.0]
+    rel_pose:
+      pos: [8.0, -4.0]
+      yaw: 0.0
+
+  - name: young_trunk_3
+    geom:
+      type: circle
+      radius: 0.3
+      z_min: 0.0
+      z_max: 5.0
+    material:
+      name: young_bark
+      rgba: [0.5, 0.4, 0.3, 1.0]
+    rel_pose:
+      pos: [-8.0, -4.5]
+      yaw: 0.0
+
+  - name: young_canopy_3
+    geom:
+      type: circle
+      radius: 1.5
+      z_min: 3.5
+      z_max: 6.5
+    material:
+      name: young_leaves
+      rgba: [0.25, 0.5, 0.2, 1.0]
+    rel_pose:
+      pos: [-8.0, -4.5]
+      yaw: 0.0
+
+  - name: young_trunk_4
+    geom:
+      type: circle
+      radius: 0.3
+      z_min: 0.0
+      z_max: 5.0
+    material:
+      name: young_bark
+      rgba: [0.5, 0.4, 0.3, 1.0]
+    rel_pose:
+      pos: [1.0, 4.5]
+      yaw: 0.0
+
+  - name: young_canopy_4
+    geom:
+      type: circle
+      radius: 1.5
+      z_min: 3.5
+      z_max: 6.5
+    material:
+      name: young_leaves
+      rgba: [0.25, 0.5, 0.2, 1.0]
+    rel_pose:
+      pos: [1.0, 4.5]
+      yaw: 0.0
+
+  - name: young_trunk_5
+    geom:
+      type: circle
+      radius: 0.3
+      z_min: 0.0
+      z_max: 5.0
+    material:
+      name: young_bark
+      rgba: [0.5, 0.4, 0.3, 1.0]
+    rel_pose:
+      pos: [-1.0, -5.0]
+      yaw: 0.0
+
+  - name: young_canopy_5
+    geom:
+      type: circle
+      radius: 1.5
+      z_min: 3.5
+      z_max: 6.5
+    material:
+      name: young_leaves
+      rgba: [0.25, 0.5, 0.2, 1.0]
+    rel_pose:
+      pos: [-1.0, -5.0]
+      yaw: 0.0
+
+  - name: young_trunk_6
+    geom:
+      type: circle
+      radius: 0.3
+      z_min: 0.0
+      z_max: 5.0
+    material:
+      name: young_bark
+      rgba: [0.5, 0.4, 0.3, 1.0]
+    rel_pose:
+      pos: [13.0, 1.0]
+      yaw: 0.0
+
+  - name: young_canopy_6
+    geom:
+      type: circle
+      radius: 1.5
+      z_min: 3.5
+      z_max: 6.5
+    material:
+      name: young_leaves
+      rgba: [0.25, 0.5, 0.2, 1.0]
+    rel_pose:
+      pos: [13.0, 1.0]
+      yaw: 0.0
+
+  - name: young_trunk_7
+    geom:
+      type: circle
+      radius: 0.3
+      z_min: 0.0
+      z_max: 5.0
+    material:
+      name: young_bark
+      rgba: [0.5, 0.4, 0.3, 1.0]
+    rel_pose:
+      pos: [-13.0, 0.5]
+      yaw: 0.0
+
+  - name: young_canopy_7
+    geom:
+      type: circle
+      radius: 1.5
+      z_min: 3.5
+      z_max: 6.5
+    material:
+      name: young_leaves
+      rgba: [0.25, 0.5, 0.2, 1.0]
+    rel_pose:
+      pos: [-13.0, 0.5]
+      yaw: 0.0
+
+  # Additional back row trees for more density
+  - name: pine_trunk_4
+    geom:
+      type: circle
+      radius: 0.5
+      z_min: 0.0
+      z_max: 12.0
+    material:
+      name: pine_bark
+      rgba: [0.45, 0.35, 0.25, 1.0]
+    rel_pose:
+      pos: [0.5, 6.0]
+      yaw: 0.0
+
+  - name: pine_canopy_4
+    geom:
+      type: circle
+      radius: 2.5
+      z_min: 8.0
+      z_max: 15.0
+    material:
+      name: pine_needles
+      rgba: [0.15, 0.35, 0.15, 1.0]
+    rel_pose:
+      pos: [0.5, 6.0]
+      yaw: 0.0
+
+  - name: pine_trunk_5
+    geom:
+      type: circle
+      radius: 0.5
+      z_min: 0.0
+      z_max: 12.0
+    material:
+      name: pine_bark
+      rgba: [0.45, 0.35, 0.25, 1.0]
+    rel_pose:
+      pos: [7.5, 5.5]
+      yaw: 0.0
+
+  - name: pine_canopy_5
+    geom:
+      type: circle
+      radius: 2.5
+      z_min: 8.0
+      z_max: 15.0
+    material:
+      name: pine_needles
+      rgba: [0.15, 0.35, 0.15, 1.0]
+    rel_pose:
+      pos: [7.5, 5.5]
+      yaw: 0.0
+
+  - name: pine_trunk_6
+    geom:
+      type: circle
+      radius: 0.5
+      z_min: 0.0
+      z_max: 12.0
+    material:
+      name: pine_bark
+      rgba: [0.45, 0.35, 0.25, 1.0]
+    rel_pose:
+      pos: [-7.5, 6.5]
+      yaw: 0.0
+
+  - name: pine_canopy_6
+    geom:
+      type: circle
+      radius: 2.5
+      z_min: 8.0
+      z_max: 15.0
+    material:
+      name: pine_needles
+      rgba: [0.15, 0.35, 0.15, 1.0]
+    rel_pose:
+      pos: [-7.5, 6.5]
+      yaw: 0.0
+
+  # Forest floor vegetation - expanded
+  - name: ferns_1
+    geom:
+      type: circle
+      radius: 3.0
+      z_min: 0.0
+      z_max: 0.8
+    material:
+      name: ferns
+      rgba: [0.2, 0.45, 0.15, 1.0]
+    rel_pose:
+      pos: [0.0, -1.5]
+      yaw: 0.0
+
+  - name: ferns_2
+    geom:
+      type: circle
+      radius: 3.0
+      z_min: 0.0
+      z_max: 0.8
+    material:
+      name: ferns
+      rgba: [0.2, 0.45, 0.15, 1.0]
+    rel_pose:
+      pos: [6.0, 3.5]
+      yaw: 0.0
+
+  - name: ferns_3
+    geom:
+      type: circle
+      radius: 3.0
+      z_min: 0.0
+      z_max: 0.8
+    material:
+      name: ferns
+      rgba: [0.2, 0.45, 0.15, 1.0]
+    rel_pose:
+      pos: [-6.0, 4.0]
+      yaw: 0.0
+
+  - name: ferns_4
+    geom:
+      type: circle
+      radius: 3.0
+      z_min: 0.0
+      z_max: 0.8
+    material:
+      name: ferns
+      rgba: [0.2, 0.45, 0.15, 1.0]
+    rel_pose:
+      pos: [9.0, -1.0]
+      yaw: 0.0
+
+  - name: ferns_5
+    geom:
+      type: circle
+      radius: 3.0
+      z_min: 0.0
+      z_max: 0.8
+    material:
+      name: ferns
+      rgba: [0.2, 0.45, 0.15, 1.0]
+    rel_pose:
+      pos: [-9.0, -1.5]
+      yaw: 0.0

@@ -1,0 +1,1019 @@
+name: bridge_long
+category: structure
+parts:
+  # Foundation supports - 9 total (4x bridge = 8 sections + 1 end = 9 supports)
+  - name: foundation_1
+    geom:
+      type: box
+      hx: 1.5
+      hy: 1.5
+      z_min: 0.0
+      z_max: 0.5
+    material:
+      name: bridge_foundation
+      rgba: [0.4, 0.4, 0.4, 1.0]
+    rel_pose:
+      pos: [-32.0, 0.0]
+      yaw: 0.0
+
+  - name: foundation_2
+    geom:
+      type: box
+      hx: 1.5
+      hy: 1.5
+      z_min: 0.0
+      z_max: 0.5
+    material:
+      name: bridge_foundation
+      rgba: [0.4, 0.4, 0.4, 1.0]
+    rel_pose:
+      pos: [-24.0, 0.0]
+      yaw: 0.0
+
+  - name: foundation_3
+    geom:
+      type: box
+      hx: 1.5
+      hy: 1.5
+      z_min: 0.0
+      z_max: 0.5
+    material:
+      name: bridge_foundation
+      rgba: [0.4, 0.4, 0.4, 1.0]
+    rel_pose:
+      pos: [-16.0, 0.0]
+      yaw: 0.0
+
+  - name: foundation_4
+    geom:
+      type: box
+      hx: 1.5
+      hy: 1.5
+      z_min: 0.0
+      z_max: 0.5
+    material:
+      name: bridge_foundation
+      rgba: [0.4, 0.4, 0.4, 1.0]
+    rel_pose:
+      pos: [-8.0, 0.0]
+      yaw: 0.0
+
+  - name: foundation_5
+    geom:
+      type: box
+      hx: 1.5
+      hy: 1.5
+      z_min: 0.0
+      z_max: 0.5
+    material:
+      name: bridge_foundation
+      rgba: [0.4, 0.4, 0.4, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: foundation_6
+    geom:
+      type: box
+      hx: 1.5
+      hy: 1.5
+      z_min: 0.0
+      z_max: 0.5
+    material:
+      name: bridge_foundation
+      rgba: [0.4, 0.4, 0.4, 1.0]
+    rel_pose:
+      pos: [8.0, 0.0]
+      yaw: 0.0
+
+  - name: foundation_7
+    geom:
+      type: box
+      hx: 1.5
+      hy: 1.5
+      z_min: 0.0
+      z_max: 0.5
+    material:
+      name: bridge_foundation
+      rgba: [0.4, 0.4, 0.4, 1.0]
+    rel_pose:
+      pos: [16.0, 0.0]
+      yaw: 0.0
+
+  - name: foundation_8
+    geom:
+      type: box
+      hx: 1.5
+      hy: 1.5
+      z_min: 0.0
+      z_max: 0.5
+    material:
+      name: bridge_foundation
+      rgba: [0.4, 0.4, 0.4, 1.0]
+    rel_pose:
+      pos: [24.0, 0.0]
+      yaw: 0.0
+
+  - name: foundation_9
+    geom:
+      type: box
+      hx: 1.5
+      hy: 1.5
+      z_min: 0.0
+      z_max: 0.5
+    material:
+      name: bridge_foundation
+      rgba: [0.4, 0.4, 0.4, 1.0]
+    rel_pose:
+      pos: [32.0, 0.0]
+      yaw: 0.0
+
+  # Main support pillars - 9 total
+  - name: support_1
+    geom:
+      type: box
+      hx: 1.2
+      hy: 1.2
+      z_min: 0.5
+      z_max: 4.0
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [-32.0, 0.0]
+      yaw: 0.0
+
+  - name: support_2
+    geom:
+      type: box
+      hx: 1.2
+      hy: 1.2
+      z_min: 0.5
+      z_max: 4.0
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [-24.0, 0.0]
+      yaw: 0.0
+
+  - name: support_3
+    geom:
+      type: box
+      hx: 1.2
+      hy: 1.2
+      z_min: 0.5
+      z_max: 4.0
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [-16.0, 0.0]
+      yaw: 0.0
+
+  - name: support_4
+    geom:
+      type: box
+      hx: 1.2
+      hy: 1.2
+      z_min: 0.5
+      z_max: 4.0
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [-8.0, 0.0]
+      yaw: 0.0
+
+  - name: support_5
+    geom:
+      type: box
+      hx: 1.2
+      hy: 1.2
+      z_min: 0.5
+      z_max: 4.0
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: support_6
+    geom:
+      type: box
+      hx: 1.2
+      hy: 1.2
+      z_min: 0.5
+      z_max: 4.0
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [8.0, 0.0]
+      yaw: 0.0
+
+  - name: support_7
+    geom:
+      type: box
+      hx: 1.2
+      hy: 1.2
+      z_min: 0.5
+      z_max: 4.0
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [16.0, 0.0]
+      yaw: 0.0
+
+  - name: support_8
+    geom:
+      type: box
+      hx: 1.2
+      hy: 1.2
+      z_min: 0.5
+      z_max: 4.0
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [24.0, 0.0]
+      yaw: 0.0
+
+  - name: support_9
+    geom:
+      type: box
+      hx: 1.2
+      hy: 1.2
+      z_min: 0.5
+      z_max: 4.0
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [32.0, 0.0]
+      yaw: 0.0
+
+  # Support arches - 9 total
+  - name: arch_1
+    geom:
+      type: box
+      hx: 0.8
+      hy: 3.0
+      z_min: 2.5
+      z_max: 3.5
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [-32.0, 0.0]
+      yaw: 0.0
+
+  - name: arch_2
+    geom:
+      type: box
+      hx: 0.8
+      hy: 3.0
+      z_min: 2.5
+      z_max: 3.5
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [-24.0, 0.0]
+      yaw: 0.0
+
+  - name: arch_3
+    geom:
+      type: box
+      hx: 0.8
+      hy: 3.0
+      z_min: 2.5
+      z_max: 3.5
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [-16.0, 0.0]
+      yaw: 0.0
+
+  - name: arch_4
+    geom:
+      type: box
+      hx: 0.8
+      hy: 3.0
+      z_min: 2.5
+      z_max: 3.5
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [-8.0, 0.0]
+      yaw: 0.0
+
+  - name: arch_5
+    geom:
+      type: box
+      hx: 0.8
+      hy: 3.0
+      z_min: 2.5
+      z_max: 3.5
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: arch_6
+    geom:
+      type: box
+      hx: 0.8
+      hy: 3.0
+      z_min: 2.5
+      z_max: 3.5
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [8.0, 0.0]
+      yaw: 0.0
+
+  - name: arch_7
+    geom:
+      type: box
+      hx: 0.8
+      hy: 3.0
+      z_min: 2.5
+      z_max: 3.5
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [16.0, 0.0]
+      yaw: 0.0
+
+  - name: arch_8
+    geom:
+      type: box
+      hx: 0.8
+      hy: 3.0
+      z_min: 2.5
+      z_max: 3.5
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [24.0, 0.0]
+      yaw: 0.0
+
+  - name: arch_9
+    geom:
+      type: box
+      hx: 0.8
+      hy: 3.0
+      z_min: 2.5
+      z_max: 3.5
+    material:
+      name: bridge_concrete
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [32.0, 0.0]
+      yaw: 0.0
+
+  # Deck support beams (continuous)
+  - name: deck_beam_left
+    geom:
+      type: box
+      hx: 32.5
+      hy: 0.6
+      z_min: 3.5
+      z_max: 4.0
+    material:
+      name: bridge_steel
+      rgba: [0.35, 0.35, 0.35, 1.0]
+    rel_pose:
+      pos: [0.0, 2.5]
+      yaw: 0.0
+
+  - name: deck_beam_right
+    geom:
+      type: box
+      hx: 32.5
+      hy: 0.6
+      z_min: 3.5
+      z_max: 4.0
+    material:
+      name: bridge_steel
+      rgba: [0.35, 0.35, 0.35, 1.0]
+    rel_pose:
+      pos: [0.0, -2.5]
+      yaw: 0.0
+
+  # Main deck (continuous)
+  - name: deck
+    geom:
+      type: box
+      hx: 33.0
+      hy: 5.0
+      z_min: 4.0
+      z_max: 4.5
+    material:
+      name: bridge_deck
+      rgba: [0.4, 0.4, 0.4, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  # Road surface markings (continuous)
+  - name: road_surface
+    geom:
+      type: box
+      hx: 33.0
+      hy: 4.5
+      z_min: 4.5
+      z_max: 4.51
+    material:
+      name: asphalt
+      rgba: [0.2, 0.2, 0.2, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: center_line
+    geom:
+      type: box
+      hx: 33.0
+      hy: 0.1
+      z_min: 4.51
+      z_max: 4.52
+    material:
+      name: yellow_paint
+      rgba: [1.0, 0.9, 0.0, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  # Railings (continuous)
+  - name: left_railing
+    geom:
+      type: box
+      hx: 33.0
+      hy: 0.1
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [0.0, 5.0]
+      yaw: 0.0
+
+  - name: right_railing
+    geom:
+      type: box
+      hx: 33.0
+      hy: 0.1
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [0.0, -5.0]
+      yaw: 0.0
+
+  # Railing posts - evenly distributed every 3.5m
+  - name: post_l1
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-31.5, 5.0]
+      yaw: 0.0
+
+  - name: post_l2
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-28.0, 5.0]
+      yaw: 0.0
+
+  - name: post_l3
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-24.5, 5.0]
+      yaw: 0.0
+
+  - name: post_l4
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-21.0, 5.0]
+      yaw: 0.0
+
+  - name: post_l5
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-17.5, 5.0]
+      yaw: 0.0
+
+  - name: post_l6
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-14.0, 5.0]
+      yaw: 0.0
+
+  - name: post_l7
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-10.5, 5.0]
+      yaw: 0.0
+
+  - name: post_l8
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-7.0, 5.0]
+      yaw: 0.0
+
+  - name: post_l9
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-3.5, 5.0]
+      yaw: 0.0
+
+  - name: post_l10
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [0.0, 5.0]
+      yaw: 0.0
+
+  - name: post_l11
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [3.5, 5.0]
+      yaw: 0.0
+
+  - name: post_l12
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [7.0, 5.0]
+      yaw: 0.0
+
+  - name: post_l13
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [10.5, 5.0]
+      yaw: 0.0
+
+  - name: post_l14
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [14.0, 5.0]
+      yaw: 0.0
+
+  - name: post_l15
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [17.5, 5.0]
+      yaw: 0.0
+
+  - name: post_l16
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [21.0, 5.0]
+      yaw: 0.0
+
+  - name: post_l17
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [24.5, 5.0]
+      yaw: 0.0
+
+  - name: post_l18
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [28.0, 5.0]
+      yaw: 0.0
+
+  - name: post_l19
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [31.5, 5.0]
+      yaw: 0.0
+
+  # Right side posts
+  - name: post_r1
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-31.5, -5.0]
+      yaw: 0.0
+
+  - name: post_r2
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-28.0, -5.0]
+      yaw: 0.0
+
+  - name: post_r3
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-24.5, -5.0]
+      yaw: 0.0
+
+  - name: post_r4
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-21.0, -5.0]
+      yaw: 0.0
+
+  - name: post_r5
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-17.5, -5.0]
+      yaw: 0.0
+
+  - name: post_r6
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-14.0, -5.0]
+      yaw: 0.0
+
+  - name: post_r7
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-10.5, -5.0]
+      yaw: 0.0
+
+  - name: post_r8
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-7.0, -5.0]
+      yaw: 0.0
+
+  - name: post_r9
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [-3.5, -5.0]
+      yaw: 0.0
+
+  - name: post_r10
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [0.0, -5.0]
+      yaw: 0.0
+
+  - name: post_r11
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [3.5, -5.0]
+      yaw: 0.0
+
+  - name: post_r12
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [7.0, -5.0]
+      yaw: 0.0
+
+  - name: post_r13
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [10.5, -5.0]
+      yaw: 0.0
+
+  - name: post_r14
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [14.0, -5.0]
+      yaw: 0.0
+
+  - name: post_r15
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [17.5, -5.0]
+      yaw: 0.0
+
+  - name: post_r16
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [21.0, -5.0]
+      yaw: 0.0
+
+  - name: post_r17
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [24.5, -5.0]
+      yaw: 0.0
+
+  - name: post_r18
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [28.0, -5.0]
+      yaw: 0.0
+
+  - name: post_r19
+    geom:
+      type: box
+      hx: 0.15
+      hy: 0.15
+      z_min: 4.5
+      z_max: 5.5
+    material:
+      name: bridge_railing
+      rgba: [0.6, 0.6, 0.6, 1.0]
+    rel_pose:
+      pos: [31.5, -5.0]
+      yaw: 0.0

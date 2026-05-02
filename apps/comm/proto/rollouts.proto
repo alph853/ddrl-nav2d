@@ -1,0 +1,81 @@
+syntax = "proto3";
+
+package ddrl.comm;
+
+option csharp_namespace = "Ddrl.Comm";
+option go_package       = "github.com/ddrl/collision-avoidance/comm/gen/go/ddrl/comm";
+option java_multiple_files = true;
+option java_package        = "ai.ddrl.comm";
+
+// Unique identifier for the simulator stream that produced a rollout.
+message ActorId {
+  uint32 worker_id  = 1; // process-unique id (hash of hostname, PID, etc.)
+  uint32 sim_id     = 2; // simulator index within the worker
+  uint64 rollout_id = 3; // monotonically increasing counter per simulator
+}
+
+message Observation {
+  repeated float features = 1; // Fixed-size compact observation vector.
+}
+
+message Action {
+  repeated float continuous = 1; // Normalized tanh action in [-1, 1].
+  double log_prob           = 2; // behaviour policy log π(a|s).
+}
+
+message RewardTermValue {
+  double raw = 1;
+  double weighted = 2;
+}
+
+message RecurrentState {
+  repeated float hidden = 1;
+  repeated float cell   = 2;
+  repeated int32 shape  = 3; // [num_layers, hidden_dim]
+}
+
+message TrajectoryStep {
+  Observation observation     = 1;
+  Action      action          = 2;
+  double      reward          = 3;
+  bool        terminal        = 4;
+  reserved 5; // removed behaviour_value
+  double      timestamp_sec   = 6; // simulator time.
+  reserved 7, 8; // removed prev_action, prev_reward
+  repeated float raw_action   = 9;
+  reserved 10;
+  map<string, RewardTermValue> reward_terms = 11;
+}
+
+// One IMPALA-style unroll.
+message Rollout {
+  ActorId actor           = 1;
+  uint64  policy_version  = 2;
+  double  episode_return  = 3;
+  bool    episode_terminal = 4;
+  repeated TrajectoryStep steps = 5;
+  map<string, double> metrics   = 6; // collision counts, etc.
+  RecurrentState initial_recurrent_state = 7;
+}
+
+// Kafka payload – batches multiple rollouts so we amortize overhead.
+message RolloutBatch {
+  repeated Rollout rollouts = 1;
+  uint64           batch_id = 2;
+  uint64           created_unix_ms = 3;
+}
+
+message RolloutStreamRequest {
+  string worker_id = 1;
+  string session_token = 2;
+  RolloutBatch batch = 3;
+}
+
+message RolloutStreamResponse {
+  uint64 last_batch_id = 1;
+  string message = 2;
+}
+
+service RolloutStream {
+  rpc StreamRollouts(stream RolloutStreamRequest) returns (stream RolloutStreamResponse);
+}

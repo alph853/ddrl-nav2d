@@ -1,0 +1,86 @@
+name: big_building
+category: structure
+parts:
+  - name: main_structure
+    geom:
+      type: box
+      hx: 15.0
+      hy: 12.0
+      z_min: 0.0
+      z_max: 25.0
+    material:
+      name: building_facade
+      rgba: [0.6, 0.65, 0.7, 1.0] # steel blue-gray
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: entrance_lobby1
+    geom:
+      type: box
+      hx: 0.05
+      hy: 2.0
+      z_min: 0.0
+      z_max: 4.0
+    material:
+      name: entrance_glass
+      rgba: [0.3, 0.4, 0.5, 1.0] # semi-transparent blue
+    rel_pose:
+      pos: [15.05, 0.0]
+      yaw: 0.0
+
+  - name: entrance_lobby2
+    geom:
+      type: box
+      hx: 0.05
+      hy: 2.0
+      z_min: 0.0
+      z_max: 4.0
+    material:
+      name: entrance_glass
+      rgba: [0.3, 0.4, 0.5, 1.0] # semi-transparent blue
+    rel_pose:
+      pos: [0.0, 12.05]
+      yaw: 1.57
+
+  - name: entrance_lobby3
+    geom:
+      type: box
+      hx: 0.05
+      hy: 2.0
+      z_min: 0.0
+      z_max: 4.0
+    material:
+      name: entrance_glass
+      rgba: [0.3, 0.4, 0.5, 1.0] # semi-transparent blue
+    rel_pose:
+      pos: [-15.05, 0.0]
+      yaw: 0.0
+
+  - name: entrance_lobby4
+    geom:
+      type: box
+      hx: 0.05
+      hy: 2.0
+      z_min: 0.0
+      z_max: 4.0
+    material:
+      name: entrance_glass
+      rgba: [0.3, 0.4, 0.5, 1.0] # semi-transparent blue
+    rel_pose:
+      pos: [0.0, -12.05]
+      yaw: 1.57
+
+  - name: roof
+    geom:
+      type: box
+      hx: 15.2
+      hy: 12.2
+      z_min: 25.0
+      z_max: 26.0
+    material:
+      name: building_roof
+      rgba: [0.3, 0.3, 0.3, 1.0] # dark gray
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

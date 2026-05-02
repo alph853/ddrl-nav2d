@@ -1,0 +1,144 @@
+services:
+  kafka-1:
+    image: apache/kafka:4.1.0
+    container_name: kafka-1
+    restart: unless-stopped
+    network_mode: host
+    healthcheck:
+      test: ["CMD", "bash", "-c", "echo > /dev/tcp/127.0.0.1/${B1_CLIENT_PORT}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    environment:
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_NODE_ID: 1
+      KAFKA_CLUSTER_ID: ${KAFKA_CLUSTER_ID}
+      KAFKA_LISTENERS: PLAINTEXT://${HOST_IP}:${B1_CLIENT_PORT},CONTROLLER://${HOST_IP}:${B1_CTRL_PORT}
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://${HOST_IP}:${B1_CLIENT_PORT}
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,CONTROLLER:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_CONTROLLER_QUORUM_VOTERS: ${KAFKA_CONTROLLER_VOTERS_DUAL}
+      KAFKA_LOG_DIRS: /var/lib/kafka/data
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 2
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 2
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 2
+    volumes:
+      - ${DATA_DIR_B1}:/var/lib/kafka
+
+  kafka-2:
+    image: apache/kafka:4.1.0
+    container_name: kafka-2
+    restart: unless-stopped
+    network_mode: host
+    healthcheck:
+      test: ["CMD", "bash", "-c", "echo > /dev/tcp/127.0.0.1/${B2_CLIENT_PORT}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    environment:
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_NODE_ID: 2
+      KAFKA_CLUSTER_ID: ${KAFKA_CLUSTER_ID}
+      KAFKA_LISTENERS: PLAINTEXT://${HOST_IP}:${B2_CLIENT_PORT},CONTROLLER://${HOST_IP}:${B2_CTRL_PORT}
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://${HOST_IP}:${B2_CLIENT_PORT}
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,CONTROLLER:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_CONTROLLER_QUORUM_VOTERS: ${KAFKA_CONTROLLER_VOTERS_DUAL}
+      KAFKA_LOG_DIRS: /var/lib/kafka/data
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 2
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 2
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 2
+    volumes:
+      - ${DATA_DIR_B2}:/var/lib/kafka
+
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    restart: unless-stopped
+    depends_on:
+      - kafka-1
+      - kafka-2
+    environment:
+      KAFKA_CLUSTERS_0_NAME: local
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: ${KAFKA_BOOTSTRAP_SERVERS_DUAL}
+    ports:
+      - "8080:8080"
+
+  learner:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.learner
+    restart: unless-stopped
+    volumes:
+      - rollouts-data:/data
+    depends_on:
+      - kafka-1
+    command:
+      - --grpc-bind
+      - 0.0.0.0:5600
+
+  coordinator:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.coordinator
+    restart: unless-stopped
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS_SING: ${KAFKA_BOOTSTRAP_SERVERS_DUAL}
+      COORDINATOR_HOST: 0.0.0.0
+      COORDINATOR_PORT: ${COORDINATOR_PORT}
+    ports:
+      - "5700:5700"
+    command: ["--host", "0.0.0.0", "--port", "5700", "--kafka-bootstrap", "${KAFKA_BOOTSTRAP_SERVERS_DUAL}"]
+
+  topic-init:
+    image: apache/kafka:4.1.0
+    depends_on:
+      kafka-1:
+        condition: service_healthy
+      kafka-2:
+        condition: service_healthy
+    entrypoint: ["/bin/bash"]
+    command:
+      - -lc
+      - |
+        set -e
+        sleep 5
+        /opt/kafka/bin/kafka-topics.sh --bootstrap-server ${KAFKA_BOOTSTRAP_SERVERS_DUAL} --list
+    restart: "no"
+
+  worker:
+    image: ghcr.io/alph853/ddrl-worker:1.0.0
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.worker
+    restart: unless-stopped
+    environment:
+      DISPLAY: ${DISPLAY}
+      XAUTHORITY: ${XAUTHORITY:-/home/${USER}/.Xauthority}
+      DDRL_WORKER_NUM_SIM_INSTANCES: 16
+      DDRL_WORKER_NUM_RAYCAST_THREADS: 0
+      DDRL_WORKER_ENABLE_VISUALIZATION: "true"
+      DDRL_WORKER_REAL_TIME_FACTOR: -1.0
+      KAFKA_BOOTSTRAP_SERVERS_SING: ${KAFKA_BOOTSTRAP_SERVERS_DUAL}
+      COORDINATOR_HOST: coordinator
+      COORDINATOR_PORT: ${COORDINATOR_PORT}
+      DDRL_COORDINATOR_TARGET: coordinator:${COORDINATOR_PORT}
+    volumes:
+      - rollouts-data:/data
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+      - ${XAUTHORITY:-/home/${USER}/.Xauthority}:${XAUTHORITY:-/home/${USER}/.Xauthority}:ro
+    devices:
+      - /dev/dri:/dev/dri
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+volumes:
+  rollouts-data:

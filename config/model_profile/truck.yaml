@@ -1,0 +1,30 @@
+name: truck
+category: vehicle
+parts:
+  - name: cab
+    geom:
+      type: box
+      hx: 1.25
+      hy: 1.2
+      z_min: 0.0
+      z_max: 2.5
+    material:
+      name: truck_cab
+      rgba: [0.8, 0.1, 0.1, 1.0] # red
+    rel_pose:
+      pos: [1.5, 0.0]
+      yaw: 0.0
+
+  - name: cargo_bed
+    geom:
+      type: box
+      hx: 2.75
+      hy: 1.2
+      z_min: 0.0
+      z_max: 2.0
+    material:
+      name: truck_cargo
+      rgba: [0.6, 0.6, 0.6, 1.0] # gray
+    rel_pose:
+      pos: [-2.5, 0.0]
+      yaw: 0.0

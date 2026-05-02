@@ -1,0 +1,11 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+# Find dependencies
+find_dependency(yaml-cpp)
+
+# Include target exports
+include("${CMAKE_CURRENT_LIST_DIR}/ddrlTargets.cmake")
+
+check_required_components(ddrl)

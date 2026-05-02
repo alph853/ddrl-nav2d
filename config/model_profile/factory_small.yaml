@@ -1,0 +1,283 @@
+name: factory_small
+category: structure
+parts:
+  # Main building
+  - name: main_building
+    geom:
+      type: box
+      hx: 8.0
+      hy: 6.0
+      z_min: 0.0
+      z_max: 5.0
+    material:
+      name: factory_walls
+      rgba: [0.6, 0.6, 0.65, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  # Roof
+  - name: roof
+    geom:
+      type: box
+      hx: 8.2
+      hy: 6.2
+      z_min: 5.0
+      z_max: 5.5
+    material:
+      name: factory_roof
+      rgba: [0.4, 0.4, 0.4, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  # Smokestack
+  - name: smokestack
+    geom:
+      type: circle
+      radius: 0.8
+      z_min: 5.5
+      z_max: 10.0
+    material:
+      name: brick_red
+      rgba: [0.6, 0.3, 0.2, 1.0]
+    rel_pose:
+      pos: [-5.0, 3.0]
+      yaw: 0.0
+
+  - name: smokestack_top
+    geom:
+      type: circle
+      radius: 0.9
+      z_min: 10.0
+      z_max: 10.5
+    material:
+      name: brick_red
+      rgba: [0.6, 0.3, 0.2, 1.0]
+    rel_pose:
+      pos: [-5.0, 3.0]
+      yaw: 0.0
+
+  # Loading dock
+  - name: loading_dock
+    geom:
+      type: box
+      hx: 3.0
+      hy: 2.0
+      z_min: 0.0
+      z_max: 3.5
+    material:
+      name: factory_walls
+      rgba: [0.6, 0.6, 0.65, 1.0]
+    rel_pose:
+      pos: [10.0, 0.0]
+      yaw: 0.0
+
+  - name: loading_door
+    geom:
+      type: box
+      hx: 2.5
+      hy: 0.05
+      z_min: 0.0
+      z_max: 3.0
+    material:
+      name: metal_door
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [7.95, 0.0]
+      yaw: 0.0
+
+  # Windows (yellow/lit)
+  - name: window_1
+    geom:
+      type: box
+      hx: 0.8
+      hy: 0.05
+      z_min: 2.0
+      z_max: 3.5
+    material:
+      name: factory_window
+      rgba: [0.9, 0.9, 0.5, 0.9]
+    rel_pose:
+      pos: [0.0, 6.05]
+      yaw: 0.0
+
+  - name: window_2
+    geom:
+      type: box
+      hx: 0.8
+      hy: 0.05
+      z_min: 2.0
+      z_max: 3.5
+    material:
+      name: factory_window
+      rgba: [0.9, 0.9, 0.5, 0.9]
+    rel_pose:
+      pos: [3.0, 6.05]
+      yaw: 0.0
+
+  - name: window_3
+    geom:
+      type: box
+      hx: 0.8
+      hy: 0.05
+      z_min: 2.0
+      z_max: 3.5
+    material:
+      name: factory_window
+      rgba: [0.9, 0.9, 0.5, 0.9]
+    rel_pose:
+      pos: [-3.0, 6.05]
+      yaw: 0.0
+
+  # Storage tanks
+  - name: tank_1
+    geom:
+      type: circle
+      radius: 1.5
+      z_min: 0.0
+      z_max: 4.0
+    material:
+      name: storage_tank
+      rgba: [0.7, 0.7, 0.7, 1.0]
+    rel_pose:
+      pos: [6.0, -8.0]
+      yaw: 0.0
+
+  - name: tank_2
+    geom:
+      type: circle
+      radius: 1.5
+      z_min: 0.0
+      z_max: 4.0
+    material:
+      name: storage_tank
+      rgba: [0.7, 0.7, 0.7, 1.0]
+    rel_pose:
+      pos: [2.0, -8.0]
+      yaw: 0.0
+
+  # Fence around property
+  - name: fence_front
+    geom:
+      type: box
+      hx: 12.0
+      hy: 0.1
+      z_min: 0.0
+      z_max: 2.0
+    material:
+      name: chain_link
+      rgba: [0.5, 0.5, 0.5, 0.7]
+    rel_pose:
+      pos: [0.0, -10.0]
+      yaw: 0.0
+
+  - name: fence_back
+    geom:
+      type: box
+      hx: 12.0
+      hy: 0.1
+      z_min: 0.0
+      z_max: 2.0
+    material:
+      name: chain_link
+      rgba: [0.5, 0.5, 0.5, 0.7]
+    rel_pose:
+      pos: [0.0, 8.0]
+      yaw: 0.0
+
+  - name: fence_left
+    geom:
+      type: box
+      hx: 18.0
+      hy: 0.1
+      z_min: 0.0
+      z_max: 2.0
+    material:
+      name: chain_link
+      rgba: [0.5, 0.5, 0.5, 0.7]
+    rel_pose:
+      pos: [-12.0, -1.0]
+      yaw: 1.5708
+
+  - name: fence_right
+    geom:
+      type: box
+      hx: 18.0
+      hy: 0.1
+      z_min: 0.0
+      z_max: 2.0
+    material:
+      name: chain_link
+      rgba: [0.5, 0.5, 0.5, 0.7]
+    rel_pose:
+      pos: [14.0, -1.0]
+      yaw: 1.5708
+
+  # Factory floor/yard
+  - name: factory_yard
+    geom:
+      type: box
+      hx: 14.0
+      hy: 10.0
+      z_min: -0.01
+      z_max: 0.0
+    material:
+      name: concrete_ground
+      rgba: [0.5, 0.5, 0.5, 1.0]
+    rel_pose:
+      pos: [1.0, -1.0]
+      yaw: 0.0
+
+  # Fence posts at corners
+  - name: fence_post_ne
+    geom:
+      type: circle
+      radius: 0.1
+      z_min: 0.0
+      z_max: 2.2
+    material:
+      name: metal_post
+      rgba: [0.4, 0.4, 0.4, 1.0]
+    rel_pose:
+      pos: [14.0, 8.0]
+      yaw: 0.0
+
+  - name: fence_post_nw
+    geom:
+      type: circle
+      radius: 0.1
+      z_min: 0.0
+      z_max: 2.2
+    material:
+      name: metal_post
+      rgba: [0.4, 0.4, 0.4, 1.0]
+    rel_pose:
+      pos: [-12.0, 8.0]
+      yaw: 0.0
+
+  - name: fence_post_se
+    geom:
+      type: circle
+      radius: 0.1
+      z_min: 0.0
+      z_max: 2.2
+    material:
+      name: metal_post
+      rgba: [0.4, 0.4, 0.4, 1.0]
+    rel_pose:
+      pos: [14.0, -10.0]
+      yaw: 0.0
+
+  - name: fence_post_sw
+    geom:
+      type: circle
+      radius: 0.1
+      z_min: 0.0
+      z_max: 2.2
+    material:
+      name: metal_post
+      rgba: [0.4, 0.4, 0.4, 1.0]
+    rel_pose:
+      pos: [-12.0, -10.0]
+      yaw: 0.0

@@ -1,0 +1,28 @@
+name: tree_1
+category: vegetation
+parts:
+  - name: trunk
+    geom:
+      type: circle
+      radius: 0.3
+      z_min: 0.0
+      z_max: 2.5
+    material:
+      name: tree_bark
+      rgba: [0.4, 0.3, 0.2, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: canopy
+    geom:
+      type: circle
+      radius: 1.2
+      z_min: 2.0
+      z_max: 5.0
+    material:
+      name: leaves
+      rgba: [0.3, 0.6, 0.2, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

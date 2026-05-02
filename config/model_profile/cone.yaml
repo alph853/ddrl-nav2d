@@ -1,0 +1,15 @@
+name: cone
+category: obstacle
+parts:
+  - name: body
+    geom:
+      type: circle
+      radius: 0.15
+      z_min: 0.0
+      z_max: 0.7
+    material:
+      name: traffic_cone
+      rgba: [1.0, 0.5, 0.0, 1.0] # orange
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

@@ -1,0 +1,91 @@
+syntax = "proto3";
+
+package ddrl.comm;
+
+option csharp_namespace = "Ddrl.Comm";
+option go_package       = "github.com/ddrl/collision-avoidance/comm/gen/go/ddrl/comm";
+option java_multiple_files = true;
+option java_package        = "ai.ddrl.comm";
+
+import "google/protobuf/empty.proto";
+
+message Capability {
+  string name  = 1;
+  string value = 2;
+}
+
+message WorkerHello {
+  string hostname             = 1;
+  string version              = 2;
+  repeated Capability capabilities = 3;
+  map<string, string> labels = 4;
+}
+
+message WorkerSession {
+  string worker_id           = 1;
+  string session_token       = 2;
+  string learner_target      = 3;
+  uint64 heartbeat_interval_ms = 4;
+}
+
+message WorkerStatus {
+  string phase             = 1;
+  uint32 active_simulators = 2;
+  string detail            = 3;
+}
+
+message WorkerHeartbeat {
+  string worker_id       = 1;
+  string session_token   = 2;
+  uint64 unix_ms         = 3;
+  WorkerStatus status    = 4;
+  map<string, double> metrics = 5;
+}
+
+enum ControlType {
+  CONTROL_NONE          = 0;
+  CONTROL_DRAIN         = 1;
+  CONTROL_RESUME        = 2;
+  CONTROL_SWITCH_LEARNER = 3;
+  CONTROL_SHUTDOWN      = 4;
+}
+
+message ControlDirective {
+  ControlType type   = 1;
+  string message     = 2;
+  string learner_target = 3;
+}
+
+message LearnerHello {
+  string endpoint = 1;
+  string version  = 2;
+  repeated string models = 3;
+  string hostname = 4;
+}
+
+message LearnerSession {
+  string learner_id            = 1;
+  string session_token         = 2;
+  uint64 heartbeat_interval_ms = 3;
+}
+
+message LearnerHeartbeat {
+  string learner_id    = 1;
+  string session_token = 2;
+  uint64 unix_ms       = 3;
+  string endpoint      = 4;
+  string version       = 5;
+  repeated string models = 6;
+  map<string, double> metrics = 7;
+}
+
+message LearnerHeartbeatRequest {
+  LearnerHeartbeat heartbeat = 1;
+}
+
+service CoordinatorControl {
+  rpc RegisterWorker(WorkerHello) returns (WorkerSession);
+  rpc RegisterLearner(LearnerHello) returns (LearnerSession);
+  rpc WorkerHeartbeatStream(stream WorkerHeartbeat) returns (stream ControlDirective);
+  rpc LearnerHeartbeat(LearnerHeartbeatRequest) returns (google.protobuf.Empty);
+}

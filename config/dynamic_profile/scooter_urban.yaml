@@ -1,0 +1,58 @@
+name: scooter_urban
+
+# Electric scooter in urban environment - slightly calmer tuning
+cfg:
+  type: linear_pid
+
+  caps:
+    max_speed: 5.0
+    max_accel: 1.5
+    max_decel: 3.0
+    cmd_rate_hz: 30.0
+    cmd_delay_s: 0.05
+    accel_noise_std: 0.05
+    steer_noise_std: 0.0
+
+  speed_pid:
+    kp: 1.2
+    ki: 0.15
+    kd: 0.08
+    integral_windup_limit: 2.0
+    d_filter_hz: 8.0
+
+  lateral_pid:
+    kp: 0.8
+    ki: 0.05
+    kd: 0.1
+    integral_windup_limit: 1.5
+    d_filter_hz: 10.0
+
+  cruise_speed_min: 3.0
+  cruise_speed_max: 5.0
+  max_lateral_error: 1.2
+
+# Urban scooter path
+waypoints_local:
+  points:
+    - p_local:
+        pos: [0.0, 0.0]
+        yaw: 0.0
+      wait_s: 0.0
+    - p_local:
+        pos: [25.0, 0.0]
+        yaw: 0.0
+      wait_s: 1.0
+    - p_local:
+        pos: [25.0, 15.0]
+        yaw: 1.571
+      wait_s: 0.0
+    - p_local:
+        pos: [0.0, 15.0]
+        yaw: 3.142
+      wait_s: 1.0
+
+  reached_pos_tol: 0.6
+  reached_yaw_tol: 0.15
+  loop: true
+
+stop_when_collide_s: 1.2

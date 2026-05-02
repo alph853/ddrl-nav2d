@@ -1,0 +1,96 @@
+services:
+  coordinator:
+    image: ghcr.io/alph853/ddrl-coordinator:1.0.2
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.coordinator
+    restart: unless-stopped
+    environment:
+      COORDINATOR_HOST: 0.0.0.0
+      COORDINATOR_PORT: ${COORDINATOR_PORT:-10800}
+      DDRL_ENABLE_KAFKA_HEALTHCHECK: "false"
+    ports:
+      - "${COORDINATOR_PORT:-10800}:${COORDINATOR_PORT:-10800}"
+    command:
+      - --host
+      - 0.0.0.0
+      - --port
+      - "${COORDINATOR_PORT:-10800}"
+
+  learner:
+    image: ghcr.io/alph853/ddrl-learner:1.0.2
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.learner
+    restart: unless-stopped
+    depends_on:
+      - coordinator
+    environment:
+      DDRL_COORDINATOR_TARGET: coordinator:${COORDINATOR_PORT:-10800}
+    volumes:
+      - ./config:/opt/ddrl/config:ro
+      - ./learner_checkpoints:/opt/ddrl/checkpoints
+    command:
+      - --grpc-bind
+      - 0.0.0.0:${LEARNER_PORT:-6600}
+      - --grpc-advertise
+      - learner:${LEARNER_PORT:-6600}
+      - --policy-arch-config
+      - /opt/ddrl/config/policy_arch.yaml
+      - --checkpoint-dir
+      - /opt/ddrl/checkpoints
+      - --coordinator-target
+      - coordinator:${COORDINATOR_PORT:-10800}
+      - --device
+      - ${DDRL_LEARNER_DEVICE:-auto}
+
+  worker:
+    image: ghcr.io/alph853/ddrl-worker:1.0.2
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.worker
+    restart: unless-stopped
+    depends_on:
+      - coordinator
+      - learner
+    environment:
+      DDRL_COORDINATOR_TARGET: coordinator:${COORDINATOR_PORT:-10800}
+      DDRL_WORKER_NUM_SIM_INSTANCES: ${DDRL_WORKER_NUM_SIM_INSTANCES:-4}
+      DDRL_WORKER_NUM_RAYCAST_THREADS: ${DDRL_WORKER_NUM_RAYCAST_THREADS:-0}
+      DDRL_WORKER_ENABLE_VISUALIZATION: ${DDRL_WORKER_ENABLE_VISUALIZATION:-false}
+      DDRL_WORKER_REAL_TIME_FACTOR: ${DDRL_WORKER_REAL_TIME_FACTOR:-1.0}
+      DDRL_WORKER_STANDALONE_RUN_ENABLE: "false"
+    volumes:
+      - ./config:/opt/ddrl/config:ro
+    command:
+      - --coordinator-target
+      - coordinator:${COORDINATOR_PORT:-10800}
+
+  worker-viz:
+    image: ghcr.io/alph853/ddrl-worker:1.0.2
+    profiles: ["viz"]
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.worker
+    restart: unless-stopped
+    depends_on:
+      - coordinator
+      - learner
+    environment:
+      DISPLAY: ${DISPLAY}
+      XAUTHORITY: ${XAUTHORITY:-/tmp/.Xauthority}
+      DDRL_COORDINATOR_TARGET: coordinator:${COORDINATOR_PORT:-10800}
+      DDRL_WORKER_NUM_SIM_INSTANCES: ${DDRL_WORKER_NUM_SIM_INSTANCES:-4}
+      DDRL_WORKER_NUM_RAYCAST_THREADS: ${DDRL_WORKER_NUM_RAYCAST_THREADS:-0}
+      DDRL_WORKER_ENABLE_VISUALIZATION: "true"
+      DDRL_WORKER_REAL_TIME_FACTOR: ${DDRL_WORKER_REAL_TIME_FACTOR:-1.0}
+      DDRL_WORKER_STANDALONE_RUN_ENABLE: "false"
+    volumes:
+      - ./config:/opt/ddrl/config:ro
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+      - ${XAUTHORITY:-/tmp/.Xauthority}:${XAUTHORITY:-/tmp/.Xauthority}:ro
+    devices:
+      - /dev/dri:/dev/dri
+    command:
+      - --coordinator-target
+      - coordinator:${COORDINATOR_PORT:-10800}

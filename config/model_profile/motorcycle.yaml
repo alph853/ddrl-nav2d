@@ -1,0 +1,29 @@
+name: motorcycle
+category: vehicle
+parts:
+  - name: body
+    geom:
+      type: box
+      hx: 1.2
+      hy: 0.4
+      z_min: 0.5
+      z_max: 1.0
+    material:
+      name: motorcycle_body
+      rgba: [0.1, 0.1, 0.1, 1.0] # black
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: rider
+    geom:
+      type: circle
+      radius: 0.3
+      z_min: 1.0
+      z_max: 1.7
+    material:
+      name: rider_body
+      rgba: [0.3, 0.3, 0.8, 1.0] # blue jacket
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

@@ -1,0 +1,29 @@
+name: traffic_light
+category: infrastructure
+parts:
+  - name: pole
+    geom:
+      type: circle
+      radius: 0.1
+      z_min: 0.0
+      z_max: 4.0
+    material:
+      name: light_pole
+      rgba: [0.3, 0.3, 0.3, 1.0] # dark gray
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: signal_box
+    geom:
+      type: box
+      hx: 0.3
+      hy: 0.2
+      z_min: 3.5
+      z_max: 4.5
+    material:
+      name: signal_housing
+      rgba: [0.2, 0.2, 0.2, 1.0] # black
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

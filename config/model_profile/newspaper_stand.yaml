@@ -1,0 +1,30 @@
+name: newspaper_stand
+category: furniture
+parts:
+  - name: base
+    geom:
+      type: box
+      hx: 0.4
+      hy: 0.3
+      z_min: 0.0
+      z_max: 0.2
+    material:
+      name: stand_base
+      rgba: [0.3, 0.3, 0.3, 1.0] # dark gray
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: body
+    geom:
+      type: box
+      hx: 0.35
+      hy: 0.25
+      z_min: 0.2
+      z_max: 1.2
+    material:
+      name: stand_body
+      rgba: [0.8, 0.1, 0.1, 1.0] # red
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

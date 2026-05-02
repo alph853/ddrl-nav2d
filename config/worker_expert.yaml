@@ -1,0 +1,37 @@
+# Expert-worker variant used for BC warm-start runs.
+# Same runtime settings as worker.yaml, but uses the scripted expert policy.
+
+num_sim_instances: 4
+num_raycast_threads: 0
+
+enable_visualization: true
+real_time_factor: -1.0
+
+unroll_length: 64
+
+standalone_run_enable: false
+
+sim_config_path: "simulator_expert.yaml"
+world_config_path: "world_random.yaml"
+visualizer_config_path: "visualizer.yaml"
+policy_type: expert
+policy_arch_config_path: "policy_arch.yaml"
+reward_config_path: "rl_reward.yaml"
+
+map_directory: "map"
+
+event_bus:
+  buffer_size: 1000
+
+coordinator:
+  target: "127.0.0.1:10800"
+  version: "1.0.0"
+  worker_identity: ""
+  hostname: ""
+  capabilities: {}
+  labels: {}
+
+demos:
+  mode: off
+  output_dir: "../data/demos"
+  max_files: 20000

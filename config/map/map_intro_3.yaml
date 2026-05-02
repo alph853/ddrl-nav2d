@@ -1,0 +1,221 @@
+version: '1.0'
+name: map_intro_3
+description: ''
+static_instances:
+- name: medium_building_1
+  model_id: medium_building
+  pose_world:
+    pos:
+    - -23.0
+    - 8.0
+    yaw: 0.0
+- name: wall_huge_2
+  model_id: wall_huge
+  pose_world:
+    pos:
+    - 24.0
+    - -28.0
+    yaw: 1.5707963267948963
+robot_routes:
+- name: route_1
+  start:
+    pos:
+    - -21.0
+    - -21.0
+    yaw: 1.6539375586833378
+  waypoints:
+  - name: wp_1
+    pos:
+    - -22.0
+    - -9.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - -9.0
+    - -3.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - -5.0
+    - 8.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - -13.0
+    - 22.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - -25.0
+    - 29.0
+    tolerance: 2.0
+- name: route_2
+  start:
+    pos:
+    - -21.0
+    - -21.0
+    yaw: 0.04164257909858842
+  waypoints:
+  - name: wp_1
+    pos:
+    - 3.0
+    - -20.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - 13.0
+    - -20.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - 14.0
+    - -31.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - 25.0
+    - -37.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - 37.0
+    - -29.0
+    tolerance: 2.0
+  - name: wp_6
+    pos:
+    - 35.0
+    - -20.0
+    tolerance: 2.0
+- name: route_3
+  start:
+    pos:
+    - -20.0
+    - -21.0
+    yaw: 0.702256931509007
+  waypoints:
+  - name: wp_1
+    pos:
+    - -7.0
+    - -10.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - 3.0
+    - 0.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - 10.0
+    - 9.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - 18.0
+    - 16.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - 25.0
+    - 24.0
+    tolerance: 2.0
+  - name: wp_6
+    pos:
+    - 25.0
+    - 32.0
+    tolerance: 2.0
+- name: route_4
+  start:
+    pos:
+    - 37.0
+    - 6.0
+    yaw: 1.5083775167989393
+  waypoints:
+  - name: wp_1
+    pos:
+    - 38.0
+    - 22.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - 22.0
+    - 21.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - 3.0
+    - 20.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - 3.0
+    - 6.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - 4.0
+    - -10.0
+    tolerance: 2.0
+  - name: wp_6
+    pos:
+    - 5.0
+    - -27.0
+    tolerance: 2.0
+  - name: wp_7
+    pos:
+    - 5.0
+    - -34.0
+    tolerance: 2.0
+- name: route_5
+  start:
+    pos:
+    - -23.0
+    - 24.0
+    yaw: -3.050932766389048
+  waypoints:
+  - name: wp_1
+    pos:
+    - -34.0
+    - 23.0
+    tolerance: 2.0
+  - name: wp_2
+    pos:
+    - -13.0
+    - 24.0
+    tolerance: 2.0
+  - name: wp_3
+    pos:
+    - 1.0
+    - 24.0
+    tolerance: 2.0
+  - name: wp_4
+    pos:
+    - 1.0
+    - 8.0
+    tolerance: 2.0
+  - name: wp_5
+    pos:
+    - 1.0
+    - -5.0
+    tolerance: 2.0
+  - name: wp_6
+    pos:
+    - -23.0
+    - -6.0
+    tolerance: 2.0
+  - name: wp_7
+    pos:
+    - -24.0
+    - -17.0
+    tolerance: 2.0
+  - name: wp_8
+    pos:
+    - -21.0
+    - -30.0
+    tolerance: 2.0
+bounds:
+  min:
+  - -75.0
+  - -75.0
+  max:
+  - 75.0
+  - 75.0

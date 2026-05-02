@@ -1,0 +1,16 @@
+name: tile_grass
+category: ground_tile
+parts:
+  - name: grass_fill
+    geom:
+      type: box
+      hx: 2.0
+      hy: 2.0
+      z_min: 0.0
+      z_max: 0.001
+    material:
+      name: grass_green
+      rgba: [0.4, 0.7, 0.3, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0

@@ -1,0 +1,253 @@
+version: '1.0'
+name: map_med_4
+description: ''
+static_instances:
+- name: factory_small_1
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -1.0
+    - 5.0
+    yaw: 0.0
+- name: factory_small_2
+  model_id: factory_small
+  pose_world:
+    pos:
+    - -36.0
+    - 5.0
+    yaw: 0.0
+- name: gate_3
+  model_id: gate
+  pose_world:
+    pos:
+    - -10.0
+    - 22.0
+    yaw: 0.0
+- name: gate_4
+  model_id: gate
+  pose_world:
+    pos:
+    - -25.0
+    - 22.0
+    yaw: 0.0
+- name: small_building_6
+  model_id: small_building
+  pose_world:
+    pos:
+    - -17.0
+    - 36.0
+    yaw: 0.0
+- name: wall_7
+  model_id: wall
+  pose_world:
+    pos:
+    - -13.0
+    - 22.0
+    yaw: 1.5707963267948963
+- name: wall_8
+  model_id: wall
+  pose_world:
+    pos:
+    - -38.0
+    - 22.0
+    yaw: 0.0
+- name: jungle_patch_9
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -46.0
+    - 32.0
+    yaw: 0.0
+- name: jungle_patch_10
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -39.0
+    - 39.0
+    yaw: 0.0
+- name: jungle_patch_11
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - -25.0
+    - 35.0
+    yaw: 0.7853981633974483
+- name: wood_pile_12
+  model_id: wood_pile
+  pose_world:
+    pos:
+    - -41.0
+    - 35.0
+    yaw: 0.0
+- name: wood_pile_13
+  model_id: wood_pile
+  pose_world:
+    pos:
+    - -43.0
+    - 32.0
+    yaw: 0.5235987755982988
+- name: wood_pile_14
+  model_id: wood_pile
+  pose_world:
+    pos:
+    - -23.0
+    - 32.0
+    yaw: 3.1415926535897936
+- name: wood_pile_15
+  model_id: wood_pile
+  pose_world:
+    pos:
+    - -24.0
+    - 30.0
+    yaw: 3.1415926535897936
+- name: cone_line_16
+  model_id: cone_line
+  pose_world:
+    pos:
+    - -27.0
+    - 27.0
+    yaw: 0.7853981633974483
+- name: cone_line_17
+  model_id: cone_line
+  pose_world:
+    pos:
+    - -28.0
+    - 28.0
+    yaw: 0.7853981633974483
+- name: cone_line_18
+  model_id: cone_line
+  pose_world:
+    pos:
+    - -28.0
+    - 27.0
+    yaw: 0.7853981633974483
+- name: cone_line_19
+  model_id: cone_line
+  pose_world:
+    pos:
+    - -30.0
+    - 27.0
+    yaw: 0.7853981633974483
+- name: bamboo_grove_20
+  model_id: bamboo_grove
+  pose_world:
+    pos:
+    - -28.0
+    - 31.0
+    yaw: 0.0
+- name: bamboo_grove_21
+  model_id: bamboo_grove
+  pose_world:
+    pos:
+    - -32.0
+    - 28.0
+    yaw: 0.0
+- name: bamboo_grove_22
+  model_id: bamboo_grove
+  pose_world:
+    pos:
+    - -31.0
+    - 31.0
+    yaw: 0.0
+- name: forest_dense_23
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - 5.0
+    - 36.0
+    yaw: 1.308996938995747
+- name: train_station_platform_24
+  model_id: train_station_platform
+  pose_world:
+    pos:
+    - 20.0
+    - -23.0
+    yaw: 0.0
+- name: gas_station_25
+  model_id: gas_station
+  pose_world:
+    pos:
+    - 38.0
+    - -38.0
+    yaw: 4.71238898038469
+- name: construction_zone_medium_27
+  model_id: construction_zone_medium
+  pose_world:
+    pos:
+    - 18.0
+    - -9.0
+    yaw: 1.5707963267948963
+- name: parking_structure_28
+  model_id: parking_structure
+  pose_world:
+    pos:
+    - 37.0
+    - 19.0
+    yaw: 1.5707963267948963
+- name: lumber_stack_29
+  model_id: lumber_stack
+  pose_world:
+    pos:
+    - 12.0
+    - -17.0
+    yaw: 0.0
+bounds:
+  min:
+  - -100.0
+  - -100.0
+  max:
+  - 100.0
+  - 100.0
+robot_routes:
+- name: route_s1_g1
+  start:
+    pos:
+    - -33.682173
+    - -31.126819
+    yaw: 0.292113
+  waypoints:
+  - name: wp_01
+    pos:
+    - -24.992375
+    - -28.51366
+    tolerance: 2.0
+  - name: wp_02
+    pos:
+    - -16.302577
+    - -25.900501
+    tolerance: 2.0
+  - name: wp_03
+    pos:
+    - -7.612779
+    - -23.287342
+    tolerance: 2.0
+  - name: wp_04
+    pos:
+    - 1.077019
+    - -20.674183
+    tolerance: 2.0
+  - name: wp_05
+    pos:
+    - 9.766817
+    - -18.061024
+    tolerance: 2.0
+  - name: wp_06
+    pos:
+    - 18.456615
+    - -15.447865
+    tolerance: 2.0
+  - name: wp_07
+    pos:
+    - 27.146413
+    - -12.834706
+    tolerance: 2.0
+  - name: wp_08
+    pos:
+    - 35.836211
+    - -10.221547
+    tolerance: 2.0
+  - name: final_goal
+    pos:
+    - 44.526009
+    - -7.608388
+    tolerance: 2.0

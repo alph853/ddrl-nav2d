@@ -1,0 +1,12 @@
+.git
+.venv
+build
+install
+data
+learner_checkpoints
+**/__pycache__
+*.pyc
+*.log
+
+# Downloaded by scripts/install.sh inside the worker builder image.
+third_party/onnxruntime

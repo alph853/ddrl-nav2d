@@ -1,0 +1,353 @@
+version: '1.0'
+name: map_med_3
+description: ''
+static_instances:
+- name: parking_structure_1
+  model_id: parking_structure
+  pose_world:
+    pos:
+    - 19.0
+    - -12.0
+    yaw: 0.0
+- name: playground_2
+  model_id: playground
+  pose_world:
+    pos:
+    - -20.0
+    - -12.0
+    yaw: 0.0
+- name: roundabout_small_3
+  model_id: roundabout_small
+  pose_world:
+    pos:
+    - -3.0
+    - 17.0
+    yaw: 0.0
+- name: bridge_long_4
+  model_id: bridge_long
+  pose_world:
+    pos:
+    - -20.0
+    - 22.0
+    yaw: 0.7853981633974483
+- name: forest_dense_5
+  model_id: forest_dense
+  pose_world:
+    pos:
+    - 29.0
+    - 25.0
+    yaw: 1.5707963267948963
+- name: small_building_6
+  model_id: small_building
+  pose_world:
+    pos:
+    - 45.0
+    - 15.0
+    yaw: 0.0
+- name: jungle_patch_7
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - 35.0
+    - 11.0
+    yaw: 0.0
+- name: jungle_patch_8
+  model_id: jungle_patch
+  pose_world:
+    pos:
+    - 23.0
+    - 12.0
+    yaw: 1.5707963267948963
+- name: small_building_9
+  model_id: small_building
+  pose_world:
+    pos:
+    - -30.0
+    - 45.0
+    yaw: 0.0
+- name: small_building_10
+  model_id: small_building
+  pose_world:
+    pos:
+    - -40.0
+    - 35.0
+    yaw: 0.0
+- name: bamboo_grove_11
+  model_id: bamboo_grove
+  pose_world:
+    pos:
+    - -43.0
+    - 48.0
+    yaw: 0.0
+- name: bamboo_grove_12
+  model_id: bamboo_grove
+  pose_world:
+    pos:
+    - -38.0
+    - 46.0
+    yaw: 0.0
+- name: bamboo_grove_13
+  model_id: bamboo_grove
+  pose_world:
+    pos:
+    - -42.0
+    - 45.0
+    yaw: 0.0
+- name: oak_tree_14
+  model_id: oak_tree
+  pose_world:
+    pos:
+    - -40.0
+    - 47.0
+    yaw: 0.0
+bounds:
+  min:
+  - -100.0
+  - -100.0
+  max:
+  - 100.0
+  - 100.0
+robot_routes:
+- name: route_s1_g1
+  start:
+    pos:
+    - -45.882296
+    - -46.30791
+    yaw: 0.637829
+  waypoints:
+  - name: wp_01
+    pos:
+    - -38.280416
+    - -40.673591
+    tolerance: 2.0
+  - name: wp_02
+    pos:
+    - -30.678536
+    - -35.039273
+    tolerance: 2.0
+  - name: wp_03
+    pos:
+    - -23.076656
+    - -29.404954
+    tolerance: 2.0
+  - name: wp_04
+    pos:
+    - -15.474777
+    - -23.770635
+    tolerance: 2.0
+  - name: wp_05
+    pos:
+    - -7.872897
+    - -18.136316
+    tolerance: 2.0
+  - name: wp_06
+    pos:
+    - -0.271017
+    - -12.501998
+    tolerance: 2.0
+  - name: wp_07
+    pos:
+    - 7.330863
+    - -6.867679
+    tolerance: 2.0
+  - name: wp_08
+    pos:
+    - 14.932742
+    - -1.23336
+    tolerance: 2.0
+  - name: wp_09
+    pos:
+    - 22.534622
+    - 4.400958
+    tolerance: 2.0
+  - name: wp_10
+    pos:
+    - 30.136502
+    - 10.035277
+    tolerance: 2.0
+  - name: wp_11
+    pos:
+    - 37.738382
+    - 15.669596
+    tolerance: 2.0
+  - name: final_goal
+    pos:
+    - 45.340262
+    - 21.303914
+    tolerance: 2.0
+- name: route_s1_g2
+  start:
+    pos:
+    - -45.882296
+    - -46.30791
+    yaw: 1.588864
+  waypoints:
+  - name: wp_01
+    pos:
+    - -46.048435
+    - -37.113579
+    tolerance: 2.0
+  - name: wp_02
+    pos:
+    - -46.214574
+    - -27.919247
+    tolerance: 2.0
+  - name: wp_03
+    pos:
+    - -46.380713
+    - -18.724916
+    tolerance: 2.0
+  - name: wp_04
+    pos:
+    - -46.546852
+    - -9.530585
+    tolerance: 2.0
+  - name: wp_05
+    pos:
+    - -46.712991
+    - -0.336253
+    tolerance: 2.0
+  - name: wp_06
+    pos:
+    - -46.879129
+    - 8.858078
+    tolerance: 2.0
+  - name: wp_07
+    pos:
+    - -47.045268
+    - 18.05241
+    tolerance: 2.0
+  - name: wp_08
+    pos:
+    - -47.211407
+    - 27.246741
+    tolerance: 2.0
+  - name: wp_09
+    pos:
+    - -47.377546
+    - 36.441072
+    tolerance: 2.0
+  - name: final_goal
+    pos:
+    - -47.543685
+    - 45.635404
+    tolerance: 2.0
+- name: route_s2_g1
+  start:
+    pos:
+    - 45.370535
+    - -48.168896
+    yaw: 1.571232
+  waypoints:
+  - name: wp_01
+    pos:
+    - 45.36621
+    - -38.244209
+    tolerance: 2.0
+  - name: wp_02
+    pos:
+    - 45.361885
+    - -28.319522
+    tolerance: 2.0
+  - name: wp_03
+    pos:
+    - 45.357561
+    - -18.394835
+    tolerance: 2.0
+  - name: wp_04
+    pos:
+    - 45.353236
+    - -8.470147
+    tolerance: 2.0
+  - name: wp_05
+    pos:
+    - 45.348911
+    - 1.45454
+    tolerance: 2.0
+  - name: wp_06
+    pos:
+    - 45.344586
+    - 11.379227
+    tolerance: 2.0
+  - name: final_goal
+    pos:
+    - 45.340262
+    - 21.303914
+    tolerance: 2.0
+- name: route_s2_g2
+  start:
+    pos:
+    - 45.370535
+    - -48.168896
+    yaw: 2.351428
+  waypoints:
+  - name: wp_01
+    pos:
+    - 38.733805
+    - -41.468589
+    tolerance: 2.0
+  - name: wp_02
+    pos:
+    - 32.097075
+    - -34.768282
+    tolerance: 2.0
+  - name: wp_03
+    pos:
+    - 25.460345
+    - -28.067975
+    tolerance: 2.0
+  - name: wp_04
+    pos:
+    - 18.823615
+    - -21.367668
+    tolerance: 2.0
+  - name: wp_05
+    pos:
+    - 12.186885
+    - -14.667361
+    tolerance: 2.0
+  - name: wp_06
+    pos:
+    - 5.550155
+    - -7.967054
+    tolerance: 2.0
+  - name: wp_07
+    pos:
+    - -1.086575
+    - -1.266746
+    tolerance: 2.0
+  - name: wp_08
+    pos:
+    - -7.723305
+    - 5.433561
+    tolerance: 2.0
+  - name: wp_09
+    pos:
+    - -14.360035
+    - 12.133868
+    tolerance: 2.0
+  - name: wp_10
+    pos:
+    - -20.996765
+    - 18.834175
+    tolerance: 2.0
+  - name: wp_11
+    pos:
+    - -27.633495
+    - 25.534482
+    tolerance: 2.0
+  - name: wp_12
+    pos:
+    - -34.270225
+    - 32.234789
+    tolerance: 2.0
+  - name: wp_13
+    pos:
+    - -40.906955
+    - 38.935096
+    tolerance: 2.0
+  - name: final_goal
+    pos:
+    - -47.543685
+    - 45.635404
+    tolerance: 2.0

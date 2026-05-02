@@ -1,0 +1,41 @@
+name: pine_tree
+category: vegetation
+parts:
+  - name: trunk
+    geom:
+      type: circle
+      radius: 0.5
+      z_min: 0.0
+      z_max: 10.0
+    material:
+      name: tree_bark
+      rgba: [0.4, 0.3, 0.2, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: lower_branches
+    geom:
+      type: circle
+      radius: 1.5
+      z_min: 3.0
+      z_max: 8.0
+    material:
+      name: pine_needles
+      rgba: [0.1, 0.3, 0.1, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
+
+  - name: upper_branches
+    geom:
+      type: circle
+      radius: 0.8
+      z_min: 8.0
+      z_max: 15.0
+    material:
+      name: pine_needles
+      rgba: [0.1, 0.3, 0.1, 1.0]
+    rel_pose:
+      pos: [0.0, 0.0]
+      yaw: 0.0
